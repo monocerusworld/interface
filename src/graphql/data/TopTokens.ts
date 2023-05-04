@@ -18,11 +18,11 @@ import {
 import {
   CHAIN_NAME_TO_CHAIN_ID,
   isPricePoint,
-  PollingInterval,
+  // PollingInterval,
   PricePoint,
   toHistoryDuration,
   unwrapToken,
-  usePollQueryWhileMounted,
+  // usePollQueryWhileMounted,
 } from './util'
 
 gql`
@@ -150,12 +150,15 @@ export function useTopTokens(chain: Chain): UseTopTokensReturnValue {
   const chainId = CHAIN_NAME_TO_CHAIN_ID[chain]
   const duration = toHistoryDuration(useAtomValue(filterTimeAtom))
 
-  const { data: sparklineQuery } = usePollQueryWhileMounted(
+  const {
+    data: sparklineQuery,
+  } = //usePollQueryWhileMounted(
     useTopTokensSparklineQuery({
       variables: { duration, chain },
-    }),
-    PollingInterval.Slow
-  )
+    })
+  //   ,
+  //   PollingInterval.Slow
+  // )
 
   const sparklines = useMemo(() => {
     const unwrappedTokens = sparklineQuery?.topTokens?.map((topToken) => unwrapToken(chainId, topToken))
@@ -166,12 +169,16 @@ export function useTopTokens(chain: Chain): UseTopTokensReturnValue {
     return map
   }, [chainId, sparklineQuery?.topTokens])
 
-  const { data, loading: loadingTokens } = usePollQueryWhileMounted(
+  const {
+    data,
+    loading: loadingTokens,
+  } = // usePollQueryWhileMounted(
     useTopTokens100Query({
       variables: { duration, chain },
-    }),
-    PollingInterval.Fast
-  )
+    })
+  //   ,
+  //   PollingInterval.Fast
+  // )
 
   const unwrappedTokens = useMemo(() => data?.topTokens?.map((token) => unwrapToken(chainId, token)), [chainId, data])
   const sortedTokens = useSortedTokens(unwrappedTokens)

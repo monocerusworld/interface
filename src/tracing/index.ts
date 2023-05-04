@@ -1,11 +1,12 @@
+// eslint-disable-next-line
 import 'components/analytics'
 
 import * as Sentry from '@sentry/react'
 import { BrowserTracing } from '@sentry/tracing'
-import { initializeAnalytics, OriginApplication } from '@uniswap/analytics'
-import { SharedEventName } from '@uniswap/analytics-events'
+//import { initializeAnalytics, OriginApplication } from '@uniswap/analytics'
+//import { SharedEventName } from '@uniswap/analytics-events'
 import { isSentryEnabled } from 'utils/env'
-import { getEnvName, isProductionEnv } from 'utils/env'
+import { getEnvName } from 'utils/env'
 
 export { trace } from './trace'
 
@@ -13,8 +14,8 @@ export { trace } from './trace'
 window.GIT_COMMIT_HASH = process.env.REACT_APP_GIT_COMMIT_HASH
 
 // Actual KEYs are set by proxy servers.
-const AMPLITUDE_DUMMY_KEY = '00000000000000000000000000000000'
-export const STATSIG_DUMMY_KEY = 'client-0000000000000000000000000000000000000000000'
+//const AMPLITUDE_DUMMY_KEY = '00000000000000000000000000000000'
+// export const STATSIG_DUMMY_KEY = 'client-0000000000000000000000000000000000000000000'
 
 Sentry.init({
   dsn: process.env.REACT_APP_SENTRY_DSN,
@@ -37,9 +38,9 @@ Sentry.init({
   normalizeDepth: 10,
 })
 
-initializeAnalytics(AMPLITUDE_DUMMY_KEY, OriginApplication.INTERFACE, {
-  proxyUrl: process.env.REACT_APP_AMPLITUDE_PROXY_URL,
-  defaultEventName: SharedEventName.PAGE_VIEWED,
-  commitHash: process.env.REACT_APP_GIT_COMMIT_HASH,
-  isProductionEnv: isProductionEnv(),
-})
+//initializeAnalytics(AMPLITUDE_DUMMY_KEY, OriginApplication.INTERFACE, {
+//  proxyUrl: process.env.REACT_APP_AMPLITUDE_PROXY_URL,
+//  defaultEventName: SharedEventName.PAGE_VIEWED,
+//  commitHash: process.env.REACT_APP_GIT_COMMIT_HASH,
+//  isProductionEnv: isProductionEnv(),
+//})

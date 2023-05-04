@@ -9,7 +9,17 @@ import CeloLogo from '../../assets/svg/celo_logo.svg'
 import MaticLogo from '../../assets/svg/matic-token-icon.svg'
 import { isCelo, NATIVE_CHAIN_ID, nativeOnChain } from '../../constants/tokens'
 
-type Network = 'ethereum' | 'arbitrum' | 'optimism' | 'polygon' | 'smartchain'
+type Network =
+  | 'ethereum'
+  | 'arbitrum'
+  | 'optimism'
+  | 'polygon'
+  | 'smartchain'
+  | 'fantom'
+  | 'gnosis'
+  | 'klaytn'
+  | 'avalanche'
+  | 'moonbeam'
 
 export function chainIdToNetworkName(networkId: SupportedChainId): Network {
   switch (networkId) {
@@ -23,6 +33,16 @@ export function chainIdToNetworkName(networkId: SupportedChainId): Network {
       return 'polygon'
     case SupportedChainId.BNB:
       return 'smartchain'
+    case SupportedChainId.FANTOM:
+      return 'fantom'
+    case SupportedChainId.GNOSIS:
+      return 'gnosis'
+    case SupportedChainId.KLAYTN:
+      return 'klaytn'
+    case SupportedChainId.AVALANCHE:
+      return 'avalanche'
+    case SupportedChainId.MOONBEAM:
+      return 'moonbeam'
     default:
       return 'ethereum'
   }
@@ -34,6 +54,16 @@ export function getNativeLogoURI(chainId: SupportedChainId = SupportedChainId.MA
     case SupportedChainId.POLYGON_MUMBAI:
       return MaticLogo
     case SupportedChainId.BNB:
+      return BnbLogo
+    case SupportedChainId.FANTOM:
+      return BnbLogo
+    case SupportedChainId.GNOSIS:
+      return BnbLogo
+    case SupportedChainId.KLAYTN:
+      return BnbLogo
+    case SupportedChainId.AVALANCHE:
+      return BnbLogo
+    case SupportedChainId.MOONBEAM:
       return BnbLogo
     case SupportedChainId.CELO:
     case SupportedChainId.CELO_ALFAJORES:

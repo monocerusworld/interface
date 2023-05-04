@@ -96,6 +96,56 @@ export default function RadialGradientByChainUpdater(): null {
         backgroundRadialGradientElement.style.background = darkMode ? bscDarkGradient : bscLightGradient
         break
       }
+
+      case SupportedChainId.FANTOM: {
+        setBackground(backgroundResetStyles)
+        const fantomLightGradient =
+          'radial-gradient(100% 100% at 50% 0%, rgba(242 , 186, 8, 0.1) 0%, rgba(238, 182, 6, 0.08) 50%, rgba(140, 185, 11, 0) 100%), #FFFFFF'
+        const fantomDarkGradient =
+          'radial-gradient(100% 100% at 50% 0%, rgba(169, 132, 17, 0.1) 0%, rgba(128, 100, 14, 0.08) 50%, rgba(140, 185, 11, 0) 100%), #0D0E0E'
+        backgroundRadialGradientElement.style.background = darkMode ? fantomDarkGradient : fantomLightGradient
+        break
+      }
+
+      case SupportedChainId.GNOSIS: {
+        setBackground(backgroundResetStyles)
+        const gnosisLightGradient =
+          'radial-gradient(100% 100% at 50% 0%, rgba(242 , 186, 8, 0.1) 0%, rgba(238, 182, 6, 0.08) 50%, rgba(140, 185, 11, 0) 100%), #FFFFFF'
+        const gnosisDarkGradient =
+          'radial-gradient(100% 100% at 50% 0%, rgba(169, 132, 17, 0.1) 0%, rgba(128, 100, 14, 0.08) 50%, rgba(140, 185, 11, 0) 100%), #0D0E0E'
+        backgroundRadialGradientElement.style.background = darkMode ? gnosisDarkGradient : gnosisLightGradient
+        break
+      }
+
+      case SupportedChainId.AVALANCHE: {
+        setBackground(backgroundResetStyles)
+        const avalancheLightGradient =
+          'radial-gradient(100% 100% at 50% 0%, rgba(242 , 186, 8, 0.1) 0%, rgba(238, 182, 6, 0.08) 50%, rgba(140, 185, 11, 0) 100%), #FFFFFF'
+        const avalancheDarkGradient =
+          'radial-gradient(100% 100% at 50% 0%, rgba(169, 132, 17, 0.1) 0%, rgba(128, 100, 14, 0.08) 50%, rgba(140, 185, 11, 0) 100%), #0D0E0E'
+        backgroundRadialGradientElement.style.background = darkMode ? avalancheDarkGradient : avalancheLightGradient
+        break
+      }
+
+      case SupportedChainId.MOONBEAM: {
+        setBackground(backgroundResetStyles)
+        const moonbeamLightGradient =
+          'radial-gradient(100% 100% at 50% 0%, rgba(242 , 186, 8, 0.1) 0%, rgba(238, 182, 6, 0.08) 50%, rgba(140, 185, 11, 0) 100%), #FFFFFF'
+        const moonbeamDarkGradient =
+          'radial-gradient(100% 100% at 50% 0%, rgba(169, 132, 17, 0.1) 0%, rgba(128, 100, 14, 0.08) 50%, rgba(140, 185, 11, 0) 100%), #0D0E0E'
+        backgroundRadialGradientElement.style.background = darkMode ? moonbeamDarkGradient : moonbeamLightGradient
+        break
+      }
+
+      case SupportedChainId.KLAYTN: {
+        setBackground(backgroundResetStyles)
+        const klaytnLightGradient =
+          'radial-gradient(100% 100% at 50% 0%, rgba(242 , 186, 8, 0.1) 0%, rgba(238, 182, 6, 0.08) 50%, rgba(140, 185, 11, 0) 100%), #FFFFFF'
+        const klaytnDarkGradient =
+          'radial-gradient(100% 100% at 50% 0%, rgba(169, 132, 17, 0.1) 0%, rgba(128, 100, 14, 0.08) 50%, rgba(140, 185, 11, 0) 100%), #0D0E0E'
+        backgroundRadialGradientElement.style.background = darkMode ? klaytnDarkGradient : klaytnLightGradient
+        break
+      }
       default: {
         setBackground(initialStyles)
         const defaultLightGradient =

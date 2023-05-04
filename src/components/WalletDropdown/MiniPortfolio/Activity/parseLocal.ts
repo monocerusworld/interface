@@ -1,7 +1,7 @@
 import { t } from '@lingui/macro'
+import { nativeOnChain } from '@tartz-one/smart-order-router'
 import { formatCurrencyAmount } from '@uniswap/conedison/format'
 import { Currency, CurrencyAmount, TradeType } from '@uniswap/sdk-core'
-import { nativeOnChain } from '@uniswap/smart-order-router'
 import { useWeb3React } from '@web3-react/core'
 import { SupportedChainId } from 'constants/chains'
 import { TransactionPartsFragment, TransactionStatus } from 'graphql/data/__generated__/types-and-hooks'

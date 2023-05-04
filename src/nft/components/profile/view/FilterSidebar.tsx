@@ -22,9 +22,6 @@ import {
   useState,
 } from 'react'
 import { easings, useSpring } from 'react-spring'
-import AutoSizer from 'react-virtualized-auto-sizer'
-import { FixedSizeList, ListOnItemsRenderedProps } from 'react-window'
-import InfiniteLoader from 'react-window-infinite-loader'
 import styled from 'styled-components/macro'
 import { ThemedText } from 'theme'
 import { TRANSITION_DURATIONS } from 'theme/styles'
@@ -231,7 +228,7 @@ const CollectionSelect = ({
             />
           )}
           <ItemsContainer>
-            <AutoSizer disableWidth>
+            {/* <AutoSizer disableWidth>
               {({ height }) => (
                 <InfiniteLoader isItemLoaded={isItemLoaded} itemCount={itemCount} loadMoreItems={loadMoreItems}>
                   {({
@@ -255,7 +252,7 @@ const CollectionSelect = ({
                   )}
                 </InfiniteLoader>
               )}
-            </AutoSizer>
+            </AutoSizer> */}
           </ItemsContainer>
         </Column>
       </Box>

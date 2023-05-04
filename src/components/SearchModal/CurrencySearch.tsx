@@ -12,7 +12,7 @@ import useNativeCurrency from 'lib/hooks/useNativeCurrency'
 import { getTokenFilter } from 'lib/hooks/useTokenList/filtering'
 import { tokenComparator, useSortTokensByQuery } from 'lib/hooks/useTokenList/sorting'
 import { ChangeEvent, KeyboardEvent, RefObject, useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import AutoSizer from 'react-virtualized-auto-sizer'
+// import AutoSizer from 'react-virtualized-auto-sizer'
 import { FixedSizeList } from 'react-window'
 import { Text } from 'rebass'
 import { useAllTokenBalances } from 'state/connection/hooks'
@@ -26,7 +26,7 @@ import Column from '../Column'
 import Row, { RowBetween } from '../Row'
 import CommonBases from './CommonBases'
 import { CurrencyRow, formatAnalyticsEventProperties } from './CurrencyList'
-import CurrencyList from './CurrencyList'
+// import CurrencyList from './CurrencyList'
 import { PaddedColumn, SearchInput, Separator } from './styleds'
 
 const ContentWrapper = styled(Column)`
@@ -265,8 +265,8 @@ export function CurrencySearch({
           </Column>
         ) : searchCurrencies?.length > 0 || filteredInactiveTokens?.length > 0 || isLoading ? (
           <div style={{ flex: '1' }}>
-            <AutoSizer disableWidth>
-              {({ height }) => (
+            {/* <AutoSizer disableWidth>
+              {( height ) => (
                 <CurrencyList
                   height={height}
                   currencies={searchCurrencies}
@@ -281,7 +281,7 @@ export function CurrencySearch({
                   isAddressSearch={isAddressSearch}
                 />
               )}
-            </AutoSizer>
+            </AutoSizer> */}
           </div>
         ) : (
           <Column style={{ padding: '20px', height: '100%' }}>

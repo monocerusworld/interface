@@ -15,6 +15,16 @@ const CHAIN_SUBGRAPH_URL: Record<number, string> = {
   [SupportedChainId.CELO]: 'https://api.thegraph.com/subgraphs/name/jesse-sawa/uniswap-celo',
 
   [SupportedChainId.BNB]: 'https://api.thegraph.com/subgraphs/name/ianlapham/uniswap-v3-bsc',
+
+  [SupportedChainId.FANTOM]: 'https://api.thegraph.com/subgraphs/name/pullstacker/v3-fantom',
+
+  [SupportedChainId.GNOSIS]: 'https://api.thegraph.com/subgraphs/name/pullstacker/v3-gnosis',
+
+  [SupportedChainId.KLAYTN]: 'https://api.thegraph.com/subgraphs/name/pullstacker/v3-klaytn',
+
+  [SupportedChainId.AVALANCHE]: 'https://api.thegraph.com/subgraphs/name/pullstacker/v3-avalanche',
+
+  [SupportedChainId.MOONBEAM]: 'https://api.thegraph.com/subgraphs/name/pullstacker/v3-moonbeam',
 }
 
 const httpLink = new HttpLink({ uri: CHAIN_SUBGRAPH_URL[SupportedChainId.MAINNET] })

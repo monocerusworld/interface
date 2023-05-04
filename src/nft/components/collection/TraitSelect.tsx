@@ -9,8 +9,6 @@ import { Trait, useCollectionFilters } from 'nft/hooks/useCollectionFilters'
 import { pluralize } from 'nft/utils/roundAndPluralize'
 import { scrollToTop } from 'nft/utils/scrollToTop'
 import { CSSProperties, FormEvent, MouseEvent, useCallback, useEffect, useMemo, useState } from 'react'
-import AutoSizer from 'react-virtualized-auto-sizer'
-import { FixedSizeList } from 'react-window'
 
 import { Input } from '../layout/Input'
 import * as styles from './Filters.css'
@@ -164,7 +162,7 @@ export const TraitSelect = ({ traits, type, index }: { traits: Trait[]; type: st
         className={styles.filterDropDowns}
         style={{ height: `${Math.min(TRAIT_ROW_HEIGHT * searchedTraits.length, styles.MAX_FILTER_DROPDOWN_HEIGHT)}px` }}
       >
-        <AutoSizer disableWidth>
+        {/* <AutoSizer disableWidth>
           {({ height }) => (
             <FixedSizeList
               height={height}
@@ -177,7 +175,7 @@ export const TraitSelect = ({ traits, type, index }: { traits: Trait[]; type: st
               {({ index, style, data }) => <Row style={style} key={itemKey(index, data)} data={data} index={index} />}
             </FixedSizeList>
           )}
-        </AutoSizer>
+        </AutoSizer> */}
       </Column>
     </TraitsHeader>
   ) : null

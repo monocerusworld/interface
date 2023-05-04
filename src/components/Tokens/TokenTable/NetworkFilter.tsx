@@ -118,6 +118,11 @@ export default function NetworkFilter() {
 
   const chainInfo = getChainInfo(CHAIN_NAME_TO_CHAIN_ID[currentChainName])
   const BNBChainInfo = getChainInfo(CHAIN_NAME_TO_CHAIN_ID.BNB)
+  const FANTOMChainInfo = getChainInfo(CHAIN_NAME_TO_CHAIN_ID.FANTOM)
+  const GNOSISChainInfo = getChainInfo(CHAIN_NAME_TO_CHAIN_ID.GNOSIS)
+  const KLAYTNChainInfo = getChainInfo(CHAIN_NAME_TO_CHAIN_ID.KLAYTN)
+  const AVALANCHEChainInfo = getChainInfo(CHAIN_NAME_TO_CHAIN_ID.AVALANCHE)
+  const MOONBEAMChainInfo = getChainInfo(CHAIN_NAME_TO_CHAIN_ID.MOONBEAM)
 
   return (
     <StyledMenu ref={node}>
@@ -170,6 +175,41 @@ export default function NetworkFilter() {
             <NetworkLabel>
               <Logo src={BNBChainInfo.logoUrl} />
               {BNBChainInfo.label}
+            </NetworkLabel>
+            <Tag>Coming soon</Tag>
+          </InternalLinkMenuItem>
+          <InternalLinkMenuItem data-testid="tokens-network-filter-option-fantom-chain" disabled>
+            <NetworkLabel>
+              <Logo src={FANTOMChainInfo.logoUrl} />
+              {FANTOMChainInfo.label}
+            </NetworkLabel>
+            <Tag>Coming soon</Tag>
+          </InternalLinkMenuItem>
+          <InternalLinkMenuItem data-testid="tokens-network-filter-option-gnosis-chain" disabled>
+            <NetworkLabel>
+              <Logo src={GNOSISChainInfo.logoUrl} />
+              {GNOSISChainInfo.label}
+            </NetworkLabel>
+            <Tag>Coming soon</Tag>
+          </InternalLinkMenuItem>
+          <InternalLinkMenuItem data-testid="tokens-network-filter-option-avalanche-chain" disabled>
+            <NetworkLabel>
+              <Logo src={AVALANCHEChainInfo.logoUrl} />
+              {AVALANCHEChainInfo.label}
+            </NetworkLabel>
+            <Tag>Coming soon</Tag>
+          </InternalLinkMenuItem>
+          <InternalLinkMenuItem data-testid="tokens-network-filter-option-moonbeam-chain" disabled>
+            <NetworkLabel>
+              <Logo src={MOONBEAMChainInfo.logoUrl} />
+              {MOONBEAMChainInfo.label}
+            </NetworkLabel>
+            <Tag>Coming soon</Tag>
+          </InternalLinkMenuItem>
+          <InternalLinkMenuItem data-testid="tokens-network-filter-option-klaytn-chain" disabled>
+            <NetworkLabel>
+              <Logo src={KLAYTNChainInfo.logoUrl} />
+              {KLAYTNChainInfo.label}
             </NetworkLabel>
             <Tag>Coming soon</Tag>
           </InternalLinkMenuItem>

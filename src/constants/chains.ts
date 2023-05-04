@@ -23,6 +23,11 @@ export enum SupportedChainId {
   CELO_ALFAJORES = 44787,
 
   BNB = 56,
+  FANTOM = 250,
+  GNOSIS = 100,
+  KLAYTN = 8217,
+  AVALANCHE = 43114,
+  MOONBEAM = 1284,
 }
 
 export const CHAIN_IDS_TO_NAMES = {
@@ -37,6 +42,11 @@ export const CHAIN_IDS_TO_NAMES = {
   [SupportedChainId.OPTIMISM]: 'optimism',
   [SupportedChainId.OPTIMISM_GOERLI]: 'optimism_goerli',
   [SupportedChainId.BNB]: 'bnb',
+  [SupportedChainId.FANTOM]: 'fantom',
+  [SupportedChainId.GNOSIS]: 'gnosis',
+  [SupportedChainId.KLAYTN]: 'klaytn',
+  [SupportedChainId.AVALANCHE]: 'avalanche',
+  [SupportedChainId.MOONBEAM]: 'moonbeam',
 }
 
 /**
@@ -57,6 +67,11 @@ export const SUPPORTED_GAS_ESTIMATE_CHAIN_IDS = [
   SupportedChainId.OPTIMISM,
   SupportedChainId.ARBITRUM_ONE,
   SupportedChainId.BNB,
+  SupportedChainId.FANTOM,
+  SupportedChainId.GNOSIS,
+  SupportedChainId.KLAYTN,
+  SupportedChainId.AVALANCHE,
+  SupportedChainId.MOONBEAM,
 ] as const
 
 /**
@@ -67,6 +82,11 @@ export const UNSUPPORTED_V2POOL_CHAIN_IDS = [
   SupportedChainId.OPTIMISM,
   SupportedChainId.ARBITRUM_ONE,
   SupportedChainId.BNB,
+  SupportedChainId.FANTOM,
+  SupportedChainId.GNOSIS,
+  SupportedChainId.KLAYTN,
+  SupportedChainId.AVALANCHE,
+  SupportedChainId.MOONBEAM,
   SupportedChainId.ARBITRUM_GOERLI,
 ] as const
 
@@ -77,7 +97,7 @@ export const TESTNET_CHAIN_IDS = [
   SupportedChainId.OPTIMISM_GOERLI,
 ] as const
 
-export type SupportedTestnetChainId = typeof TESTNET_CHAIN_IDS[number]
+export type SupportedTestnetChainId = (typeof TESTNET_CHAIN_IDS)[number]
 
 /**
  * All the chain IDs that are running the Ethereum protocol.
@@ -90,9 +110,14 @@ export const L1_CHAIN_IDS = [
   SupportedChainId.CELO,
   SupportedChainId.CELO_ALFAJORES,
   SupportedChainId.BNB,
+  SupportedChainId.FANTOM,
+  SupportedChainId.GNOSIS,
+  SupportedChainId.KLAYTN,
+  SupportedChainId.AVALANCHE,
+  SupportedChainId.MOONBEAM,
 ] as const
 
-export type SupportedL1ChainId = typeof L1_CHAIN_IDS[number]
+export type SupportedL1ChainId = (typeof L1_CHAIN_IDS)[number]
 
 /**
  * Controls some L2 specific behavior, e.g. slippage tolerance, special UI behavior.
@@ -105,4 +130,4 @@ export const L2_CHAIN_IDS = [
   SupportedChainId.OPTIMISM_GOERLI,
 ] as const
 
-export type SupportedL2ChainId = typeof L2_CHAIN_IDS[number]
+export type SupportedL2ChainId = (typeof L2_CHAIN_IDS)[number]

@@ -1,12 +1,9 @@
 import { Trans } from '@lingui/macro'
-import { useWeb3React } from '@web3-react/core'
 import NewBadge from 'components/WalletModal/NewBadge'
 import Web3Status from 'components/Web3Status'
 import { useMGTMMicrositeEnabled } from 'featureFlags/flags/mgtm'
-import { chainIdToBackendName } from 'graphql/data/util'
 import { useIsNftPage } from 'hooks/useIsNftPage'
 import { useIsPoolsPage } from 'hooks/useIsPoolsPage'
-import { useAtomValue } from 'jotai/utils'
 import { Box } from 'nft/components/Box'
 import { Row } from 'nft/components/Flex'
 import { UniIcon } from 'nft/components/icons'
@@ -14,7 +11,6 @@ import { useProfilePageState } from 'nft/hooks'
 import { ProfilePageStateType } from 'nft/types'
 import { ReactNode } from 'react'
 import { NavLink, NavLinkProps, useLocation, useNavigate } from 'react-router-dom'
-import { shouldDisableNFTRoutesAtom } from 'state/application/atoms'
 import styled from 'styled-components/macro'
 
 import { Bag } from './Bag'
@@ -55,22 +51,19 @@ const MenuItem = ({ href, dataTestId, id, isActive, children }: MenuItemProps) =
 
 export const PageTabs = () => {
   const { pathname } = useLocation()
-  const { chainId: connectedChainId } = useWeb3React()
-  const chainName = chainIdToBackendName(connectedChainId)
+  // const { chainId: connectedChainId } = useWeb3React()
+  // const chainName = chainIdToBackendName(connectedChainId)
 
   const isPoolActive = useIsPoolsPage()
   const isNftPage = useIsNftPage()
   const micrositeEnabled = useMGTMMicrositeEnabled()
 
-  const shouldDisableNFTRoutes = useAtomValue(shouldDisableNFTRoutesAtom)
+  const shouldDisableNFTRoutes = true //hardeoded to true //useAtomValue(shouldDisableNFTRoutesAtom)
 
   return (
     <>
       <MenuItem href="/swap" isActive={pathname.startsWith('/swap')}>
         <Trans>Swap</Trans>
-      </MenuItem>
-      <MenuItem href={`/tokens/${chainName.toLowerCase()}`} isActive={pathname.startsWith('/tokens')}>
-        <Trans>Tokens</Trans>
       </MenuItem>
       {!shouldDisableNFTRoutes && (
         <MenuItem dataTestId="nft-nav" href="/nfts" isActive={isNftPage}>

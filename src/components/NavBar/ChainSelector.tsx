@@ -27,6 +27,11 @@ const NETWORK_SELECTOR_CHAINS = [
   SupportedChainId.ARBITRUM_ONE,
   SupportedChainId.CELO,
   SupportedChainId.BNB,
+  SupportedChainId.FANTOM,
+  SupportedChainId.GNOSIS,
+  SupportedChainId.KLAYTN,
+  SupportedChainId.AVALANCHE,
+  SupportedChainId.MOONBEAM,
 ]
 
 interface ChainSelectorProps {

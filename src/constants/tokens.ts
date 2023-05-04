@@ -352,7 +352,212 @@ export const BUSD_BSC = new Token(
   'BUSD'
 )
 
+// FANTOM Tokens
+export const BTC_FANTOM = new Token(
+  SupportedChainId.FANTOM,
+  '0x321162Cd933E2Be498Cd2267a90534A804051b11',
+  8,
+  'BTC',
+  'Bitcoin'
+)
+
+export const DAI_FANTOM = new Token(
+  SupportedChainId.FANTOM,
+  '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
+  18,
+  'DAI',
+  'DAI Stablecoin'
+)
+
+// export const ETH_FANTOM = new Token(
+//   SupportedChainId.FANTOM,
+//   '0x74b23882a30290451A17c44f4F05243b6b58C76d',
+//   18,
+//   'ETH',
+//   'Ethereum'
+// )
+
+export const USDC_FANTOM = new Token(
+  SupportedChainId.FANTOM,
+  '0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  6,
+  'USDC',
+  'USD Coin'
+)
+
+export const USDT_FANTOM = new Token(
+  SupportedChainId.FANTOM,
+  '0x049d68029688eAbF473097a2fC38ef61633A3C7A',
+  6,
+  'fUSDT',
+  'Frapped USDT'
+)
+
+// GNOSIS Tokens
+export const BTC_GNOSIS = new Token(
+  SupportedChainId.GNOSIS,
+  '0x8e5bBbb09Ed1ebdE8674Cda39A0c169401db4252',
+  8,
+  'WBTC',
+  'Wrapped BTC on xDai'
+)
+
+export const DAI_GNOSIS = new Token(
+  SupportedChainId.GNOSIS,
+  '0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d',
+  18,
+  'WXDAI',
+  'Wrapped XDAI'
+)
+
+// export const ETH_GNOSIS = new Token(
+//   SupportedChainId.GNOSIS,
+//   '0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1',
+//   18,
+//   'WETH',
+//   'Wrapped Ether on xDai'
+// )
+
+export const USDC_GNOSIS = new Token(
+  SupportedChainId.GNOSIS,
+  '0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83',
+  6,
+  'USDC',
+  'USD//C on xDai'
+)
+
+export const USDT_GNOSIS = new Token(
+  SupportedChainId.GNOSIS,
+  '0x4ECaBa5870353805a9F068101A40E0f32ed605C6',
+  6,
+  'USDT',
+  'Tether USD on xDai'
+)
+
+// KLAYTN Tokens
+export const BTC_KLAYTN = new Token(
+  SupportedChainId.KLAYTN,
+  '0x16d0e1fbd024c600ca0380a4c5d57ee7a2ecbf9c',
+  8,
+  'oWBTC',
+  'Orbit Bridge Klaytn Wrapped BTC'
+)
+
+export const DAI_KLAYTN = new Token(
+  SupportedChainId.KLAYTN,
+  '0x5c74070fdea071359b86082bd9f9b3deaafbe32b',
+  18,
+  'KDAI',
+  'Klaytn DAI'
+)
+
+// export const ETH_KLAYTN = new Token(
+//   SupportedChainId.KLAYTN,
+//   '0x34d21b1e550d73cee41151c77f3c73359527a396',
+//   18,
+//   'oETH',
+//   'Orbit Bridge Klaytn Ethereum'
+// )
+
+export const USDC_KLAYTN = new Token(
+  SupportedChainId.KLAYTN,
+  '0x754288077d0ff82af7a5317c7cb8c444d421d103',
+  6,
+  'oUSDC',
+  'Orbit Bridge Klaytn USD Coin'
+)
+
+export const USDT_KLAYTN = new Token(
+  SupportedChainId.KLAYTN,
+  '0xcee8faf64bb97a73bb51e115aa89c17ffa8dd167',
+  6,
+  'oUSDT',
+  'Orbit Bridge Klaytn USD Tether'
+)
+
 export const DAI_BSC = new Token(SupportedChainId.BNB, '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3', 18, 'DAI', 'DAI')
+
+// Moonbeam Tokens
+export const USDC_MOONBEAM = new Token(
+  SupportedChainId.MOONBEAM,
+  '0x818ec0A7Fe18Ff94269904fCED6AE3DaE6d6dC0b',
+  6,
+  'USDC',
+  'USD Coin bridged using Multichain'
+)
+
+export const USDT_MOONBEAM = new Token(
+  SupportedChainId.MOONBEAM,
+  '0xeFAeeE334F0Fd1712f9a8cc375f427D9Cdd40d73',
+  6,
+  'USDT',
+  'Tether USD'
+)
+
+export const WGLMR_MOONBEAM = new Token(
+  SupportedChainId.MOONBEAM,
+  '0xAcc15dC74880C9944775448304B263D191c6077F',
+  18,
+  'WGLMR',
+  'Wrapped GLMR'
+)
+
+export const DAI_MOONBEAM = new Token(
+  SupportedChainId.MOONBEAM,
+  '0x765277EebeCA2e31912C9946eAe1021199B39C61',
+  6,
+  'DAI',
+  'Dai on moonbeam bridged using Multichain'
+)
+
+export const WBTC_MOONBEAM = new Token(
+  SupportedChainId.MOONBEAM,
+  '0x922D641a426DcFFaeF11680e5358F34d97d112E1',
+  8,
+  'WBTC',
+  'Wrapped BTC bridged using Multichain'
+)
+
+// Avalanche Tokens
+export const USDT_AVALANCHE = new Token(
+  SupportedChainId.AVALANCHE,
+  '0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7',
+  6,
+  'USDT',
+  'TetherToken'
+)
+
+export const USDC_AVALANCHE = new Token(
+  SupportedChainId.AVALANCHE,
+  '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E',
+  6,
+  'USDC',
+  'USD Coin'
+)
+
+export const WAVAX_AVALANCHE = new Token(
+  SupportedChainId.AVALANCHE,
+  '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+  18,
+  'WAVAX',
+  'Wrapped AVAX'
+)
+
+export const DAI_AVALANCHE = new Token(
+  SupportedChainId.AVALANCHE,
+  '0xd586E7F844cEa2F87f50152665BCbc2C279D8d70',
+  6,
+  'DAI',
+  'Dai Stablecoin'
+)
+
+export const WBTC_AVALANCHE = new Token(
+  SupportedChainId.AVALANCHE,
+  '0x50b7545627a5162F82A992c33b87aDc75187B218',
+  8,
+  'WBTC',
+  'Wrapped BTC'
+)
 
 export const UNI: { [chainId: number]: Token } = {
   [SupportedChainId.MAINNET]: new Token(SupportedChainId.MAINNET, UNI_ADDRESS[1], 18, 'UNI', 'Uniswap'),
@@ -424,6 +629,41 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } =
     'WBNB',
     'Wrapped BNB'
   ),
+  [SupportedChainId.FANTOM]: new Token(
+    SupportedChainId.FANTOM,
+    '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
+    18,
+    'WFTM',
+    'Wrapped FTM'
+  ),
+  [SupportedChainId.GNOSIS]: new Token(
+    SupportedChainId.GNOSIS,
+    '0xe91d153e0b41518a2ce8dd3d7944fa863463a97d',
+    18,
+    'WXDAI',
+    'Wrapped XDAI on Gnosis'
+  ),
+  [SupportedChainId.KLAYTN]: new Token(
+    SupportedChainId.KLAYTN,
+    '0x19aac5f612f524b754ca7e7c41cbfa2e981a4432',
+    18,
+    'WKLAY',
+    'Wrapped KLAY'
+  ),
+  [SupportedChainId.AVALANCHE]: new Token(
+    SupportedChainId.AVALANCHE,
+    '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+    18,
+    'WAVAX',
+    'Wrapped AVAX'
+  ),
+  [SupportedChainId.MOONBEAM]: new Token(
+    SupportedChainId.MOONBEAM,
+    '0xAcc15dC74880C9944775448304B263D191c6077F',
+    18,
+    'WGLMR',
+    'Wrapped GLMR'
+  ),
 }
 
 export function isCelo(chainId: number): chainId is SupportedChainId.CELO | SupportedChainId.CELO_ALFAJORES {
@@ -485,6 +725,116 @@ class BscNativeCurrency extends NativeCurrency {
   }
 }
 
+function isFantom(chainId: number): chainId is SupportedChainId.FANTOM {
+  return chainId === SupportedChainId.FANTOM
+}
+
+class FantomNativeCurrency extends NativeCurrency {
+  equals(other: Currency): boolean {
+    return other.isNative && other.chainId === this.chainId
+  }
+
+  get wrapped(): Token {
+    if (!isFantom(this.chainId)) throw new Error('Not FANTOM')
+    const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
+    invariant(wrapped instanceof Token)
+    return wrapped
+  }
+
+  public constructor(chainId: number) {
+    if (!isFantom(chainId)) throw new Error('Not FANTOM')
+    super(chainId, 18, 'FTM', 'FANTOM')
+  }
+}
+
+function isGnosis(chainId: number): chainId is SupportedChainId.GNOSIS {
+  return chainId === SupportedChainId.GNOSIS
+}
+
+class GnosisNativeCurrency extends NativeCurrency {
+  equals(other: Currency): boolean {
+    return other.isNative && other.chainId === this.chainId
+  }
+
+  get wrapped(): Token {
+    if (!isGnosis(this.chainId)) throw new Error('Not GNOSIS')
+    const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
+    invariant(wrapped instanceof Token)
+    return wrapped
+  }
+
+  public constructor(chainId: number) {
+    if (!isGnosis(chainId)) throw new Error('Not GNOSIS')
+    super(chainId, 18, 'XDAI', 'GNOSIS')
+  }
+}
+
+function isKlaytn(chainId: number): chainId is SupportedChainId.KLAYTN {
+  return chainId === SupportedChainId.KLAYTN
+}
+
+class KlaytnNativeCurrency extends NativeCurrency {
+  equals(other: Currency): boolean {
+    return other.isNative && other.chainId === this.chainId
+  }
+
+  get wrapped(): Token {
+    if (!isKlaytn(this.chainId)) throw new Error('Not KLAYTN')
+    const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
+    invariant(wrapped instanceof Token)
+    return wrapped
+  }
+
+  public constructor(chainId: number) {
+    if (!isKlaytn(chainId)) throw new Error('Not KLAYTN')
+    super(chainId, 18, 'KLAY', 'KLAYTN')
+  }
+}
+
+function isMoonbeam(chainId: number): chainId is SupportedChainId.MOONBEAM {
+  return chainId === SupportedChainId.MOONBEAM
+}
+
+class MoonbeamNativeCurrency extends NativeCurrency {
+  equals(other: Currency): boolean {
+    return other.isNative && other.chainId === this.chainId
+  }
+
+  get wrapped(): Token {
+    if (!isMoonbeam(this.chainId)) throw new Error('Not Moonbeam')
+    const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
+    invariant(wrapped instanceof Token)
+    return wrapped
+  }
+
+  public constructor(chainId: number) {
+    if (!isMoonbeam(chainId)) throw new Error('Not Moonbeam')
+    super(chainId, 18, 'GLMR', 'GLMR')
+  }
+}
+
+function isAvalanche(chainId: number): chainId is SupportedChainId.AVALANCHE {
+  return chainId === SupportedChainId.AVALANCHE
+}
+
+class AvalancheNativeCurrency extends NativeCurrency {
+  equals(other: Currency): boolean {
+    return other.isNative && other.chainId === this.chainId
+  }
+
+  get wrapped(): Token {
+    if (!isAvalanche(this.chainId)) throw new Error('Not Avalanche')
+    const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
+    invariant(wrapped instanceof Token)
+    return wrapped
+  }
+
+  public constructor(chainId: number) {
+    if (!isAvalanche(chainId)) throw new Error('Not Avalanche')
+    super(chainId, 18, 'AVAX', 'AVAX')
+  }
+}
+
 class ExtendedEther extends Ether {
   public get wrapped(): Token {
     const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
@@ -509,6 +859,16 @@ export function nativeOnChain(chainId: number): NativeCurrency | Token {
     nativeCurrency = getCeloNativeCurrency(chainId)
   } else if (isBsc(chainId)) {
     nativeCurrency = new BscNativeCurrency(chainId)
+  } else if (isFantom(chainId)) {
+    nativeCurrency = new FantomNativeCurrency(chainId)
+  } else if (isGnosis(chainId)) {
+    nativeCurrency = new GnosisNativeCurrency(chainId)
+  } else if (isKlaytn(chainId)) {
+    nativeCurrency = new KlaytnNativeCurrency(chainId)
+  } else if (isAvalanche(chainId)) {
+    nativeCurrency = new AvalancheNativeCurrency(chainId)
+  } else if (isMoonbeam(chainId)) {
+    nativeCurrency = new MoonbeamNativeCurrency(chainId)
   } else {
     nativeCurrency = ExtendedEther.onChain(chainId)
   }
@@ -525,6 +885,11 @@ export const TOKEN_SHORTHANDS: { [shorthand: string]: { [chainId in SupportedCha
     [SupportedChainId.POLYGON]: USDC_POLYGON.address,
     [SupportedChainId.POLYGON_MUMBAI]: USDC_POLYGON_MUMBAI.address,
     [SupportedChainId.BNB]: USDC_BSC.address,
+    [SupportedChainId.FANTOM]: USDC_FANTOM.address,
+    [SupportedChainId.GNOSIS]: USDC_GNOSIS.address,
+    [SupportedChainId.KLAYTN]: USDC_KLAYTN.address,
+    [SupportedChainId.AVALANCHE]: USDC_AVALANCHE.address,
+    [SupportedChainId.MOONBEAM]: USDC_MOONBEAM.address,
     [SupportedChainId.CELO]: PORTAL_USDC_CELO.address,
     [SupportedChainId.CELO_ALFAJORES]: PORTAL_USDC_CELO.address,
     [SupportedChainId.GOERLI]: USDC_GOERLI.address,

@@ -23,6 +23,31 @@ describe('#getExplorerLink', () => {
       'https://bscscan.com/address/abc'
     )
   })
+  it('fantom', () => {
+    expect(getExplorerLink(SupportedChainId.FANTOM, 'abc', ExplorerDataType.ADDRESS)).toEqual(
+      'https://ftmscan.com/address/abc'
+    )
+  })
+  it('gnosis', () => {
+    expect(getExplorerLink(SupportedChainId.GNOSIS, 'abc', ExplorerDataType.ADDRESS)).toEqual(
+      'https://gnosisscan.com/address/abc'
+    )
+  })
+  it('klaytn', () => {
+    expect(getExplorerLink(SupportedChainId.KLAYTN, 'abc', ExplorerDataType.ADDRESS)).toEqual(
+      'https://scope.klaytn.com/address/abc'
+    )
+  })
+  it('avalanche', () => {
+    expect(getExplorerLink(SupportedChainId.AVALANCHE, 'abc', ExplorerDataType.ADDRESS)).toEqual(
+      'https://snowtrace.io/address/abc'
+    )
+  })
+  it('moonbeam', () => {
+    expect(getExplorerLink(SupportedChainId.MOONBEAM, 'abc', ExplorerDataType.ADDRESS)).toEqual(
+      'https://moonscan.io/address/abc'
+    )
+  })
   it('polygon', () => {
     expect(getExplorerLink(137, 'abc', ExplorerDataType.ADDRESS)).toEqual('https://polygonscan.com/address/abc')
   })

@@ -1,9 +1,9 @@
-import { QueryResult } from '@apollo/client'
+// import { QueryResult } from '@apollo/client'
 import { Currency, Token } from '@uniswap/sdk-core'
 import { SupportedChainId } from 'constants/chains'
 import { NATIVE_CHAIN_ID, nativeOnChain, WRAPPED_NATIVE_CURRENCY } from 'constants/tokens'
 import ms from 'ms.macro'
-import { useEffect } from 'react'
+// import { useEffect } from 'react'
 import { getNativeTokenDBAddress } from 'utils/nativeTokens'
 
 import { Chain, ContractInput, HistoryDuration, TokenStandard } from './__generated__/types-and-hooks'
@@ -16,16 +16,16 @@ export enum PollingInterval {
 }
 
 // Polls a query only when the current component is mounted, as useQuery's pollInterval prop will continue to poll after unmount
-export function usePollQueryWhileMounted<T, K>(queryResult: QueryResult<T, K>, interval: PollingInterval) {
-  const { startPolling, stopPolling } = queryResult
+// export function usePollQueryWhileMounted<T, K>(queryResult: QueryResult<T, K>, interval: PollingInterval) {
+//   const { startPolling, stopPolling } = queryResult
 
-  useEffect(() => {
-    startPolling(interval)
-    return stopPolling
-  }, [interval, startPolling, stopPolling])
+//   useEffect(() => {
+//     startPolling(interval)
+//     return stopPolling
+//   }, [interval, startPolling, stopPolling])
 
-  return queryResult
-}
+//   return queryResult
+// }
 
 export enum TimePeriod {
   HOUR,
@@ -68,6 +68,11 @@ export const CHAIN_ID_TO_BACKEND_NAME: { [key: number]: Chain } = {
   [SupportedChainId.OPTIMISM]: Chain.Optimism,
   [SupportedChainId.OPTIMISM_GOERLI]: Chain.Optimism,
   [SupportedChainId.BNB]: Chain.Bnb,
+  [SupportedChainId.FANTOM]: Chain.Fantom,
+  [SupportedChainId.GNOSIS]: Chain.Gnosis,
+  [SupportedChainId.KLAYTN]: Chain.Klaytn,
+  [SupportedChainId.AVALANCHE]: Chain.Avalanche,
+  [SupportedChainId.MOONBEAM]: Chain.Moonbeam,
 }
 
 export function chainIdToBackendName(chainId: number | undefined) {
@@ -112,6 +117,11 @@ const URL_CHAIN_PARAM_TO_BACKEND: { [key: string]: Chain } = {
   arbitrum: Chain.Arbitrum,
   optimism: Chain.Optimism,
   bnb: Chain.Bnb,
+  fantom: Chain.Fantom,
+  gnosis: Chain.Gnosis,
+  klaytn: Chain.Klaytn,
+  avalanche: Chain.Avalanche,
+  moonbeam: Chain.Moonbeam,
 }
 
 export function validateUrlChainParam(chainName: string | undefined) {
@@ -128,6 +138,11 @@ export const CHAIN_NAME_TO_CHAIN_ID: { [key in Chain]: SupportedChainId } = {
   [Chain.Arbitrum]: SupportedChainId.ARBITRUM_ONE,
   [Chain.UnknownChain]: SupportedChainId.MAINNET,
   [Chain.Bnb]: SupportedChainId.BNB,
+  [Chain.Fantom]: SupportedChainId.FANTOM,
+  [Chain.Gnosis]: SupportedChainId.GNOSIS,
+  [Chain.Klaytn]: SupportedChainId.KLAYTN,
+  [Chain.Avalanche]: SupportedChainId.AVALANCHE,
+  [Chain.Moonbeam]: SupportedChainId.MOONBEAM,
 }
 
 export function fromGraphQLChain(chain: Chain): SupportedChainId {

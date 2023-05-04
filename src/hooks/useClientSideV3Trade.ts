@@ -19,6 +19,11 @@ const QUOTE_GAS_OVERRIDES: { [chainId: number]: number } = {
   [SupportedChainId.POLYGON]: 40_000_000,
   [SupportedChainId.POLYGON_MUMBAI]: 40_000_000,
   [SupportedChainId.BNB]: 50_000_000,
+  [SupportedChainId.FANTOM]: 50_000_000,
+  [SupportedChainId.GNOSIS]: 50_000_000,
+  [SupportedChainId.KLAYTN]: 50_000_000,
+  [SupportedChainId.AVALANCHE]: 50_000_000,
+  [SupportedChainId.MOONBEAM]: 50_000_000,
 }
 
 const DEFAULT_GAS_QUOTE = 2_000_000

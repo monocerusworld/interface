@@ -73,9 +73,29 @@ export const FALLBACK_URLS = {
     // "Safe" URLs
     `https://forno.celo.org`,
   ],
+  [SupportedChainId.FANTOM]: [
+    // "Safe" URLs
+    'https://rpc.ftm.tools',
+  ],
+  [SupportedChainId.GNOSIS]: [
+    // "Safe" URLs
+    'https://rpc.gnosischain.com',
+  ],
+  [SupportedChainId.KLAYTN]: [
+    // "Safe" URLs
+    'https://klaytn.blockpi.network/v1/rpc/public',
+  ],
+  [SupportedChainId.AVALANCHE]: [
+    // "Safe" URLs
+    'https://api.avax.network/ext/bc/C/rpc',
+  ],
+  [SupportedChainId.MOONBEAM]: [
+    // "Safe" URLs
+    'https://rpc.api.moonbeam.network',
+  ],
   [SupportedChainId.CELO_ALFAJORES]: [
     // "Safe" URLs
-    `https://alfajores-forno.celo-testnet.org`,
+    `https://celo-alfajores.infura.io/v3/${INFURA_KEY}`,
   ],
   [SupportedChainId.BNB]: [
     // "Safe" URLs
@@ -128,4 +148,9 @@ export const RPC_URLS = {
   [SupportedChainId.CELO]: FALLBACK_URLS[SupportedChainId.CELO],
   [SupportedChainId.CELO_ALFAJORES]: FALLBACK_URLS[SupportedChainId.CELO_ALFAJORES],
   [SupportedChainId.BNB]: [QUICKNODE_RPC_URL, ...FALLBACK_URLS[SupportedChainId.BNB]],
+  [SupportedChainId.FANTOM]: [process.env.ANKR_FANTOM_RPC_URL, ...FALLBACK_URLS[SupportedChainId.FANTOM]],
+  [SupportedChainId.GNOSIS]: [process.env.ANKR_GNOSIS_RPC_URL, ...FALLBACK_URLS[SupportedChainId.GNOSIS]],
+  [SupportedChainId.KLAYTN]: [process.env.ANKR_KLAYTN_RPC_URL, ...FALLBACK_URLS[SupportedChainId.KLAYTN]],
+  [SupportedChainId.AVALANCHE]: [process.env.ANKR_AVALANCHE_RPC_URL, ...FALLBACK_URLS[SupportedChainId.AVALANCHE]],
+  [SupportedChainId.MOONBEAM]: [process.env.ANKR_MOONBEAM_RPC_URL, ...FALLBACK_URLS[SupportedChainId.MOONBEAM]],
 }

@@ -58,7 +58,6 @@ import { TransactionType } from '../../state/transactions/types'
 import { useIsExpertMode, useUserSlippageToleranceWithDefault } from '../../state/user/hooks'
 import { ThemedText } from '../../theme'
 import approveAmountCalldata from '../../utils/approveAmountCalldata'
-import { calculateGasMargin } from '../../utils/calculateGasMargin'
 import { currencyId } from '../../utils/currencyId'
 import { maxAmountSpend } from '../../utils/maxAmountSpend'
 import { Dots } from '../Pool/styleds'
@@ -238,7 +237,11 @@ export default function AddLiquidity() {
         data: calldata,
         value,
       }
-
+      console.log('######################################### calldata:')
+      console.dir(calldata)
+      console.log('######################################### txn:')
+      console.dir(txn)
+      console.log('#########################################')
       if (argentWalletContract) {
         const amountA = parsedAmounts[Field.CURRENCY_A]
         const amountB = parsedAmounts[Field.CURRENCY_B]
@@ -264,16 +267,29 @@ export default function AddLiquidity() {
       }
 
       setAttemptingTxn(true)
-
+      console.log('%%%%%%%%%%%%%%%%%%%%%%%% provider1')
+      console.dir(provider)
+      // provider._network._defaultProvider = null
+      provider._network.chainId = 250
+      provider._network.name = 'fantom'
+      // provider._network.ensAddress = null
+      const signer = provider.getSigner()
+      console.dir(signer.estimateGas(txn))
       provider
         .getSigner()
         .estimateGas(txn)
         .then((estimate) => {
+          console.log('%%%%%%%%%%%%%%%%%%%%%%%% until here')
           const newTxn = {
             ...txn,
-            gasLimit: calculateGasMargin(estimate),
+            // gasLimit: calculateGasMargin(estimate),
           }
 
+          console.log('%%%%%%%%%%%%%%%%%%%%%%%% estimate')
+          console.log(estimate)
+
+          console.log('%%%%%%%%%%%%%%%%%%%%%%%% provider 2')
+          console.dir(provider)
           return provider
             .getSigner()
             .sendTransaction(newTxn)

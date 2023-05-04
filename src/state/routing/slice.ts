@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery, FetchBaseQueryError } from '@reduxjs/toolkit/query/react'
+import { AlphaRouter, ChainId } from '@tartz-one/smart-order-router'
 import { Protocol } from '@uniswap/router-sdk'
-import { AlphaRouter, ChainId } from '@uniswap/smart-order-router'
 import { RPC_PROVIDERS } from 'constants/providers'
 import { getClientSideQuote, toSupportedChainId } from 'lib/hooks/routing/clientSideSmartOrderRouter'
 import ms from 'ms.macro'
@@ -82,7 +82,7 @@ interface GetQuoteArgs {
 export const routingApi = createApi({
   reducerPath: 'routingApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://api.uniswap.org/v1/',
+    baseUrl: 'https://4b3zybnhi6.execute-api.ap-southeast-1.amazonaws.com/prod/',
   }),
   endpoints: (build) => ({
     getQuote: build.query<GetQuoteResult, GetQuoteArgs>({
