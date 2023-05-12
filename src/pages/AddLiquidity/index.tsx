@@ -237,11 +237,7 @@ export default function AddLiquidity() {
         data: calldata,
         value,
       }
-      console.log('######################################### calldata:')
-      console.dir(calldata)
-      console.log('######################################### txn:')
-      console.dir(txn)
-      console.log('#########################################')
+
       if (argentWalletContract) {
         const amountA = parsedAmounts[Field.CURRENCY_A]
         const amountB = parsedAmounts[Field.CURRENCY_B]
@@ -267,58 +263,32 @@ export default function AddLiquidity() {
       }
 
       setAttemptingTxn(true)
-      console.log('%%%%%%%%%%%%%%%%%%%%%%%% provider1')
-      console.dir(provider)
-      // provider._network._defaultProvider = null
-      provider._network.chainId = 250
-      provider._network.name = 'fantom'
-      // provider._network.ensAddress = null
-      const signer = provider.getSigner()
-      console.dir(signer.estimateGas(txn))
-      provider
+
+      const newTxn = {
+        ...txn,
+        gasLimit: BigNumber.from(7000000),
+      }
+
+      return provider
         .getSigner()
-        .estimateGas(txn)
-        .then((estimate) => {
-          console.log('%%%%%%%%%%%%%%%%%%%%%%%% until here')
-          const newTxn = {
-            ...txn,
-            // gasLimit: calculateGasMargin(estimate),
-          }
-
-          console.log('%%%%%%%%%%%%%%%%%%%%%%%% estimate')
-          console.log(estimate)
-
-          console.log('%%%%%%%%%%%%%%%%%%%%%%%% provider 2')
-          console.dir(provider)
-          return provider
-            .getSigner()
-            .sendTransaction(newTxn)
-            .then((response: TransactionResponse) => {
-              setAttemptingTxn(false)
-              addTransaction(response, {
-                type: TransactionType.ADD_LIQUIDITY_V3_POOL,
-                baseCurrencyId: currencyId(baseCurrency),
-                quoteCurrencyId: currencyId(quoteCurrency),
-                createPool: Boolean(noLiquidity),
-                expectedAmountBaseRaw: parsedAmounts[Field.CURRENCY_A]?.quotient?.toString() ?? '0',
-                expectedAmountQuoteRaw: parsedAmounts[Field.CURRENCY_B]?.quotient?.toString() ?? '0',
-                feeAmount: position.pool.fee,
-              })
-              setTxHash(response.hash)
-              sendEvent({
-                category: 'Liquidity',
-                action: 'Add',
-                label: [currencies[Field.CURRENCY_A]?.symbol, currencies[Field.CURRENCY_B]?.symbol].join('/'),
-              })
-            })
-        })
-        .catch((error) => {
-          console.error('Failed to send transaction', error)
+        .sendTransaction(newTxn)
+        .then((response: TransactionResponse) => {
           setAttemptingTxn(false)
-          // we only care if the error is something _other_ than the user rejected the tx
-          if (error?.code !== 4001) {
-            console.error(error)
-          }
+          addTransaction(response, {
+            type: TransactionType.ADD_LIQUIDITY_V3_POOL,
+            baseCurrencyId: currencyId(baseCurrency),
+            quoteCurrencyId: currencyId(quoteCurrency),
+            createPool: Boolean(noLiquidity),
+            expectedAmountBaseRaw: parsedAmounts[Field.CURRENCY_A]?.quotient?.toString() ?? '0',
+            expectedAmountQuoteRaw: parsedAmounts[Field.CURRENCY_B]?.quotient?.toString() ?? '0',
+            feeAmount: position.pool.fee,
+          })
+          setTxHash(response.hash)
+          sendEvent({
+            category: 'Liquidity',
+            action: 'Add',
+            label: [currencies[Field.CURRENCY_A]?.symbol, currencies[Field.CURRENCY_B]?.symbol].join('/'),
+          })
         })
     } else {
       return
