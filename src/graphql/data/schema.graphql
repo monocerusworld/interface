@@ -122,6 +122,11 @@ enum Chain {
   CELO
   BNB
   UNKNOWN_CHAIN
+  FANTOM
+  GNOSIS
+  KLAYTN
+  AVALANCHE
+  MOONBEAM
 }
 
 enum CollectionSortableField {
