@@ -7,7 +7,13 @@ const commitHash = require('child_process').execSync('git rev-parse HEAD')
 
 module.exports = {
   babel: {
-    plugins: ['@vanilla-extract/babel-plugin'],
+    plugins: [
+      '@vanilla-extract/babel-plugin', 
+      ["@babel/plugin-proposal-class-properties", { "loose": true }],
+      ["@babel/plugin-proposal-private-methods", { "loose": true }],
+      ["@babel/plugin-proposal-private-property-in-object", { "loose": true }],
+      ["@babel/plugin-proposal-nullish-coalescing-operator", { "loose": true }],
+    ],
     env: {
       test: {
         plugins: ['istanbul'],
