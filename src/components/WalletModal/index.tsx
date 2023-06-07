@@ -189,7 +189,7 @@ export default function WalletModal({ openSettings }: { openSettings: () => void
         <AutoColumn gap="16px">
           <OptionGrid data-testid="option-grid">
             {connections.map((connection) =>
-              // Hides Uniswap Wallet if mgtm is disabled
+              // Hides Tartz Wallet if mgtm is disabled
               connection.shouldDisplay && !(connection.type === ConnectionType.UNIWALLET && !mgtmEnabled) ? (
                 <Option
                   key={connection.name}

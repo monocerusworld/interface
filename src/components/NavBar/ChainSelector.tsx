@@ -21,17 +21,17 @@ import ChainSelectorRow from './ChainSelectorRow'
 import { NavDropdown } from './NavDropdown'
 
 const NETWORK_SELECTOR_CHAINS = [
-  SupportedChainId.MAINNET,
-  SupportedChainId.POLYGON,
-  SupportedChainId.OPTIMISM,
-  SupportedChainId.ARBITRUM_ONE,
-  SupportedChainId.CELO,
-  SupportedChainId.BNB,
+  // SupportedChainId.MAINNET,
+  // SupportedChainId.POLYGON,
+  // SupportedChainId.OPTIMISM,
+  // SupportedChainId.ARBITRUM_ONE,
+  // SupportedChainId.CELO,
+  // SupportedChainId.BNB,
   SupportedChainId.FANTOM,
-  SupportedChainId.GNOSIS,
-  SupportedChainId.KLAYTN,
+  // SupportedChainId.GNOSIS,
+  // SupportedChainId.KLAYTN,
   SupportedChainId.AVALANCHE,
-  SupportedChainId.MOONBEAM,
+  // SupportedChainId.MOONBEAM,
 ]
 
 interface ChainSelectorProps {

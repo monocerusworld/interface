@@ -342,7 +342,7 @@ export default function AuthenticatedHeader({ account, openSettings }: { account
         )}
         {isClaimAvailable && (
           <UNIButton size={ButtonSize.medium} emphasis={ButtonEmphasis.medium} onClick={openNftModal}>
-            <Trans>Claim Uniswap NFT Airdrop</Trans>
+            <Trans>Claim Tartz NFT Airdrop</Trans>
           </UNIButton>
         )}
       </PortfolioDrawerContainer>

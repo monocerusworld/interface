@@ -11,7 +11,7 @@ import UNIWALLET_ICON_URL from 'assets/images/uniwallet.svg'
 import WALLET_CONNECT_ICON_URL from 'assets/images/walletConnectIcon.svg'
 import INJECTED_DARK_ICON_URL from 'assets/svg/browser-wallet-dark.svg'
 import INJECTED_LIGHT_ICON_URL from 'assets/svg/browser-wallet-light.svg'
-import UNISWAP_LOGO_URL from 'assets/svg/logo.svg'
+import UNISWAP_LOGO_URL from 'assets/svg/tartz.svg'
 import { SupportedChainId } from 'constants/chains'
 import { useCallback } from 'react'
 import { useIsDarkMode } from 'theme/components/ThemeToggle'
@@ -111,7 +111,7 @@ const [web3UniwalletConnect, web3UniwalletConnectHooks] = initializeConnector<Un
   (actions) => new UniwalletConnect({ actions, onError })
 )
 export const uniwalletConnectConnection: Connection = {
-  name: 'Uniswap Wallet',
+  name: 'Tartz Wallet',
   connector: web3UniwalletConnect,
   hooks: web3UniwalletConnectHooks,
   type: ConnectionType.UNIWALLET,

@@ -101,19 +101,8 @@ const Navbar = ({ blur }: { blur: boolean }) => {
       <Nav>
         <Box display="flex" height="full" flexWrap="nowrap">
           <Box className={styles.leftSideContainer}>
-            <Box className={styles.logoContainer}>
-              <UniIcon
-                width="48"
-                height="48"
-                data-testid="uniswap-logo"
-                className={styles.logo}
-                onClick={() => {
-                  navigate({
-                    pathname: '/',
-                    search: '?intro=true',
-                  })
-                }}
-              />
+            <Box className={styles.logoContainer} >
+              <UniIcon/>
             </Box>
             {!isNftPage && (
               <Box display={{ sm: 'flex', lg: 'none' }}>

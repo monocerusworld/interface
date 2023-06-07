@@ -43,8 +43,8 @@ export function getWarningCopy(warning: Warning | null, plural = false) {
         description = (
           <Plural
             value={plural ? 2 : 1}
-            _1="You can't trade this token using the Uniswap App."
-            other="You can't trade these tokens using the Uniswap App."
+            _1="You can't trade this token using the Tartz App."
+            other="You can't trade these tokens using the Tartz App."
           />
         )
         break
