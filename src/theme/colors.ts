@@ -27,7 +27,7 @@ export const colors = {
   pink100: '#FFD9E4',
   pink200: '#FBA4C0',
   pink300: '#FF6FA3',
-  pink400: '#FB118E',
+  pink400: '#F4881E',//'#FB118E',
   pink500: '#C41969',
   pink600: '#8C0F49',
   pink700: '#55072A',
@@ -83,7 +83,7 @@ export const colors = {
   blue900: '#040E34',
   blueVibrant: '#587BFF',
   // TODO: add magenta 50-900
-  magentaVibrant: '#FC72FF',
+  magentaVibrant: '#F4881E',//#D5DaD9',//'#FC72FF',
   purple300: '#8440F2',
   purple900: '#1C0337',
   // TODO: add all other vibrant variations

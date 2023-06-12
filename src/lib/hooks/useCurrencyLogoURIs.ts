@@ -62,7 +62,7 @@ export function getNativeLogoURI(chainId: SupportedChainId = SupportedChainId.MA
     case SupportedChainId.KLAYTN:
       return BnbLogo
     case SupportedChainId.AVALANCHE:
-      return BnbLogo
+      return CeloLogo
     case SupportedChainId.MOONBEAM:
       return BnbLogo
     case SupportedChainId.CELO:
