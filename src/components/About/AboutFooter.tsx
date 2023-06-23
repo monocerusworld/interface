@@ -113,7 +113,7 @@ const LogoSectionContent = () => {
   const isDarkMode = useIsDarkMode()
   return (
     <>
-      <StyledLogo src={isDarkMode ? darkUnicornImgSrc : lightUnicornImgSrc} alt="Tartz Logo" />
+      <StyledLogo src={isDarkMode ? darkUnicornImgSrc : lightUnicornImgSrc} alt="Monocerus Logo" />
       <SocialLinks>
         <SocialLink href="https://discord.gg/FCfyBSbCU5" target="_blank" rel="noopener noreferrer">
           <DiscordIcon size={32} />
@@ -131,7 +131,7 @@ const LogoSectionContent = () => {
           <GithubIcon size={32} />
         </SocialLink>
       </SocialLinks>
-      <Copyright>© {new Date().getFullYear()} Tartz Labs</Copyright>
+      <Copyright>© {new Date().getFullYear()} Monocerus Labs</Copyright>
     </>
   )
 }

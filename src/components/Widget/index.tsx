@@ -38,7 +38,7 @@ import { useSyncWidgetTransactions } from './transactions'
 
 export const DEFAULT_WIDGET_WIDTH = 360
 
-const WIDGET_ROUTER_URL = 'https://kw8kodvxmi.execute-api.ap-southeast-1.amazonaws.com/prod/'
+const WIDGET_ROUTER_URL = 'https://h21lmrex3f.execute-api.ap-southeast-1.amazonaws.com/prod/'
 
 function useWidgetTheme() {
   return useIsDarkMode() ? DARK_THEME : LIGHT_THEME

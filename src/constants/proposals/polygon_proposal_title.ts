@@ -1,1 +1,1 @@
-export const POLYGON_PROPOSAL_TITLE = 'Should Tartz v3 be deployed to Polygon?'
+export const POLYGON_PROPOSAL_TITLE = 'Should Monocerus v3 be deployed to Polygon?'

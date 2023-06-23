@@ -143,7 +143,7 @@ export enum Markets {
   NFTX = 'nftx',
   Opensea = 'opensea',
   Rarible = 'rarible',
-  Tartz = 'Uniswap',
+  Monocerus = 'Uniswap',
   Uniswap_V2 = 'Uniswap_V2',
   SushiSwap = 'SushiSwap',
   SuperRare = 'superrare',

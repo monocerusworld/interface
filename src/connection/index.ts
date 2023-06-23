@@ -111,7 +111,7 @@ const [web3UniwalletConnect, web3UniwalletConnectHooks] = initializeConnector<Un
   (actions) => new UniwalletConnect({ actions, onError })
 )
 export const uniwalletConnectConnection: Connection = {
-  name: 'Tartz Wallet',
+  name: 'Monocerus Wallet',
   connector: web3UniwalletConnect,
   hooks: web3UniwalletConnectHooks,
   type: ConnectionType.UNIWALLET,

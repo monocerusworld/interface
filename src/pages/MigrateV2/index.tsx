@@ -121,14 +121,14 @@ export default function MigrateV2() {
               <Trans>Migrate V2 Liquidity</Trans>
             </ThemedText.DeprecatedMediumHeader>
             <div>
-              <QuestionHelper text={<Trans>Migrate your liquidity tokens from Tartz V2 to Tartz V3.</Trans>} />
+              <QuestionHelper text={<Trans>Migrate your liquidity tokens from Monocerus V2 to Monocerus V3.</Trans>} />
             </div>
           </AutoRow>
 
           <ThemedText.DeprecatedBody style={{ marginBottom: 8, fontWeight: 400 }}>
             <Trans>
-              For each pool shown below, click migrate to remove your liquidity from Tartz V2 and deposit it into
-              Tartz V3.
+              For each pool shown below, click migrate to remove your liquidity from Monocerus V2 and deposit it into
+              Monocerus V3.
             </Trans>
           </ThemedText.DeprecatedBody>
 

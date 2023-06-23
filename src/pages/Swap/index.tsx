@@ -676,7 +676,7 @@ export default function Swap({ className }: { className?: string }) {
                             <MouseoverTooltip
                               text={
                                 <Trans>
-                                  Permission is required for Tartz to swap each token. This will expire after one
+                                  Permission is required for Monocerus to swap each token. This will expire after one
                                   month for your security.
                                 </Trans>
                               }

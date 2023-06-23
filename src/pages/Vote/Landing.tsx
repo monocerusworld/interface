@@ -160,13 +160,13 @@ export default function Landing() {
                 <AutoColumn gap="md">
                   <RowBetween>
                     <ThemedText.DeprecatedWhite fontWeight={600}>
-                      <Trans>Tartz Governance</Trans>
+                      <Trans>Monocerus Governance</Trans>
                     </ThemedText.DeprecatedWhite>
                   </RowBetween>
                   <RowBetween>
                     <ThemedText.DeprecatedWhite fontSize={14}>
                       <Trans>
-                        UNI tokens represent voting shares in Tartz governance. You can vote on each proposal yourself
+                        UNI tokens represent voting shares in Monocerus governance. You can vote on each proposal yourself
                         or delegate your votes to a third party.
                       </Trans>
                     </ThemedText.DeprecatedWhite>
@@ -180,7 +180,7 @@ export default function Landing() {
                     target="_blank"
                   >
                     <ThemedText.DeprecatedWhite fontSize={14}>
-                      <Trans>Read more about Tartz governance</Trans>
+                      <Trans>Read more about Monocerus governance</Trans>
                     </ThemedText.DeprecatedWhite>
                   </ExternalLink>
                 </AutoColumn>

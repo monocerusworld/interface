@@ -82,7 +82,7 @@ interface GetQuoteArgs {
 export const routingApi = createApi({
   reducerPath: 'routingApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://kw8kodvxmi.execute-api.ap-southeast-1.amazonaws.com/prod/',
+    baseUrl: 'https://h21lmrex3f.execute-api.ap-southeast-1.amazonaws.com/prod/',
   }),
   endpoints: (build) => ({
     getQuote: build.query<GetQuoteResult, GetQuoteArgs>({

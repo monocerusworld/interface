@@ -56,8 +56,8 @@ msgid "24H volume"
 msgstr "24時間出来高"
 
 #: src/components/Tokens/TokenDetails/StatsSection.tsx
-msgid "24H volume is the amount of the asset that has been traded on Tartz v3 during the past 24 hours."
-msgstr "24時間出来高とは、過去 24 時間に Tartz v3 で取引された資産の金額です。"
+msgid "24H volume is the amount of the asset that has been traded on Monocerus v3 during the past 24 hours."
+msgstr "24時間出来高とは、過去 24 時間に Monocerus v3 で取引された資産の金額です。"
 
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "25%"
@@ -152,7 +152,7 @@ msgid "Add"
 msgstr "追加"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
-msgid "Add <0/> and <1/> to Tartz V2"
+msgid "Add <0/> and <1/> to Monocerus V2"
 msgstr "<0/>と<1/>をユニスワップV2に追加"
 
 #: src/components/vote/DelegateModal.tsx
@@ -246,7 +246,7 @@ msgid "An error occurred loading tokens. Please try again."
 msgstr ""
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Tartz V3."
+msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Monocerus V3."
 msgstr "スワップ実行時にエラーが発生しました。スリッページの許容範囲を広げる必要がある可能性があります。それでも上手くいかない場合、取引しているトークンとの互換性がない可能性があります。注：転送時に手数料が発生するトークンおよびリベースするトークンは、UniswapV3と互換性がありません。"
 
 #: src/nft/components/bag/BagFooter.tsx
@@ -370,7 +370,7 @@ msgid "By adding liquidity you'll earn 0.3% of all trades on this pair proportio
 msgstr "流動性を追加することで、このペアのすべての取引で発生する0.3%の手数料のうち、プールのシェアに応じた報酬を獲得します。報酬はリアルタイムにプールに追加され、反映されます。報酬は流動性を引き出すことで請求できます。"
 
 #: src/components/WalletModal/index.tsx
-msgid "By connecting a wallet, you agree to Tartz Labs’ <0>Terms of Service</0> and consent to its <1>Privacy Policy</1>."
+msgid "By connecting a wallet, you agree to Monocerus Labs’ <0>Terms of Service</0> and consent to its <1>Privacy Policy</1>."
 msgstr ""
 
 #: src/pages/Vote/styled.tsx
@@ -415,7 +415,7 @@ msgid "Claim UNI reward for {0}"
 msgstr "{0} のUNI報酬を請求する"
 
 #: src/components/WalletDropdown/AuthenticatedHeader.tsx
-msgid "Claim Tartz NFT Airdrop"
+msgid "Claim Monocerus NFT Airdrop"
 msgstr ""
 
 #: src/pages/Pool/PositionPage.tsx
@@ -720,7 +720,7 @@ msgid "Don’t see one of your v2 positions? <0>Import it.</0>"
 msgstr "V2の流動性が表示されない場合、該当のトークンを<0>インポート</0>してください"
 
 #: src/components/vote/DelegateModal.tsx
-msgid "Earned UNI tokens represent voting shares in Tartz governance."
+msgid "Earned UNI tokens represent voting shares in Monocerus governance."
 msgstr "保有するUNIトークンは、Uniswapのガバナンスにおける投票権を表します。"
 
 #: src/components/FeeSelector/index.tsx
@@ -839,8 +839,8 @@ msgid "Explore NFTs"
 msgstr "NFTを探す"
 
 #: src/pages/Pool/CTACards.tsx
-msgid "Explore Tartz Analytics."
-msgstr "Tartz Analyticsをご覧ください。"
+msgid "Explore Monocerus Analytics."
+msgstr "Monocerus Analyticsをご覧ください。"
 
 #: src/components/Tokens/TokenDetails/InvalidTokenDetails.tsx
 msgid "Explore tokens"
@@ -903,8 +903,8 @@ msgid "For"
 msgstr "賛成"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "For each pool shown below, click migrate to remove your liquidity from Tartz V2 and deposit it into Tartz V3."
-msgstr "以下の各流動性について「移行」ボタンをクリックすると、Tartz V2から流動性を取り出し、Tartz V3に移行します。"
+msgid "For each pool shown below, click migrate to remove your liquidity from Monocerus V2 and deposit it into Monocerus V3."
+msgstr "以下の各流動性について「移行」ボタンをクリックすると、Monocerus V2から流動性を取り出し、Monocerus V3に移行します。"
 
 #: src/pages/Swap/index.tsx
 msgid "From"
@@ -1184,8 +1184,8 @@ msgid "Migrate V2 Liquidity"
 msgstr "V2の流動性を移行"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "Migrate your liquidity tokens from Tartz V2 to Tartz V3."
-msgstr "Tartz V2からTartz V3に流動性トークンを移行します。"
+msgid "Migrate your liquidity tokens from Monocerus V2 to Monocerus V3."
+msgstr "Monocerus V2からTartz V3に流動性トークンを移行します。"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Migrate {0}/{1} liquidity to V3"
@@ -1217,7 +1217,7 @@ msgid "Missing chart data"
 msgstr "グラフ データがありません"
 
 #: src/components/Tokens/TokenDetails/PriceChart.tsx
-msgid "Missing price data due to recently low trading volume on Tartz v3"
+msgid "Missing price data due to recently low trading volume on Monocerus v3"
 msgstr ""
 
 #: src/components/FiatOnrampModal/index.tsx
@@ -1403,7 +1403,7 @@ msgid "Pending"
 msgstr "保留中"
 
 #: src/pages/Swap/index.tsx
-msgid "Permission is required for Tartz to swap each token. This will expire after one month for your security."
+msgid "Permission is required for Monocerus to swap each token. This will expire after one month for your security."
 msgstr ""
 
 #: src/components/vote/ProposalEmptyState.tsx
@@ -1566,7 +1566,7 @@ msgid "Rates"
 msgstr "レート"
 
 #: src/pages/Vote/Landing.tsx
-msgid "Read more about Tartz governance"
+msgid "Read more about Monocerus governance"
 msgstr "Uniswapガバナンスについてもっと見る"
 
 #: src/pages/Pool/v2.tsx
@@ -1916,7 +1916,7 @@ msgid "TVL"
 msgstr "TVL"
 
 #: src/components/Popups/ClaimPopup.tsx
-msgid "Thanks for being part of the Tartz community <0/>"
+msgid "Thanks for being part of the Monocerus community <0/>"
 msgstr "Uniswapコミュニティにご参加いただきありがとうございます <0/>"
 
 #: src/components/FeeSelector/index.tsx
@@ -1924,7 +1924,7 @@ msgid "The % you will earn in fees."
 msgstr "設定する手数料率"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "The Tartz invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
+msgid "The Monocerus invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
 msgstr "Uniswap不変式 x * y = kはスワップで満たされませんでした。これは通常、スワップするトークンの1つが転送時のカスタム動作を組み込んでいることを意味します。"
 
 #: src/components/swap/AdvancedSwapDetails.tsx
@@ -1940,8 +1940,8 @@ msgid "The app fetches on-chain data and constructs contract calls with an Infur
 msgstr "アプリはオンチェーンデータを取得し、InfuraAPIを使用してコントラクト呼び出しを構築します。"
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "The app fetches the optimal trade route from a Tartz Labs server."
-msgstr "アプリは、Tartz Labsサーバーから最適な取引ルートを取得します。"
+msgid "The app fetches the optimal trade route from a Monocerus Labs server."
+msgstr "アプリは、Monocerus Labsサーバーから最適な取引ルートを取得します。"
 
 #: src/components/PrivacyPolicy/index.tsx
 msgid "The app logs anonymized usage statistics in order to improve over time."
@@ -1990,7 +1990,7 @@ msgid "The output token cannot be transferred. There may be an issue with the ou
 msgstr "購入するトークンを転送できません。購入するトークンに問題がある可能性があります。"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Tartz V3."
+msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Monocerus V3."
 msgstr "購入するトークンを転送できません。購入するトークンに問題がある可能性があります。注：転送時に手数料が発生するトークンおよびリベースするトークンは、UniswapV3と互換性がありません。"
 
 #: src/components/Badge/RangeBadge.tsx
@@ -2010,7 +2010,7 @@ msgid "There is no liquidity data."
 msgstr "流動性データはありません。"
 
 #: src/components/ConnectedAccountBlocked/index.tsx
-msgid "This address is blocked on the Tartz Labs interface because it is associated with one or more"
+msgid "This address is blocked on the Monocerus Labs interface because it is associated with one or more"
 msgstr ""
 
 #: src/components/PrivacyPolicy/index.tsx
@@ -2030,7 +2030,7 @@ msgid "This route optimizes your total output by considering split routes, multi
 msgstr ""
 
 #: src/pages/Tokens/index.tsx
-msgid "This table contains the top tokens by Tartz volume, sorted based on your input."
+msgid "This table contains the top tokens by Monocerus volume, sorted based on your input."
 msgstr ""
 
 #: src/components/Tokens/TokenDetails/InvalidTokenDetails.tsx
@@ -2050,7 +2050,7 @@ msgid "This transaction could not be sent because the deadline has passed. Pleas
 msgstr ""
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Tartz V3."
+msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Monocerus V3."
 msgstr "価格変動により、この取引は成功しません。スリッページの許容範囲を広げてみてください。注：転送時に手数料が発生するトークンおよびリベーストークンは、UniswapV3と互換性がありません。"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
@@ -2073,7 +2073,7 @@ msgid "To (at least)"
 msgstr "買うトークン（少なくとも）"
 
 #: src/components/Popups/FailedNetworkSwitchPopup.tsx
-msgid "To use Tartz on {0}, switch the network in your wallet’s settings."
+msgid "To use Monocerus on {0}, switch the network in your wallet’s settings."
 msgstr ""
 
 #: src/components/Tokens/TokenTable/TokenRow.tsx
@@ -2102,7 +2102,7 @@ msgid "Total"
 msgstr ""
 
 #: src/components/Tokens/TokenTable/TokenRow.tsx
-msgid "Total value locked (TVL) is the aggregate amount of the asset available across all Tartz v3 liquidity pools."
+msgid "Total value locked (TVL) is the aggregate amount of the asset available across all Monocerus v3 liquidity pools."
 msgstr ""
 
 #: src/components/swap/RouterLabel.tsx
@@ -2162,7 +2162,7 @@ msgid "UNI has arrived"
 msgstr "UNIの登場"
 
 #: src/pages/Vote/Landing.tsx
-msgid "UNI tokens represent voting shares in Tartz governance. You can vote on each proposal yourself or delegate your votes to a third party."
+msgid "UNI tokens represent voting shares in Monocerus governance. You can vote on each proposal yourself or delegate your votes to a third party."
 msgstr "UNIトークンはUniswapガバナンスにおける投票権を表します。各提案に対して自分で投票するか、もしくは第三者に投票を委任することができます。"
 
 #: src/pages/RemoveLiquidity/index.tsx
@@ -2182,35 +2182,35 @@ msgid "Undetermined"
 msgstr "未定"
 
 #: src/pages/Vote/Landing.tsx
-msgid "Tartz Governance"
+msgid "Monocerus Governance"
 msgstr "Uniswapのガバナンス"
 
 #: src/components/TaxServiceModal/TaxServiceBanner.tsx
-msgid "Tartz Labs can save you up to 20% on CoinTracker and TokenTax"
+msgid "Monocerus Labs can save you up to 20% on CoinTracker and TokenTax"
 msgstr ""
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "Tartz Labs' Terms of Service"
+msgid "Monocerus Labs' Terms of Service"
 msgstr "UniswapLabsの利用規約"
 
 #: src/pages/Pool/v2.tsx
-msgid "Tartz V2 is not available on this network."
+msgid "Monocerus V2 is not available on this network."
 msgstr ""
 
 #: src/components/SwitchLocaleLink/index.tsx
-msgid "Tartz available in: <0>{0}</0>"
+msgid "Monocerus available in: <0>{0}</0>"
 msgstr "利用可能言語: <0>{0}</0>"
 
 #: src/components/vote/ProposalEmptyState.tsx
-msgid "Tartz governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals and Vote."
+msgid "Monocerus governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals and Vote."
 msgstr "Uniswapのガバナンスは、レイヤー1でのみ使用できます。提案と投票を表示するために、ネットワークをEthereumメインネットに切り替えて下さい。"
 
 #: src/nft/components/collection/TransactionCompleteModal.tsx
-msgid "Tartz has granted your wish!"
+msgid "Monocerus has granted your wish!"
 msgstr ""
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "Tartz migration contract↗"
+msgid "Monocerus migration contract↗"
 msgstr "Uniswap移行コントラクト↗"
 
 #: src/pages/Vote/Landing.tsx
@@ -2262,7 +2262,7 @@ msgid "Update Delegation"
 msgstr "委任を更新"
 
 #: src/components/Settings/index.tsx
-msgid "Use the Tartz Labs API to get faster quotes."
+msgid "Use the Monocerus Labs API to get faster quotes."
 msgstr ""
 
 #: src/pages/Pool/index.tsx
@@ -2309,7 +2309,7 @@ msgid "View transaction on Explorer"
 msgstr "エクスプローラーで取引を表示する"
 
 #: src/components/Tokens/TokenTable/TokenRow.tsx
-msgid "Volume is the amount of the asset that has been traded on Tartz v3 during the selected time frame."
+msgid "Volume is the amount of the asset that has been traded on Monocerus v3 during the selected time frame."
 msgstr ""
 
 #: src/pages/Vote/VotePage.tsx
@@ -2433,7 +2433,7 @@ msgid "You are creating a pool"
 msgstr "プールを作成しています"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You are the first liquidity provider for this Tartz V3 pool. Your liquidity will migrate at the current {0} price."
+msgid "You are the first liquidity provider for this Monocerus V3 pool. Your liquidity will migrate at the current {0} price."
 msgstr "あなたはTartz V3プールの最初の流動性提供者です。流動性は現在の {0} での価格で移行されます。"
 
 #: src/pages/AddLiquidityV2/index.tsx
@@ -2470,8 +2470,8 @@ msgid "You receive"
 msgstr ""
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You should only deposit liquidity into Tartz V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
-msgstr "Tartz V3への流動性の預け入れは、正しいと思われる価格でのみ行ってください。<0/>もし価格が正しくないと思われる場合は、スワップをして価格を動かすか、他の人が同様のことをするのを待つことができます。"
+msgid "You should only deposit liquidity into Monocerus V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
+msgstr "Monocerus V3への流動性の預け入れは、正しいと思われる価格でのみ行ってください。<0/>もし価格が正しくないと思われる場合は、スワップをして価格を動かすか、他の人が同様のことをするのを待つことができます。"
 
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "You will also collect fees earned from this position."
@@ -2658,15 +2658,15 @@ msgstr ""
 
 #: src/constants/tokenSafety.tsx
 msgid "{0, plural, =1 {This token isn't traded on leading U.S. centralized exchanges or frequently swapped on Uniswap.} other {These tokens aren't traded on leading U.S. centralized exchanges or frequently swapped on Uniswap.}}"
-msgstr "{0, plural, =1 {このトークンは、米国の主要な中央集権型取引所で取引されていないか、Tartz で頻繁に交換されていません。} other {これらのトークンは、主要な米国の中央集権型取引所で取引されていないか、Tartz で頻繁に交換されていません。}}"
+msgstr "{0, plural, =1 {このトークンは、米国の主要な中央集権型取引所で取引されていないか、Monocerus で頻繁に交換されていません。} other {これらのトークンは、主要な米国の中央集権型取引所で取引されていないか、Monocerus で頻繁に交換されていません。}}"
 
 #: src/constants/tokenSafety.tsx
 msgid "{0, plural, =1 {This token isn't traded on leading U.S. centralized exchanges.} other {These tokens aren't traded on leading U.S. centralized exchanges.}}"
 msgstr "{0, plural, =1 {このトークンは、主要な米国の中央集権型取引所では取引されていません。} other {これらのトークンは、主要な米国の集中型取引所では取引されていません。}}"
 
 #: src/constants/tokenSafety.tsx
-msgid "{0, plural, =1 {You can't trade this token using the Tartz App.} other {You can't trade these tokens using the Tartz App.}}"
-msgstr "{0, plural, =1 {Tartz アプリを使用してこのトークンを取引することはできません。} other {Tartz アプリを使用してこれらのトークンを取引することはできません。}}"
+msgid "{0, plural, =1 {You can't trade this token using the Monocerus App.} other {You can't trade these tokens using the Monocerus App.}}"
+msgstr "{0, plural, =1 {Monocerus アプリを使用してこのトークンを取引することはできません。} other {Monocerus アプリを使用してこれらのトークンを取引することはできません。}}"
 
 #: src/nft/components/profile/list/Modal/ListModalSection.tsx
 msgid "{0, plural, =1 {listing} other {listings}}"
@@ -2759,7 +2759,7 @@ msgstr "{0}％が選択"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
 msgid "{0}. Try increasing your slippage tolerance.\n"
-"Note: fee-on-transfer and rebase tokens are incompatible with Tartz V3."
+"Note: fee-on-transfer and rebase tokens are incompatible with Monocerus V3."
 msgstr ""
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx

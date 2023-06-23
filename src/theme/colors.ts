@@ -2,6 +2,8 @@
 import { opacify } from './utils'
 
 export const colors = {
+  fantomblue: '#13b5ec',
+  avalanchered: '#e84142',
   white: '#FFFFFF',
   black: '#000000',
   gray50: '#F5F6FC',
@@ -198,14 +200,14 @@ export const lightTheme: Theme = {
   textSecondary: colors.gray400,
   textTertiary: colors.gray300,
 
-  accentAction: colors.pink400,
+  accentAction: colors.fantomblue,
   accentActive: colors.blue400,
   accentSuccess: colors.green300,
   accentWarning: colors.gold400,
   accentFailure: colors.red400,
   accentCritical: colors.red400,
 
-  accentActionSoft: opacify(12, colors.pink400),
+  accentActionSoft: opacify(12, colors.fantomblue),
   accentActiveSoft: opacify(24, colors.blue400),
   accentSuccessSoft: opacify(24, colors.green300),
   accentWarningSoft: opacify(24, colors.gold400),
@@ -224,7 +226,7 @@ export const lightTheme: Theme = {
   shallowShadow:
     '6px 6px 10px rgba(51, 53, 72, 0.01), 2px 2px 6px rgba(51, 53, 72, 0.02), 1px 2px 2px rgba(51, 53, 72, 0.02);',
 
-  networkDefaultShadow: `0px 40px 120px ${opacify(12, colors.pink400)}`,
+  networkDefaultShadow: `0px 40px 120px ${opacify(12, colors.fantomblue)}`,
 
   stateOverlayHover: opacify(8, colors.gray300),
   stateOverlayPressed: opacify(24, colors.gray200),

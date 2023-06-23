@@ -1,4 +1,4 @@
-# Tartz Interface
+# Monocerus Interface
 
 [![codecov](https://codecov.io/gh/Uniswap/interface/branch/main/graph/badge.svg?token=YVT2Y86O82)](https://codecov.io/gh/Uniswap/interface)
 

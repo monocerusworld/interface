@@ -5,7 +5,7 @@ import useTransactionDeadline from './useTransactionDeadline'
 
 const REMOVE_V2_LIQUIDITY_PERMIT_INFO: PermitInfo = {
   version: '1',
-  name: 'Tartz V2',
+  name: 'Monocerus V2',
   type: PermitType.AMOUNT,
 }
 

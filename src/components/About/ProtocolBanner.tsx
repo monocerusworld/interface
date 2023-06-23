@@ -89,7 +89,7 @@ const ProtocolBanner = () => {
   return (
     <Banner isDarkMode={isDarkMode}>
       <TextContainer>
-        <HeaderText>Powered by the Tartz Protocol</HeaderText>
+        <HeaderText>Powered by the Monocerus Protocol</HeaderText>
         <DescriptionText>
           The leading decentralized crypto trading protocol, governed by a global community.
         </DescriptionText>

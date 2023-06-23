@@ -35,7 +35,7 @@ function BaseButton({ onClick, branded, children }: PropsWithChildren<{ onClick?
 
 const APP_STORE_LINK = 'https://apps.apple.com/us/app/uniswap-wallet-defi-nfts/id6443944476'
 
-// Launches App Store if on an iOS device, else navigates to Tartz Wallet microsite
+// Launches App Store if on an iOS device, else navigates to Monocerus Wallet microsite
 export function DownloadButton({ onClick, text = 'Download' }: { onClick?: () => void; text?: string }) {
   const navigate = useNavigate()
   const micrositeEnabled = useMGTMMicrositeEnabled()
@@ -45,7 +45,7 @@ export function DownloadButton({ onClick, text = 'Download' }: { onClick?: () =>
     onClick?.()
 
     if (isIOS || !micrositeEnabled) {
-      sendAnalyticsEvent('Tartz wallet download clicked')
+      sendAnalyticsEvent('Monocerus wallet download clicked')
       window.open(APP_STORE_LINK)
     } else navigate('/wallet')
   }, [onClick, micrositeEnabled, navigate])

@@ -43,8 +43,8 @@ export function getWarningCopy(warning: Warning | null, plural = false) {
         description = (
           <Plural
             value={plural ? 2 : 1}
-            _1="You can't trade this token using the Tartz App."
-            other="You can't trade these tokens using the Tartz App."
+            _1="You can't trade this token using the Monocerus App."
+            other="You can't trade these tokens using the Monocerus App."
           />
         )
         break

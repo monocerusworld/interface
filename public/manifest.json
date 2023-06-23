@@ -22,7 +22,7 @@
   ],
   "orientation": "portrait",
   "name": "Uniswap",
-  "description": "Swap or provide liquidity on the Tartz Protocol",
+  "description": "Swap or provide liquidity on the Monocerus Protocol",
   "iconPath": "./images/256x256_App_Icon_Pink.svg",
   "short_name": "Uniswap",
   "start_url": ".",

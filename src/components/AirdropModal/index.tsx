@@ -271,7 +271,7 @@ const AirdropModal = () => {
               <ImageContainer>
                 <TextContainer>
                   <SyledCloseIcon onClick={usdcAirdropToggle} stroke="white" />
-                  <MainHeader>Tartz NFT Airdrop</MainHeader>
+                  <MainHeader>Monocerus NFT Airdrop</MainHeader>
                   <USDCLabel>{totalAmount} USDC</USDCLabel>
                   <Line />
                   <RewardsDetailsContainer>
@@ -299,7 +299,7 @@ const AirdropModal = () => {
                 </RewardsInformationText>
                 <ReactLinkWrap>
                   <LinkWrap href="https://uniswap.org/blog/uniswap-nft-aggregator-announcement" target="_blank">
-                    <ThemedText.Link>Read more about Tartz NFT.</ThemedText.Link>
+                    <ThemedText.Link>Read more about Monocerus NFT.</ThemedText.Link>
                   </LinkWrap>
                 </ReactLinkWrap>
 

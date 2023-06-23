@@ -11,7 +11,7 @@ type SVGProps = React.SVGProps<SVGSVGElement> & { fill?: string; height?: string
 // )
 
 export const UniIcon = () => (
-  <img src='https://tartz.one/tartz-small.png' height='48' width='160'></img>
+  <img src='../assets/images/favicon.png' height='48' width='48'></img>
   )
 
 export const ChevronUpIcon = ({

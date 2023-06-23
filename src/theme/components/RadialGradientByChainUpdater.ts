@@ -116,7 +116,7 @@ export default function RadialGradientByChainUpdater(): null {
       case SupportedChainId.FANTOM: {
         setBackground(backgroundResetStyles);
         const fantomLightGradient =
-          "radial-gradient(100% 100% at 50% 0%, rgba(205, 232, 251, 0.7) 0%, rgba(252, 243, 249, 0.6536) 49.48%, rgba(255, 255, 255, 0) 100%), #FFFFFF";
+          "radial-gradient(100% 100% at 50% 0%, rgba(205, 232, 255, 0.7) 0%, rgba(255, 255, 255, 0.6536) 49.48%, rgba(255, 255, 255, 0) 100%), #FFFFFF";
         const fantomDarkGradient =
           "radial-gradient(100% 100% at 50% 0%, rgba(10, 41, 75, 0.7) 0%, rgba(34, 30, 48, 0.6536) 49.48%, rgba(31, 33, 40, 0) 100%), #0D0E0E";
 
@@ -141,7 +141,7 @@ export default function RadialGradientByChainUpdater(): null {
       case SupportedChainId.AVALANCHE: {
         setBackground(backgroundResetStyles);
         const avalancheLightGradient =
-          "radial-gradient(100% 100% at 50% 0%,rgba(255, 4, 32, 0.1) 0%, rgba(255, 4, 32, 0.16) 50%, rgba(140, 185, 11, 0) 100%), #FFFFFF";
+          "radial-gradient(100% 100% at 50% 0%,rgba(255, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.16) 50%, rgba(255, 255, 255, 0) 100%), #FFFFFF";
         const avalancheDarkGradient =
           "radial-gradient(100% 100% at 50% 0%,rgba(255, 4, 32, 0.1) 0%, rgba(255, 4, 32, 0.16) 50%, rgba(140, 185, 11, 0) 100%), #0D0E0E";
 

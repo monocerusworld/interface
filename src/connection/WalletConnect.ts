@@ -30,9 +30,9 @@ export class WalletConnectPopup extends WalletConnect {
   }
 }
 
-// Custom class for Tartz Wallet specific functionality
+// Custom class for Monocerus Wallet specific functionality
 export class UniwalletConnect extends WalletConnectPopup {
-  ANALYTICS_EVENT = 'Tartz Wallet QR Scan'
+  ANALYTICS_EVENT = 'Monocerus Wallet QR Scan'
   static UNI_URI_AVAILABLE = 'uni_uri_available'
 
   constructor({ actions, onError }: Omit<WalletConnectConstructorArgs, 'options'>) {
@@ -47,10 +47,10 @@ export class UniwalletConnect extends WalletConnectPopup {
 
     this.events.on(URI_AVAILABLE, (uri) => {
       if (!uri) return
-      // Emits custom wallet connect code, parseable by the Tartz Wallet
+      // Emits custom wallet connect code, parseable by the Monocerus Wallet
       this.events.emit(UniwalletConnect.UNI_URI_AVAILABLE, `hello_uniwallet:${uri}`)
 
-      // Opens deeplink to Tartz Wallet if on iOS
+      // Opens deeplink to Monocerus Wallet if on iOS
       if (isIOS) {
         const newTab = window.open(`https://uniswap.org/app/wc?uri=${encodeURIComponent(uri)}`)
 

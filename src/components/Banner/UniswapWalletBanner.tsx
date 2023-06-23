@@ -83,7 +83,7 @@ export default function UniswapWalletBanner() {
         <AutoColumn gap="8px">
           <RowBetween>
             <ThemedText.SubHeader>
-              <Trans>Get the power of Tartz in your pocket</Trans>
+              <Trans>Get the power of Monocerus in your pocket</Trans>
             </ThemedText.SubHeader>
             <StyledXButton
               data-testid="uniswap-wallet-banner"

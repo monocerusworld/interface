@@ -55,7 +55,7 @@ export default function UniwalletModal() {
   const { account } = useWeb3React()
   useEffect(() => {
     if (open) {
-      sendAnalyticsEvent('Tartz wallet modal opened', { userConnected: !!account })
+      sendAnalyticsEvent('Monocerus wallet modal opened', { userConnected: !!account })
       if (account) {
         toggle()
       }
@@ -73,7 +73,7 @@ export default function UniwalletModal() {
       <UniwalletConnectWrapper>
         <HeaderRow>
           <ThemedText.SubHeader>
-            <Trans>Scan with Tartz Wallet</Trans>
+            <Trans>Scan with Monocerus Wallet</Trans>
           </ThemedText.SubHeader>
           <CloseIcon onClick={onClose} />
         </HeaderRow>
@@ -113,7 +113,7 @@ function InfoSection({ onClose }: { onClose: () => void }) {
     <InfoSectionWrapper>
       <AutoColumn gap="4px">
         <ThemedText.SubHeaderSmall color="textPrimary">
-          <Trans>Don&apos;t have Tartz Wallet?</Trans>
+          <Trans>Don&apos;t have Monocerus Wallet?</Trans>
         </ThemedText.SubHeaderSmall>
         <ThemedText.Caption color="textSecondary">
           <Trans>
