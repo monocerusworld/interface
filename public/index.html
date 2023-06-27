@@ -25,7 +25,7 @@
       manifest.json provides metadata used when the app is installed as a PWA.
       See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest-light.json" />
 
     <link rel="preconnect" href="https://www.google-analytics.com/" />
 
@@ -118,5 +118,24 @@
     </div>
 
     <div id="background-radial-gradient"></div>
+
+    <script>
+      const usesDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches || false;
+      const favicon = document.getElementById('favicon');
+      const manifest = document.getElementById('manifest');
+
+      function switchIcon(usesDarkMode) {
+        if (usesDarkMode) { 
+          favicon.href = '%PUBLIC_URL%/images/favicon-black.png';
+          manifest.href='%PUBLIC_URL%/manifest-dark.json' 
+        } else {
+        favicon.href = '%PUBLIC_URL%/images/favicon-light.png';
+        manifest.href='%PUBLIC_URL%/manifest-light.json' 
+        }
+      }
+
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener( "change", (e) => switchIcon(e.matches));
+      switchIcon(usesDarkMode);
+    </script>
   </body>
 </html>

@@ -27,6 +27,7 @@ import styled from 'styled-components/macro'
 import { ExplorerDataType, getExplorerLink } from 'utils/getExplorerLink'
 
 import * as styles from './TransactionCompleteModal.css'
+import { useIsDarkMode } from 'theme/components/ThemeToggle'
 
 const TWITTER_WIDTH = 560
 const TWITTER_HEIGHT = 480
@@ -57,6 +58,7 @@ const TxCompleteModal = () => {
   const transactionResponse = useTransactionResponse((state) => state.transactionResponse)
   const setTransactionResponse = useTransactionResponse((state) => state.setTransactionResponse)
   const isMobile = useIsMobile()
+  const isDarkMode = useIsDarkMode()
   const txHashUrl = getExplorerLink(1, txHash, ExplorerDataType.TRANSACTION)
   const shouldShowModal = (txState === TxStateType.Success || txState === TxStateType.Failed) && txState
   const trace = useTrace({ modal: InterfaceModalName.NFT_TX_COMPLETE })
@@ -123,7 +125,7 @@ const TxCompleteModal = () => {
                 shouldLogImpression
               >
                 <Box className={styles.successModal} onClick={stopPropagation}>
-                  <MonoCerusIcon />
+                  <MonoCerusIcon isDarkMode={isDarkMode} />
                   <Box display="flex" flexWrap="wrap" width="full" height="min">
                     <h1 className={styles.title}>
                       <Trans>Complete!</Trans>

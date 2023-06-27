@@ -8,13 +8,13 @@
   },
   "icons": [
     {
-      "src": "./images/favicon.png",
+      "src": "./images/favicon-black.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "./images/favicon.png",
+      "src": "./images/favicon-black.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
@@ -23,7 +23,7 @@
   "orientation": "portrait",
   "name": "Monocerus",
   "description": "Swap or provide liquidity on the Monocerus Protocol",
-  "iconPath": "./images/favicon.png",
+  "iconPath": "./images/favicon-black.png",
   "short_name": "Monocerus",
   "start_url": ".",
   "theme_color": "#FC72FF"

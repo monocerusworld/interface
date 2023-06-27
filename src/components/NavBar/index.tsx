@@ -19,6 +19,7 @@ import { ChainSelector } from './ChainSelector'
 import { MenuDropdown } from './MenuDropdown'
 import { SearchBar } from './SearchBar'
 import * as styles from './style.css'
+import { useIsDarkMode } from 'theme/components/ThemeToggle'
 
 const Nav = styled.nav`
   padding: 20px 12px;
@@ -94,6 +95,7 @@ const Navbar = ({ blur }: { blur: boolean }) => {
   const isNftPage = useIsNftPage()
   const sellPageState = useProfilePageState((state) => state.state)
   const navigate = useNavigate()
+  const isDarkMode = useIsDarkMode()
 
   return (
     <>
@@ -102,7 +104,7 @@ const Navbar = ({ blur }: { blur: boolean }) => {
         <Box display="flex" height="full" flexWrap="nowrap">
           <Box className={styles.leftSideContainer}>
             <Box className={styles.logoContainer} >
-              <MonoCerusIcon />
+              <MonoCerusIcon isDarkMode={isDarkMode} />
             </Box>
             {!isNftPage && (
               <Box display={{ sm: 'flex', lg: 'none' }}>
