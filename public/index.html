@@ -10,7 +10,7 @@
       %PUBLIC_URL% will be replaced with the URL of the `public` folder during build.
       Only files inside the `public` folder can be referenced from the HTML.
     -->
-    <link rel="shortcut icon" type="image/png" href="%PUBLIC_URL%/images/favicon.png" />
+    <link id="favicon" rel="shortcut icon" type="image/png" href="%PUBLIC_URL%/images/favicon.png" />
     <link rel="apple-touch-icon" sizes="192x192" href="%PUBLIC_URL%/images/favicon.png" />
     <link rel="apple-touch-icon" sizes="512x512" href="%PUBLIC_URL%/images/favicon.png" />
 
@@ -25,7 +25,7 @@
       manifest.json provides metadata used when the app is installed as a PWA.
       See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest-light.json" />
+    <link id="manifest" rel="manifest" href="%PUBLIC_URL%/manifest-light.json" />
 
     <link rel="preconnect" href="https://www.google-analytics.com/" />
 
@@ -126,10 +126,10 @@
 
       function switchIcon(usesDarkMode) {
         if (usesDarkMode) { 
-          favicon.href = '%PUBLIC_URL%/images/favicon-black.png';
+          favicon.href = '%PUBLIC_URL%/images/favicon-light.png';
           manifest.href='%PUBLIC_URL%/manifest-dark.json' 
         } else {
-        favicon.href = '%PUBLIC_URL%/images/favicon-light.png';
+        favicon.href = '%PUBLIC_URL%/images/favicon-black.png';
         manifest.href='%PUBLIC_URL%/manifest-light.json' 
         }
       }
