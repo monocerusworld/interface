@@ -12,6 +12,7 @@ import { ProfilePageStateType } from 'nft/types'
 import { ReactNode } from 'react'
 import { NavLink, NavLinkProps, useLocation, useNavigate } from 'react-router-dom'
 import styled from 'styled-components/macro'
+import { useIsDarkMode } from 'theme/components/ThemeToggle'
 
 import { Bag } from './Bag'
 import Blur from './Blur'
@@ -19,124 +20,123 @@ import { ChainSelector } from './ChainSelector'
 import { MenuDropdown } from './MenuDropdown'
 import { SearchBar } from './SearchBar'
 import * as styles from './style.css'
-import { useIsDarkMode } from 'theme/components/ThemeToggle'
 
 const Nav = styled.nav`
-  padding: 20px 12px;
-  width: 100%;
-  height: ${({ theme }) => theme.navHeight}px;
-  z-index: 2;
+	padding: 20px 12px;
+	width: 100%;
+	height: ${({ theme }) => theme.navHeight}px;
+	z-index: 2;
 `
 
 interface MenuItemProps {
-  href: string
-  id?: NavLinkProps['id']
-  isActive?: boolean
-  children: ReactNode
-  dataTestId?: string
+	href: string
+	id?: NavLinkProps['id']
+	isActive?: boolean
+	children: ReactNode
+	dataTestId?: string
 }
 
 const MenuItem = ({ href, dataTestId, id, isActive, children }: MenuItemProps) => {
-  return (
-    <NavLink
-      to={href}
-      className={isActive ? styles.activeMenuItem : styles.menuItem}
-      id={id}
-      style={{ textDecoration: 'none' }}
-      data-testid={dataTestId}
-    >
-      {children}
-    </NavLink>
-  )
+	return (
+		<NavLink
+			to={href}
+			className={isActive ? styles.activeMenuItem : styles.menuItem}
+			id={id}
+			style={{ textDecoration: 'none' }}
+			data-testid={dataTestId}
+		>
+			{children}
+		</NavLink>
+	)
 }
 
 export const PageTabs = () => {
-  const { pathname } = useLocation()
-  // const { chainId: connectedChainId } = useWeb3React()
-  // const chainName = chainIdToBackendName(connectedChainId)
+	const { pathname } = useLocation()
+	// const { chainId: connectedChainId } = useWeb3React()
+	// const chainName = chainIdToBackendName(connectedChainId)
 
-  const isPoolActive = useIsPoolsPage()
-  const isNftPage = useIsNftPage()
-  const micrositeEnabled = useMGTMMicrositeEnabled()
+	const isPoolActive = useIsPoolsPage()
+	const isNftPage = useIsNftPage()
+	const micrositeEnabled = useMGTMMicrositeEnabled()
 
-  const shouldDisableNFTRoutes = true //hardeoded to true //useAtomValue(shouldDisableNFTRoutesAtom)
+	const shouldDisableNFTRoutes = true //hardeoded to true //useAtomValue(shouldDisableNFTRoutesAtom)
 
-  return (
-    <>
-      <MenuItem href="/swap" isActive={pathname.startsWith('/swap')}>
-        <Trans>Swap</Trans>
-      </MenuItem>
-      {!shouldDisableNFTRoutes && (
-        <MenuItem dataTestId="nft-nav" href="/nfts" isActive={isNftPage}>
-          <Trans>NFTs</Trans>
-        </MenuItem>
-      )}
-      <Box display={{ sm: 'flex', lg: 'none', xxl: 'flex' }} width="full">
-        <MenuItem href="/pools" dataTestId="pool-nav-link" isActive={isPoolActive}>
-          <Trans>Pools</Trans>
-        </MenuItem>
-      </Box>
-      {micrositeEnabled && (
-        <Box display={{ sm: 'none', xxxl: 'flex' }}>
-          <MenuItem href="/wallet" isActive={pathname.startsWith('/wallet')}>
-            <Trans>Wallet</Trans>
-            <NewBadge />
-          </MenuItem>
-        </Box>
-      )}
-      <Box marginY={{ sm: '4', md: 'unset' }}>
-        <MenuDropdown />
-      </Box>
-    </>
-  )
+	return (
+		<>
+			<MenuItem href="/swap" isActive={pathname.startsWith('/swap')}>
+				<Trans>Swap</Trans>
+			</MenuItem>
+			{!shouldDisableNFTRoutes && (
+				<MenuItem dataTestId="nft-nav" href="/nfts" isActive={isNftPage}>
+					<Trans>NFTs</Trans>
+				</MenuItem>
+			)}
+			<Box display={{ sm: 'flex', lg: 'none', xxl: 'flex' }} width="full">
+				<MenuItem href="/pools" dataTestId="pool-nav-link" isActive={isPoolActive}>
+					<Trans>Pools</Trans>
+				</MenuItem>
+			</Box>
+			{micrositeEnabled && (
+				<Box display={{ sm: 'none', xxxl: 'flex' }}>
+					<MenuItem href="/wallet" isActive={pathname.startsWith('/wallet')}>
+						<Trans>Wallet</Trans>
+						<NewBadge />
+					</MenuItem>
+				</Box>
+			)}
+			<Box marginY={{ sm: '4', md: 'unset' }}>
+				<MenuDropdown />
+			</Box>
+		</>
+	)
 }
 
 const Navbar = ({ blur }: { blur: boolean }) => {
-  const isNftPage = useIsNftPage()
-  const sellPageState = useProfilePageState((state) => state.state)
-  const navigate = useNavigate()
-  const isDarkMode = useIsDarkMode()
+	const isNftPage = useIsNftPage()
+	const sellPageState = useProfilePageState((state) => state.state)
+	const navigate = useNavigate()
+	const isDarkMode = useIsDarkMode()
 
-  return (
-    <>
-      {blur && <Blur />}
-      <Nav>
-        <Box display="flex" height="full" flexWrap="nowrap">
-          <Box className={styles.leftSideContainer}>
-            <Box className={styles.logoContainer} >
-              <MonoCerusIcon isDarkMode={isDarkMode} />
-            </Box>
-            {!isNftPage && (
-              <Box display={{ sm: 'flex', lg: 'none' }}>
-                <ChainSelector leftAlign={true} />
-              </Box>
-            )}
-            <Row display={{ sm: 'none', lg: 'flex' }}>
-              <PageTabs />
-            </Row>
-          </Box>
-          <Box className={styles.searchContainer}>
-            <SearchBar />
-          </Box>
-          <Box className={styles.rightSideContainer}>
-            <Row gap="12">
-              <Box position="relative" display={{ sm: 'flex', navSearchInputVisible: 'none' }}>
-                <SearchBar />
-              </Box>
-              {isNftPage && sellPageState !== ProfilePageStateType.LISTING && <Bag />}
-              {!isNftPage && (
-                <Box display={{ sm: 'none', lg: 'flex' }}>
-                  <ChainSelector />
-                </Box>
-              )}
+	return (
+		<>
+			{blur && <Blur />}
+			<Nav>
+				<Box display="flex" height="full" flexWrap="nowrap">
+					<Box className={styles.leftSideContainer}>
+						<Box className={styles.logoContainer}>
+							<MonoCerusIcon isDarkMode={isDarkMode} />
+						</Box>
+						{!isNftPage && (
+							<Box display={{ sm: 'flex', lg: 'none' }}>
+								<ChainSelector leftAlign={true} />
+							</Box>
+						)}
+						<Row display={{ sm: 'none', lg: 'flex' }}>
+							<PageTabs />
+						</Row>
+					</Box>
+					<Box className={styles.searchContainer}>
+						<SearchBar />
+					</Box>
+					<Box className={styles.rightSideContainer}>
+						<Row gap="12">
+							<Box position="relative" display={{ sm: 'flex', navSearchInputVisible: 'none' }}>
+								<SearchBar />
+							</Box>
+							{isNftPage && sellPageState !== ProfilePageStateType.LISTING && <Bag />}
+							{!isNftPage && (
+								<Box display={{ sm: 'none', lg: 'flex' }}>
+									<ChainSelector />
+								</Box>
+							)}
 
-              <Web3Status />
-            </Row>
-          </Box>
-        </Box>
-      </Nav>
-    </>
-  )
+							<Web3Status />
+						</Row>
+					</Box>
+				</Box>
+			</Nav>
+		</>
+	)
 }
 
 export default Navbar

@@ -24,10 +24,10 @@ import {
 import { formatAssetEventProperties } from 'nft/utils/formatEventProperties'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import styled from 'styled-components/macro'
+import { useIsDarkMode } from 'theme/components/ThemeToggle'
 import { ExplorerDataType, getExplorerLink } from 'utils/getExplorerLink'
 
 import * as styles from './TransactionCompleteModal.css'
-import { useIsDarkMode } from 'theme/components/ThemeToggle'
 
 const TWITTER_WIDTH = 560
 const TWITTER_HEIGHT = 480
