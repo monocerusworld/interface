@@ -27,10 +27,10 @@ const NETWORK_SELECTOR_CHAINS = [
   // SupportedChainId.ARBITRUM_ONE,
   // SupportedChainId.CELO,
   // SupportedChainId.BNB,
+  SupportedChainId.AVALANCHE,
   SupportedChainId.FANTOM,
   // SupportedChainId.GNOSIS,
   // SupportedChainId.KLAYTN,
-  SupportedChainId.AVALANCHE,
   // SupportedChainId.MOONBEAM,
 ]
 
