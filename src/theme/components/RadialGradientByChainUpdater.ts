@@ -116,9 +116,9 @@ export default function RadialGradientByChainUpdater(): null {
       case SupportedChainId.FANTOM: {
         setBackground(backgroundResetStyles);
         const fantomLightGradient =
-          "radial-gradient(100% 100% at 50% 0%, rgba(205, 232, 255, 0.7) 0%, rgba(255, 255, 255, 0.6536) 49.48%, rgba(255, 255, 255, 0) 100%), #FFFFFF";
+          "radial-gradient(100% 100% at 50% 0%, rgba(195, 214, 197, 0.7) 0%, rgba(255, 255, 255, 0.6536) 49.48%, rgba(255, 255, 255, 0) 100%), #FFFFFF";
         const fantomDarkGradient =
-          "radial-gradient(100% 100% at 50% 0%, rgba(10, 41, 75, 0.7) 0%, rgba(34, 30, 48, 0.6536) 49.48%, rgba(31, 33, 40, 0) 100%), #0D0E0E";
+          "radial-gradient(100% 100% at 50% 0%, rgba(14, 52, 54, 0.7) 0%, rgba(13, 26, 13, 0.6536) 49.48%, rgba(13, 26, 13, 0) 100%), #0D0E0E";
 
         backgroundRadialGradientElement.style.background = darkMode
           ? fantomDarkGradient
@@ -141,7 +141,7 @@ export default function RadialGradientByChainUpdater(): null {
       case SupportedChainId.AVALANCHE: {
         setBackground(backgroundResetStyles);
         const avalancheLightGradient =
-          "radial-gradient(100% 100% at 50% 0%,rgba(255, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.16) 50%, rgba(255, 255, 255, 0) 100%), #FFFFFF";
+          "radial-gradient(100% 100% at 50% 0%,rgba(92, 81, 44, 0.2) 0%, rgba(255, 255, 255, 0.16) 50%, rgba(255, 255, 255, 0) 100%), #FFFFFF";
         const avalancheDarkGradient =
           "radial-gradient(100% 100% at 50% 0%,rgba(255, 4, 32, 0.1) 0%, rgba(255, 4, 32, 0.16) 50%, rgba(140, 185, 11, 0) 100%), #0D0E0E";
 
@@ -177,9 +177,9 @@ export default function RadialGradientByChainUpdater(): null {
       default: {
         setBackground(initialStyles);
         const defaultLightGradient =
-          "radial-gradient(100% 100% at 50% 0%, rgba(255, 184, 226, 0.51) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF";
+          "radial-gradient(100% 100% at 50% 0%, rgba(145, 136, 99, 0.51) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF";
         const defaultDarkGradient =
-          "linear-gradient(180deg, #202738 0%, #070816 100%)";
+          "linear-gradient(180deg, #5c512c 0%, #0d1a0d 50%, rgba(140, 185, 11, 0) 100%)";
         backgroundRadialGradientElement.style.background = darkMode
           ? defaultDarkGradient
           : defaultLightGradient;

@@ -231,21 +231,21 @@ export const BrokenLinkIcon = (props: SVGProps) => (
     <g clipPath="url(#clip0_79_4612)">
       <path
         d="M14.4344 11.3181L16.9344 8.81813C17.6934 8.03229 18.1133 6.97978 18.1039 5.8873C18.0944 4.79481 17.6562 3.74976 16.8836 2.97722C16.1111 2.20469 15.066 1.76649 13.9735 1.75699C12.8811 1.7475 11.8286 2.16748 11.0427 2.92647L9.60938 4.35147"
-        stroke="#98A1C0"
+        stroke="#676b5c"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M5.20088 8.75098L2.70088 11.251C1.94189 12.0368 1.52191 13.0893 1.53141 14.1818C1.5409 15.2743 1.9791 16.3194 2.75164 17.0919C3.52417 17.8644 4.56922 18.3026 5.66171 18.3121C6.7542 18.3216 7.80671 17.9016 8.59255 17.1426L10.0175 15.7176"
-        stroke="#98A1C0"
+        stroke="#676b5c"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M5 3.24316L14.7368 16.6952"
-        stroke="#98A1C0"
+        stroke="#676b5c"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"

@@ -128,7 +128,7 @@ exports[`renders multi route 1`] = `
 }
 
 .c6 path {
-  stroke: #98A1C0;
+  stroke: #676b5c;
 }
 
 .c8 {
@@ -384,7 +384,7 @@ exports[`renders single route 1`] = `
 }
 
 .c6 path {
-  stroke: #98A1C0;
+  stroke: #676b5c;
 }
 
 .c8 {
