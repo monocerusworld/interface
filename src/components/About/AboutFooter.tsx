@@ -131,7 +131,7 @@ const LogoSectionContent = () => {
           <GithubIcon size={32} />
         </SocialLink>
       </SocialLinks>
-      <Copyright>© {new Date().getFullYear()} Monocerus Labs</Copyright>
+      <Copyright>© {new Date().getFullYear()} Monocerus</Copyright>
     </>
   )
 }

@@ -371,7 +371,7 @@ export default function Landing() {
               {shouldDisableNFTRoutes ? (
                 <Trans>Trade crypto with confidence</Trans>
               ) : (
-                <Trans>Trade crypto and NFTs with confidence</Trans>
+                <Trans>Monocerus World</Trans>
               )}
             </TitleText>
             <SubTextContainer>
@@ -379,7 +379,9 @@ export default function Landing() {
                 {shouldDisableNFTRoutes ? (
                   <Trans>Buy, sell, and explore tokens</Trans>
                 ) : (
-                  <Trans>Buy, sell, and explore tokens and NFTs</Trans>
+                  <Trans><b>The World of High-yield GameFi with Dynamic NFT</b>
+                  <p>Monocerus harness the advantage of Web 3.0 technology and orchestrates it to present a High-yield DeFi Application in
+                  an exciting way through Mobile RPG and Dynamic NFTs</p></Trans>
                 )}
               </SubText>
             </SubTextContainer>
@@ -389,8 +391,8 @@ export default function Landing() {
                 name={SharedEventName.ELEMENT_CLICKED}
                 element={InterfaceElementName.CONTINUE_BUTTON}
               >
-                <ButtonCTA as={Link} to="/swap">
-                  <ButtonCTAText>Get started</ButtonCTAText>
+                <ButtonCTA as={Link} to="https://monocerus.world/game">
+                  <ButtonCTAText>Monocerus Mobile RPG</ButtonCTAText>
                 </ButtonCTA>
               </TraceEvent>
             </ActionsContainer>
