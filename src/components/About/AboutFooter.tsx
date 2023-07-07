@@ -115,7 +115,7 @@ const LogoSectionContent = () => {
     <>
       <StyledLogo src={isDarkMode ? darkUnicornImgSrc : lightUnicornImgSrc} alt="Monocerus Logo" />
       <SocialLinks>
-        <SocialLink href="https://discord.gg/FCfyBSbCU5" target="_blank" rel="noopener noreferrer">
+        <SocialLink href="https://discord.gg/xYc2EKTPHu" target="_blank" rel="noopener noreferrer">
           <DiscordIcon size={32} />
         </SocialLink>
         <TraceEvent
@@ -123,11 +123,11 @@ const LogoSectionContent = () => {
           name={SharedEventName.ELEMENT_CLICKED}
           element={InterfaceElementName.TWITTER_LINK}
         >
-          <SocialLink href="https://twitter.com/uniswap" target="_blank" rel="noopener noreferrer">
+          <SocialLink href="https://twitter.com/monocerusworld" target="_blank" rel="noopener noreferrer">
             <TwitterIcon size={32} />
           </SocialLink>
         </TraceEvent>
-        <SocialLink href="https://github.com/Uniswap" target="_blank" rel="noopener noreferrer">
+        <SocialLink href="https://github.com/monocerusworld" target="_blank" rel="noopener noreferrer">
           <GithubIcon size={32} />
         </SocialLink>
       </SocialLinks>
@@ -153,9 +153,9 @@ export const AboutFooter = () => {
         </LinkGroup>
         <LinkGroup>
           <LinkGroupTitle>Protocol</LinkGroupTitle>
-          <ExternalTextLink href="https://uniswap.org/community">Community</ExternalTextLink>
-          <ExternalTextLink href="https://uniswap.org/governance">Governance</ExternalTextLink>
-          <ExternalTextLink href="https://uniswap.org/developers">Developers</ExternalTextLink>
+          <ExternalTextLink href="https://monocerus.world/community">Community</ExternalTextLink>
+          <ExternalTextLink href="https://monocerus.world/governance">Governance</ExternalTextLink>
+          <ExternalTextLink href="https://monocerus.world/developers">Developers</ExternalTextLink>
         </LinkGroup>
         <LinkGroup>
           <LinkGroupTitle>Company</LinkGroupTitle>
@@ -164,14 +164,14 @@ export const AboutFooter = () => {
             name={SharedEventName.ELEMENT_CLICKED}
             element={InterfaceElementName.CAREERS_LINK}
           >
-            <ExternalTextLink href="https://boards.greenhouse.io/uniswaplabs">Careers</ExternalTextLink>
+            <ExternalTextLink href="https://boards.greenhouse.io/monocerus">Careers</ExternalTextLink>
           </TraceEvent>
           <TraceEvent
             events={[BrowserEvent.onClick]}
             name={SharedEventName.ELEMENT_CLICKED}
             element={InterfaceElementName.BLOG_LINK}
           >
-            <ExternalTextLink href="https://uniswap.org/blog">Blog</ExternalTextLink>
+            <ExternalTextLink href="https://monocerus.world/blog">Blog</ExternalTextLink>
           </TraceEvent>
         </LinkGroup>
         <LinkGroup>
@@ -182,7 +182,7 @@ export const AboutFooter = () => {
             element={InterfaceElementName.SUPPORT_LINK}
           >
             <ExternalTextLink
-              href="https://support.uniswap.org/hc/en-us/requests/new"
+              href="https://monocerus.world/hc/en-us/requests/new"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -194,7 +194,7 @@ export const AboutFooter = () => {
             name={SharedEventName.ELEMENT_CLICKED}
             element={InterfaceElementName.SUPPORT_LINK}
           >
-            <ExternalTextLink href="https://support.uniswap.org/hc/en-us">Help Center</ExternalTextLink>
+            <ExternalTextLink href="https://monocerus.world/hc/en-us">Help Center</ExternalTextLink>
           </TraceEvent>
         </LinkGroup>
       </FooterLinks>

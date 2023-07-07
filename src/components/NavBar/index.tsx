@@ -84,9 +84,9 @@ export const PageTabs = () => {
 					</MenuItem>
 				</Box>
 			)}
-			<Box marginY={{ sm: '4', md: 'unset' }}>
+			{/* <Box marginY={{ sm: '4', md: 'unset' }}>
 				<MenuDropdown />
-			</Box>
+			</Box> */}
 		</>
 	)
 }
