@@ -121,13 +121,14 @@ const ContentContainer = styled.div<{ isDarkMode: boolean }>`
 const TitleText = styled.h1<{ isDarkMode: boolean }>`
   color: transparent;
   font-size: 36px;
+  font-family: 'century-gothic';
   line-height: 44px;
   font-weight: 700;
   text-align: center;
   margin: 0 0 24px;
   background: ${({ isDarkMode }) =>
     isDarkMode
-      ? "linear-gradient(20deg, rgba(255, 244, 207, 1) 10%, rgba(255, 87, 218, 1) 100%)"
+      ? "linear-gradient(20deg, rgba(255, 244, 207, 1) 10%, rgba(116, 134, 32, 1) 100%)"
       : "linear-gradient(10deg, rgba(255,79,184,1) 0%, rgba(255,159,251,1) 100%)"};
   background-clip: text;
   -webkit-background-clip: text;
@@ -169,7 +170,7 @@ const LandingButton = styled(BaseButton)`
 `;
 
 const ButtonCTA = styled(LandingButton)`
-  background: linear-gradient(93.06deg, #ff00c7 2.66%, #ff9ffb 98.99%);
+  background: linear-gradient(93.06deg, #748620 2.66%, #ffffff 98.99%);
   border: none;
   color: ${({ theme }) => theme.white};
   transition: ${({ theme }) =>
