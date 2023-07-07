@@ -420,7 +420,7 @@ export default function Landing() {
                 )
               )}
             </CardGrid>
-            <CardGrid cols={3}>
+            <CardGrid cols={2}>
               {MORE_CARDS.map(({ darkIcon, lightIcon, ...card }) => (
                 <Card
                   {...card}
