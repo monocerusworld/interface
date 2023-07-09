@@ -121,7 +121,6 @@ const ContentContainer = styled.div<{ isDarkMode: boolean }>`
 const TitleText = styled.h1<{ isDarkMode: boolean }>`
   color: transparent;
   font-size: 36px;
-  font-family: 'century-gothic';
   line-height: 44px;
   font-weight: 700;
   text-align: center;
@@ -170,7 +169,7 @@ const LandingButton = styled(BaseButton)`
 `;
 
 const ButtonCTA = styled(LandingButton)`
-  background: linear-gradient(93.06deg, #748620 2.66%, #ffffff 98.99%);
+  background: linear-gradient(93.06deg, #748620 2.66%, #a29b89 98.99%);
   border: none;
   color: ${({ theme }) => theme.white};
   transition: ${({ theme }) =>
@@ -392,7 +391,7 @@ export default function Landing() {
                 name={SharedEventName.ELEMENT_CLICKED}
                 element={InterfaceElementName.CONTINUE_BUTTON}
               >
-                <ButtonCTA as={Link} to="https://monocerus.world/game">
+                <ButtonCTA as={Link} to="#">
                   <ButtonCTAText>Monocerus Mobile RPG</ButtonCTAText>
                 </ButtonCTA>
               </TraceEvent>

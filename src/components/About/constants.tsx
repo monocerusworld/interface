@@ -1,4 +1,5 @@
 import { InterfaceElementName } from '@uniswap/analytics-events'
+
 import { Loader, ShoppingBag, PlayCircle, Play } from 'react-feather'
 import styled from 'styled-components/macro'
 import { lightTheme } from 'theme/colors'
@@ -18,9 +19,9 @@ export const MAIN_CARDS = [
     elementName: InterfaceElementName.ABOUT_PAGE_SWAP_CARD,
   },
   {
-    to: 'https://monocerus.world/mintingpage',
+    to: '#',//'https://monocerus.world/mintingpage',
     title: 'Moonlight Potion',
-    description: 'Very Limited 600 vials of transformer NFT, Morph LP-NFT to SPARKLE-VX and get tons of Utilities. Be a Monocerus\'s OG member and get a multitude of benefits',
+    description: 'Very Limited 600 vials of transformer NFT, morph your LP-NFT to SPARKLE-VX and get tons of Utilities. Be a Monocerus OG member and get a multitude of benefits',
     cta: 'Mint',
     darkBackgroundImgSrc: nftCardImgSrc,
     lightBackgroundImgSrc: nftCardImgSrc,
@@ -37,7 +38,7 @@ const StyledCardLogo = styled.img`
 
 export const MORE_CARDS = [
   {
-    to: 'https://monocerus.world/voxmorphia',
+    to: '#',//'https://monocerus.world/voxmorphia',
     external: true,
     title: 'SPARKLE-VX',
     description: 'Visit Voxmorphia and morph your LP-NFT to this Stunning Interactive 3D Voxel NFT with Play2Earn and Farming Booster Traits',
@@ -47,7 +48,7 @@ export const MORE_CARDS = [
     elementName: InterfaceElementName.ABOUT_PAGE_BUY_CRYPTO_CARD,
   },
   {
-    to: 'https://monocerus.world/tba',
+    to: '#',//'https://monocerus.world/tba',
     external: true,
     title: 'Token Bound Account',
     description: 'Allow your SPARKLE-VX to gather Tokens and Child NFTs (Rewards/Purchased Game Items) into single Account (by ERC-6551)',
@@ -57,7 +58,7 @@ export const MORE_CARDS = [
     elementName: InterfaceElementName.ABOUT_PAGE_DEV_DOCS_CARD,
   },
   {
-    to: 'https://monocerus.world/game',
+    to: '#',//'https://monocerus.world/game',
     title: 'Mobile RPG',
     description: 'Use SPARKLE-VX as Passport for Seven Realms in Mobile RPG. Cash out Your in-game rewards in Monocerus Swap',
     lightIcon: <Play color={lightTheme.textTertiary} size={36} />,
@@ -66,7 +67,7 @@ export const MORE_CARDS = [
     elementName: InterfaceElementName.ABOUT_PAGE_EARN_CARD,
   },
   {
-    to: 'https://monocerus.world/minigame',
+    to: '#',//'https://monocerus.world/minigame',
     title: 'Mini Games',
     description: 'Use SPARKLE-VX\'s built-in Play-to-Earn Traits in Mini Games. Earn more rewards in an easy and faster way',
     lightIcon: <PlayCircle color={lightTheme.textTertiary} size={36} />,
