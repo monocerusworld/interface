@@ -370,7 +370,7 @@ msgid "By adding liquidity you'll earn 0.3% of all trades on this pair proportio
 msgstr "유동성을 추가하면 풀 쉐어에 비례하여이 쌍에 대한 모든 거래의 0.3%를 벌 수 있습니다. 수수료는 풀에 추가되고 실시간으로 발생하며 유동성을 인출하여 청구할 수 있습니다."
 
 #: src/components/WalletModal/index.tsx
-msgid "By connecting a wallet, you agree to Monocerus Labs’ <0>Terms of Service</0> and consent to its <1>Privacy Policy</1>."
+msgid "By connecting a wallet, you agree to Monocerus’ <0>Terms of Service</0> and consent to its <1>Privacy Policy</1>."
 msgstr ""
 
 #: src/pages/Vote/styled.tsx
@@ -1940,7 +1940,7 @@ msgid "The app fetches on-chain data and constructs contract calls with an Infur
 msgstr ""
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "The app fetches the optimal trade route from a Monocerus Labs server."
+msgid "The app fetches the optimal trade route from a Monocerus server."
 msgstr ""
 
 #: src/components/PrivacyPolicy/index.tsx
@@ -2010,7 +2010,7 @@ msgid "There is no liquidity data."
 msgstr ""
 
 #: src/components/ConnectedAccountBlocked/index.tsx
-msgid "This address is blocked on the Monocerus Labs interface because it is associated with one or more"
+msgid "This address is blocked on the Monocerus interface because it is associated with one or more"
 msgstr ""
 
 #: src/components/PrivacyPolicy/index.tsx
@@ -2186,11 +2186,11 @@ msgid "Monocerus Governance"
 msgstr "Monocerus 거버넌스"
 
 #: src/components/TaxServiceModal/TaxServiceBanner.tsx
-msgid "Monocerus Labs can save you up to 20% on CoinTracker and TokenTax"
+msgid "Monocerus can save you up to 20% on CoinTracker and TokenTax"
 msgstr ""
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "Monocerus Labs' Terms of Service"
+msgid "Monocerus' Terms of Service"
 msgstr ""
 
 #: src/pages/Pool/v2.tsx
@@ -2262,7 +2262,7 @@ msgid "Update Delegation"
 msgstr "위임 업데이트"
 
 #: src/components/Settings/index.tsx
-msgid "Use the Monocerus Labs API to get faster quotes."
+msgid "Use the Monocerus API to get faster quotes."
 msgstr ""
 
 #: src/pages/Pool/index.tsx

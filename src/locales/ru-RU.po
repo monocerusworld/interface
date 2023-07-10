@@ -370,7 +370,7 @@ msgid "By adding liquidity you'll earn 0.3% of all trades on this pair proportio
 msgstr "Добавив ликвидность, вы будете зарабатывать 0,3% от всех сделок на этой паре пропорционально вашей доле в пуле. Комиссии добавляются в пул, начисляются в режиме реального времени и могут быть востребованы путём вывода вашей ликвидности."
 
 #: src/components/WalletModal/index.tsx
-msgid "By connecting a wallet, you agree to Monocerus Labs’ <0>Terms of Service</0> and consent to its <1>Privacy Policy</1>."
+msgid "By connecting a wallet, you agree to Monocerus’ <0>Terms of Service</0> and consent to its <1>Privacy Policy</1>."
 msgstr ""
 
 #: src/pages/Vote/styled.tsx
@@ -1940,8 +1940,8 @@ msgid "The app fetches on-chain data and constructs contract calls with an Infur
 msgstr "Приложение получает данные, хранящиеся в блокчейне, и конструирует вызовы контрактов при помощи API от Infura."
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "The app fetches the optimal trade route from a Monocerus Labs server."
-msgstr "Приложение получает оптимальный маршрут для сделки с сервера Monocerus Labs."
+msgid "The app fetches the optimal trade route from a Monocerus server."
+msgstr "Приложение получает оптимальный маршрут для сделки с сервера Monocerus."
 
 #: src/components/PrivacyPolicy/index.tsx
 msgid "The app logs anonymized usage statistics in order to improve over time."
@@ -2010,8 +2010,8 @@ msgid "There is no liquidity data."
 msgstr "Нет данных о ликвидности."
 
 #: src/components/ConnectedAccountBlocked/index.tsx
-msgid "This address is blocked on the Monocerus Labs interface because it is associated with one or more"
-msgstr "Этот адрес заблокирован в интерфейсе Monocerus Labs, поскольку он связан с одним или несколькими"
+msgid "This address is blocked on the Monocerus interface because it is associated with one or more"
+msgstr "Этот адрес заблокирован в интерфейсе Monocerus, поскольку он связан с одним или несколькими"
 
 #: src/components/PrivacyPolicy/index.tsx
 msgid "This app uses the following third-party APIs:"
@@ -2186,12 +2186,12 @@ msgid "Monocerus Governance"
 msgstr "Управление Uniswap"
 
 #: src/components/TaxServiceModal/TaxServiceBanner.tsx
-msgid "Monocerus Labs can save you up to 20% on CoinTracker and TokenTax"
+msgid "Monocerus can save you up to 20% on CoinTracker and TokenTax"
 msgstr ""
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "Monocerus Labs' Terms of Service"
-msgstr "Условия предоставления услуг Monocerus Labs"
+msgid "Monocerus' Terms of Service"
+msgstr "Условия предоставления услуг Monocerus"
 
 #: src/pages/Pool/v2.tsx
 msgid "Monocerus V2 is not available on this network."
@@ -2262,8 +2262,8 @@ msgid "Update Delegation"
 msgstr "Обновить делегирование"
 
 #: src/components/Settings/index.tsx
-msgid "Use the Monocerus Labs API to get faster quotes."
-msgstr "Использовать API от Monocerus Labs, чтобы быстрее получать котировки."
+msgid "Use the Monocerus API to get faster quotes."
+msgstr "Использовать API от Monocerus, чтобы быстрее получать котировки."
 
 #: src/pages/Pool/index.tsx
 msgid "V2 liquidity"

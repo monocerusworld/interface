@@ -169,7 +169,7 @@ const LandingButton = styled(BaseButton)`
 `;
 
 const ButtonCTA = styled(LandingButton)`
-  background: linear-gradient(93.06deg, #918863 2.66%, #748620 98.99%);
+  background: linear-gradient(93.06deg, #748620 2.66%, #a29b89 98.99%);
   border: none;
   color: ${({ theme }) => theme.white};
   transition: ${({ theme }) =>
@@ -371,7 +371,7 @@ export default function Landing() {
               {shouldDisableNFTRoutes ? (
                 <Trans>Trade crypto with confidence</Trans>
               ) : (
-                <Trans>Trade crypto and NFTs with confidence</Trans>
+                <Trans>Monocerus World</Trans>
               )}
             </TitleText>
             <SubTextContainer>
@@ -379,7 +379,9 @@ export default function Landing() {
                 {shouldDisableNFTRoutes ? (
                   <Trans>Buy, sell, and explore tokens</Trans>
                 ) : (
-                  <Trans>Buy, sell, and explore tokens and NFTs</Trans>
+                  <Trans><b>The World of High-yield GameFi with Dynamic NFT</b>
+                  <p>Monocerus harness the advantage of Web 3.0 technology and orchestrates it to present a High-yield DeFi Application in
+                  an exciting way through Mobile RPG and Dynamic NFTs</p></Trans>
                 )}
               </SubText>
             </SubTextContainer>
@@ -389,8 +391,8 @@ export default function Landing() {
                 name={SharedEventName.ELEMENT_CLICKED}
                 element={InterfaceElementName.CONTINUE_BUTTON}
               >
-                <ButtonCTA as={Link} to="/swap">
-                  <ButtonCTAText>Get started</ButtonCTAText>
+                <ButtonCTA as={Link} to="#">
+                  <ButtonCTAText>Monocerus Mobile RPG</ButtonCTAText>
                 </ButtonCTA>
               </TraceEvent>
             </ActionsContainer>
@@ -417,7 +419,7 @@ export default function Landing() {
                 )
               )}
             </CardGrid>
-            <CardGrid cols={3}>
+            <CardGrid cols={2}>
               {MORE_CARDS.map(({ darkIcon, lightIcon, ...card }) => (
                 <Card
                   {...card}

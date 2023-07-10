@@ -370,7 +370,7 @@ msgid "By adding liquidity you'll earn 0.3% of all trades on this pair proportio
 msgstr "通过添加流动性，您将按您在流动池中所占比例赚取对应交易量的0.3%手续费。手续费将实时累加到流动池中，在您取回流动性时也将同时取回您赚取的手续费。"
 
 #: src/components/WalletModal/index.tsx
-msgid "By connecting a wallet, you agree to Monocerus Labs’ <0>Terms of Service</0> and consent to its <1>Privacy Policy</1>."
+msgid "By connecting a wallet, you agree to Monocerus’ <0>Terms of Service</0> and consent to its <1>Privacy Policy</1>."
 msgstr ""
 
 #: src/pages/Vote/styled.tsx
@@ -1940,8 +1940,8 @@ msgid "The app fetches on-chain data and constructs contract calls with an Infur
 msgstr "该应用程序获取链上数据并使用 Infura API 构建合约调用。"
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "The app fetches the optimal trade route from a Monocerus Labs server."
-msgstr "该应用程序从 Monocerus Labs 服务器获取最佳交易路径。"
+msgid "The app fetches the optimal trade route from a Monocerus server."
+msgstr "该应用程序从 Monocerus 服务器获取最佳交易路径。"
 
 #: src/components/PrivacyPolicy/index.tsx
 msgid "The app logs anonymized usage statistics in order to improve over time."
@@ -2010,7 +2010,7 @@ msgid "There is no liquidity data."
 msgstr "没有流动性数据。"
 
 #: src/components/ConnectedAccountBlocked/index.tsx
-msgid "This address is blocked on the Monocerus Labs interface because it is associated with one or more"
+msgid "This address is blocked on the Monocerus interface because it is associated with one or more"
 msgstr ""
 
 #: src/components/PrivacyPolicy/index.tsx
@@ -2186,12 +2186,12 @@ msgid "Monocerus Governance"
 msgstr "Uniswap治理"
 
 #: src/components/TaxServiceModal/TaxServiceBanner.tsx
-msgid "Monocerus Labs can save you up to 20% on CoinTracker and TokenTax"
+msgid "Monocerus can save you up to 20% on CoinTracker and TokenTax"
 msgstr ""
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "Monocerus Labs' Terms of Service"
-msgstr "Monocerus Labs 的服务条款"
+msgid "Monocerus' Terms of Service"
+msgstr "Monocerus 的服务条款"
 
 #: src/pages/Pool/v2.tsx
 msgid "Monocerus V2 is not available on this network."
@@ -2262,8 +2262,8 @@ msgid "Update Delegation"
 msgstr "更新投票权委托"
 
 #: src/components/Settings/index.tsx
-msgid "Use the Monocerus Labs API to get faster quotes."
-msgstr "使用 Monocerus Labs API 获得更快的报价。"
+msgid "Use the Monocerus API to get faster quotes."
+msgstr "使用 Monocerus API 获得更快的报价。"
 
 #: src/pages/Pool/index.tsx
 msgid "V2 liquidity"

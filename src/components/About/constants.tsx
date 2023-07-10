@@ -1,30 +1,28 @@
 import { InterfaceElementName } from '@uniswap/analytics-events'
-import { DollarSign, Terminal } from 'react-feather'
+
+import { Loader, ShoppingBag, PlayCircle, Play } from 'react-feather'
 import styled from 'styled-components/macro'
 import { lightTheme } from 'theme/colors'
 
-import darkArrowImgSrc from './images/aboutArrowDark.png'
-import lightArrowImgSrc from './images/aboutArrowLight.png'
-import darkDollarImgSrc from './images/aboutDollarDark.png'
-import darkTerminalImgSrc from './images/aboutTerminalDark.png'
+
 import nftCardImgSrc from './images/nftCard.png'
 import swapCardImgSrc from './images/swapCard.png'
 
 export const MAIN_CARDS = [
   {
-    to: '/swap',
-    title: 'Swap tokens',
-    description: 'Buy, sell, and explore tokens on Ethereum, Polygon, Optimism, and more.',
-    cta: 'Trade Tokens',
+    to: '/pools',
+    title: 'CLMM DEX',
+    description: 'UniV3-based CLMM DEX with 20,000 X Capital Efficiency, boost your mining reward by targeting the price range and NFT-based farming multiplier',
+    cta: 'Pool',
     darkBackgroundImgSrc: swapCardImgSrc,
     lightBackgroundImgSrc: swapCardImgSrc,
     elementName: InterfaceElementName.ABOUT_PAGE_SWAP_CARD,
   },
   {
-    to: '/nfts',
-    title: 'Trade NFTs',
-    description: 'Buy and sell NFTs across marketplaces to find more listings at better prices.',
-    cta: 'Explore NFTs',
+    to: '#',//'https://monocerus.world/mintingpage',
+    title: 'Moonlight Potion',
+    description: 'Very Limited 600 vials of transformer NFT, morph your LP-NFT to SPARKLE-VX and get tons of Utilities. Be a Monocerus OG member and get a multitude of benefits',
+    cta: 'Mint',
     darkBackgroundImgSrc: nftCardImgSrc,
     lightBackgroundImgSrc: nftCardImgSrc,
     elementName: InterfaceElementName.ABOUT_PAGE_NFTS_CARD,
@@ -40,32 +38,42 @@ const StyledCardLogo = styled.img`
 
 export const MORE_CARDS = [
   {
-    to: 'https://support.uniswap.org/hc/en-us/articles/11306574799117-How-to-use-Moon-Pay-on-the-Uniswap-web-app-',
+    to: '#',//'https://monocerus.world/voxmorphia',
     external: true,
-    title: 'Buy crypto',
-    description: 'Buy crypto with your credit card or bank account at the best rates.',
-    lightIcon: <DollarSign color={lightTheme.textTertiary} size={48} />,
-    darkIcon: <StyledCardLogo src={darkDollarImgSrc} alt="Earn" />,
-    cta: 'Buy now',
+    title: 'SPARKLE-VX',
+    description: 'Visit Voxmorphia and morph your LP-NFT to this Stunning Interactive 3D Voxel NFT with Play2Earn and Farming Booster Traits',
+    lightIcon: <Loader color={lightTheme.textTertiary} size={36} />,
+    darkIcon: <Loader color={lightTheme.textTertiary} size={36} />,
+    cta: 'Morph',
     elementName: InterfaceElementName.ABOUT_PAGE_BUY_CRYPTO_CARD,
   },
   {
-    to: '/pools',
-    title: 'Earn',
-    description: 'Provide liquidity to pools on Monocerus and earn fees on swaps.',
-    lightIcon: <StyledCardLogo src={lightArrowImgSrc} alt="Analytics" />,
-    darkIcon: <StyledCardLogo src={darkArrowImgSrc} alt="Analytics" />,
-    cta: 'Provide liquidity',
+    to: '#',//'https://monocerus.world/tba',
+    external: true,
+    title: 'Token Bound Account',
+    description: 'Allow your SPARKLE-VX to gather Tokens and Child NFTs (Rewards/Purchased Game Items) into single Account (by ERC-6551)',
+    lightIcon: <ShoppingBag color={lightTheme.textTertiary} size={36} />,
+    darkIcon: <ShoppingBag color={lightTheme.textTertiary} size={36}  />,
+    cta: 'Create Account',
+    elementName: InterfaceElementName.ABOUT_PAGE_DEV_DOCS_CARD,
+  },
+  {
+    to: '#',//'https://monocerus.world/game',
+    title: 'Mobile RPG',
+    description: 'Use SPARKLE-VX as Passport for Seven Realms in Mobile RPG. Cash out Your in-game rewards in Monocerus Swap',
+    lightIcon: <Play color={lightTheme.textTertiary} size={36} />,
+    darkIcon: <Play color={lightTheme.textTertiary} size={36} />,
+    cta: 'Play',
     elementName: InterfaceElementName.ABOUT_PAGE_EARN_CARD,
   },
   {
-    to: 'https://docs.uniswap.org',
-    external: true,
-    title: 'Build dApps',
-    description: 'Build apps and tools on the largest DeFi protocol on Ethereum.',
-    lightIcon: <Terminal color={lightTheme.textTertiary} size={48} />,
-    darkIcon: <StyledCardLogo src={darkTerminalImgSrc} alt="Developers" />,
-    cta: 'Developer docs',
-    elementName: InterfaceElementName.ABOUT_PAGE_DEV_DOCS_CARD,
+    to: '#',//'https://monocerus.world/minigame',
+    title: 'Mini Games',
+    description: 'Use SPARKLE-VX\'s built-in Play-to-Earn Traits in Mini Games. Earn more rewards in an easy and faster way',
+    lightIcon: <PlayCircle color={lightTheme.textTertiary} size={36} />,
+    darkIcon: <PlayCircle color={lightTheme.textTertiary} size={36} />,
+    cta: 'Play',
+    elementName: InterfaceElementName.ABOUT_PAGE_EARN_CARD,
   },
+
 ]

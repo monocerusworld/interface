@@ -370,7 +370,7 @@ msgid "By adding liquidity you'll earn 0.3% of all trades on this pair proportio
 msgstr "流動性を追加することで、このペアのすべての取引で発生する0.3%の手数料のうち、プールのシェアに応じた報酬を獲得します。報酬はリアルタイムにプールに追加され、反映されます。報酬は流動性を引き出すことで請求できます。"
 
 #: src/components/WalletModal/index.tsx
-msgid "By connecting a wallet, you agree to Monocerus Labs’ <0>Terms of Service</0> and consent to its <1>Privacy Policy</1>."
+msgid "By connecting a wallet, you agree to Monocerus’ <0>Terms of Service</0> and consent to its <1>Privacy Policy</1>."
 msgstr ""
 
 #: src/pages/Vote/styled.tsx
@@ -1940,7 +1940,7 @@ msgid "The app fetches on-chain data and constructs contract calls with an Infur
 msgstr "アプリはオンチェーンデータを取得し、InfuraAPIを使用してコントラクト呼び出しを構築します。"
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "The app fetches the optimal trade route from a Monocerus Labs server."
+msgid "The app fetches the optimal trade route from a Monocerus server."
 msgstr "アプリは、Monocerus Labsサーバーから最適な取引ルートを取得します。"
 
 #: src/components/PrivacyPolicy/index.tsx
@@ -2010,7 +2010,7 @@ msgid "There is no liquidity data."
 msgstr "流動性データはありません。"
 
 #: src/components/ConnectedAccountBlocked/index.tsx
-msgid "This address is blocked on the Monocerus Labs interface because it is associated with one or more"
+msgid "This address is blocked on the Monocerus interface because it is associated with one or more"
 msgstr ""
 
 #: src/components/PrivacyPolicy/index.tsx
@@ -2186,11 +2186,11 @@ msgid "Monocerus Governance"
 msgstr "Uniswapのガバナンス"
 
 #: src/components/TaxServiceModal/TaxServiceBanner.tsx
-msgid "Monocerus Labs can save you up to 20% on CoinTracker and TokenTax"
+msgid "Monocerus can save you up to 20% on CoinTracker and TokenTax"
 msgstr ""
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "Monocerus Labs' Terms of Service"
+msgid "Monocerus' Terms of Service"
 msgstr "UniswapLabsの利用規約"
 
 #: src/pages/Pool/v2.tsx
@@ -2262,7 +2262,7 @@ msgid "Update Delegation"
 msgstr "委任を更新"
 
 #: src/components/Settings/index.tsx
-msgid "Use the Monocerus Labs API to get faster quotes."
+msgid "Use the Monocerus API to get faster quotes."
 msgstr ""
 
 #: src/pages/Pool/index.tsx

@@ -13,7 +13,7 @@ type SVGProps = React.SVGProps<SVGSVGElement> & { fill?: string; height?: string
 // )
 
 export const MonoCerusIcon = ({isDarkMode}: {isDarkMode: boolean}) => (
-  <img src={isDarkMode ? favImg : favBlackImg} height='48' width='48'></img>
+  <a href='https://monocerus.world/'><img src={isDarkMode ? favImg : favBlackImg} height='48' width='48'></img></a>
   )
 
 export const ChevronUpIcon = ({

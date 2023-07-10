@@ -17,7 +17,7 @@ import { useIsDarkMode } from 'theme/components/ThemeToggle'
 import { Bag } from './Bag'
 import Blur from './Blur'
 import { ChainSelector } from './ChainSelector'
-import { MenuDropdown } from './MenuDropdown'
+// import { MenuDropdown } from './MenuDropdown'
 import { SearchBar } from './SearchBar'
 import * as styles from './style.css'
 
@@ -84,9 +84,9 @@ export const PageTabs = () => {
 					</MenuItem>
 				</Box>
 			)}
-			<Box marginY={{ sm: '4', md: 'unset' }}>
+			{/* <Box marginY={{ sm: '4', md: 'unset' }}>
 				<MenuDropdown />
-			</Box>
+			</Box> */}
 		</>
 	)
 }
