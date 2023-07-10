@@ -92,6 +92,7 @@ const CardCTA = styled(CardDescription)`
   font-weight: 500;
   margin: 24px 0 0;
   cursor: pointer;
+  font-size: 14px;
 
   transition: ${({ theme }) => `${theme.transition.duration.medium} ${theme.transition.timing.ease} opacity`};
 

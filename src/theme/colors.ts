@@ -4,7 +4,7 @@ import { opacify } from './utils'
 export const colors = {
   fantomblue: '#6b7c6d',
   avalanchered: '#67752c',
-  white: '#FFFFFF',
+  white: '#F1EFE1',
   black: '#000000',
   gray50: '#f7f5ed',
   gray100: '#e7e8d3',
