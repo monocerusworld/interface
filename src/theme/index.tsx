@@ -62,7 +62,7 @@ const opacities = {
 }
 
 const fonts = {
-  code: 'century-gothic, serif',
+  code: 'Jost, sans-serif',
 }
 
 function getSettings(darkMode: boolean) {

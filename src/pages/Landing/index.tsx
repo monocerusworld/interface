@@ -133,11 +133,13 @@ const TitleText = styled.h1<{ isDarkMode: boolean }>`
   -webkit-background-clip: text;
 
   @media screen and (min-width: ${BREAKPOINTS.sm}px) {
+    font-family: 'Jost', sans-serif;
     font-size: 48px;
     line-height: 56px;
   }
 
   @media screen and (min-width: ${BREAKPOINTS.md}px) {
+    font-family: 'Jost', sans-serif;
     font-size: 64px;
     line-height: 72px;
   }

@@ -28,7 +28,7 @@ const NETWORK_SELECTOR_CHAINS = [
   // SupportedChainId.CELO,
   // SupportedChainId.BNB,
   SupportedChainId.AVALANCHE,
-  SupportedChainId.FANTOM,
+  // SupportedChainId.FANTOM,
   // SupportedChainId.GNOSIS,
   // SupportedChainId.KLAYTN,
   // SupportedChainId.MOONBEAM,

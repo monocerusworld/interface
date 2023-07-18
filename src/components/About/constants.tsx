@@ -11,7 +11,7 @@ import swapCardImgSrc from './images/swapCard.png'
 export const MAIN_CARDS = [
   {
     to: '/pools',
-    title: 'CLMM DEX',
+    title: 'CLMM DEX (alpha version)',
     description: 'UniV3-based CLMM DEX with 20,000 X Capital Efficiency, boost your mining reward by targeting the price range and NFT-based farming multiplier',
     cta: 'Pool',
     darkBackgroundImgSrc: swapCardImgSrc,

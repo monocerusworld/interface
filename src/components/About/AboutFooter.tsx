@@ -122,7 +122,7 @@ const LogoSectionContent = () => {
           name={SharedEventName.ELEMENT_CLICKED}
           element={InterfaceElementName.TWITTER_LINK}
         >
-          <SocialLink href="https://twitter.com/monocerusworld" target="_blank" rel="noopener noreferrer">
+          <SocialLink href="https://twitter.com/monocerus_world" target="_blank" rel="noopener noreferrer">
             <TwitterIcon size={32} />
           </SocialLink>
         </TraceEvent>
@@ -147,10 +147,10 @@ export const AboutFooter = () => {
           <LinkGroupTitle>App</LinkGroupTitle>
           <TextLink to="/swap">Swap</TextLink>
           <TextLink to="/tokens">Tokens</TextLink>
-          <TextLink to="/nfts">NFTs</TextLink>
+          {/* <TextLink to="/nfts">NFTs</TextLink> */}
           <TextLink to="/pools">Pools</TextLink>
         </LinkGroup>
-        <LinkGroup>
+        {/* <LinkGroup>
           <LinkGroupTitle>Protocol</LinkGroupTitle>
           <ExternalTextLink href="https://monocerus.world/community">Community</ExternalTextLink>
           <ExternalTextLink href="https://monocerus.world/governance">Governance</ExternalTextLink>
@@ -195,7 +195,7 @@ export const AboutFooter = () => {
           >
             <ExternalTextLink href="https://monocerus.world/hc/en-us">Help Center</ExternalTextLink>
           </TraceEvent>
-        </LinkGroup>
+        </LinkGroup> */}
       </FooterLinks>
 
       <LogoSectionBottom>
