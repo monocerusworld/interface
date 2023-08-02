@@ -393,9 +393,11 @@ export default function Landing() {
                 name={SharedEventName.ELEMENT_CLICKED}
                 element={InterfaceElementName.CONTINUE_BUTTON}
               >
-                <ButtonCTA as={Link} to="#">
+                <a href="https://monocerus.world/rpg/">
+                {/* <ButtonCTA as={Link}> */}
                   <ButtonCTAText>Monocerus Mobile RPG</ButtonCTAText>
-                </ButtonCTA>
+                {/* </ButtonCTA> */}
+                </a>
               </TraceEvent>
             </ActionsContainer>
             <LearnMoreContainer

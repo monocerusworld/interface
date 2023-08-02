@@ -3,8 +3,7 @@ import { BrowserEvent, InterfaceElementName, SharedEventName } from '@uniswap/an
 import styled from 'styled-components/macro'
 import { BREAKPOINTS, ExternalLink, StyledRouterLink } from 'theme'
 import { useIsDarkMode } from 'theme/components/ThemeToggle'
-
-import { DiscordIcon, GithubIcon, TwitterIcon } from './Icons'
+import { DiscordIcon, GitbookIcon, GithubIcon, TelegramIcon, TwitterIcon } from './Icons'
 
 
 const Footer = styled.div`
@@ -122,13 +121,20 @@ const LogoSectionContent = () => {
           name={SharedEventName.ELEMENT_CLICKED}
           element={InterfaceElementName.TWITTER_LINK}
         >
-          <SocialLink href="https://twitter.com/monocerus_world" target="_blank" rel="noopener noreferrer">
+          <SocialLink href="https://twitter.com/monocerusworld" target="_blank" rel="noopener noreferrer">
             <TwitterIcon size={32} />
           </SocialLink>
         </TraceEvent>
         <SocialLink href="https://github.com/monocerusworld" target="_blank" rel="noopener noreferrer">
           <GithubIcon size={32} />
         </SocialLink>
+        <SocialLink href="https://monocerus-world.gitbook.io/monocerus/" target="_blank" rel="noopener noreferrer">
+          <GitbookIcon size={32} />
+        </SocialLink>
+        <SocialLink href="https://t.me/monocerusworld" target="_blank" rel="noopener noreferrer">
+          <TelegramIcon size={32} />
+        </SocialLink>
+        
       </SocialLinks>
       <Copyright>© {new Date().getFullYear()} Monocerus</Copyright>
     </>
@@ -146,7 +152,7 @@ export const AboutFooter = () => {
         <LinkGroup>
           <LinkGroupTitle>App</LinkGroupTitle>
           <TextLink to="/swap">Swap</TextLink>
-          <TextLink to="/tokens">Tokens</TextLink>
+          {/* <TextLink to="/tokens">Tokens</TextLink> */}
           {/* <TextLink to="/nfts">NFTs</TextLink> */}
           <TextLink to="/pools">Pools</TextLink>
         </LinkGroup>
