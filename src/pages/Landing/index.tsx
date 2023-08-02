@@ -307,6 +307,10 @@ const Link = styled(NativeLink)`
   ${LinkCss}
 `;
 
+const LinkRPG = styled.a`
+  ${LinkCss}
+`
+
 const WidgetLandingLink = styled(NativeLink)`
   ${LinkCss}
   ${SwapCss}
@@ -393,11 +397,9 @@ export default function Landing() {
                 name={SharedEventName.ELEMENT_CLICKED}
                 element={InterfaceElementName.CONTINUE_BUTTON}
               >
-                <a href="https://monocerus.world/rpg/">
-                {/* <ButtonCTA as={Link}> */}
+                <ButtonCTA as={LinkRPG} href="https://monocerus.world/rpg/">
                   <ButtonCTAText>Monocerus Mobile RPG</ButtonCTAText>
-                {/* </ButtonCTA> */}
-                </a>
+                </ButtonCTA>
               </TraceEvent>
             </ActionsContainer>
             <LearnMoreContainer
