@@ -839,7 +839,7 @@ msgid "Explore NFTs"
 msgstr ""
 
 #: src/pages/Pool/CTACards.tsx
-msgid "Explore Monocerus Analytics."
+msgid "Explore Monocerus on DefiLlama."
 msgstr "探索 Monocerus 分析。"
 
 #: src/components/Tokens/TokenDetails/InvalidTokenDetails.tsx

@@ -551,12 +551,12 @@ export const DAI_AVALANCHE = new Token(
   'Dai Stablecoin'
 )
 
-export const WBTC_AVALANCHE = new Token(
+export const CERUS = new Token(
   SupportedChainId.AVALANCHE,
-  '0x50b7545627a5162F82A992c33b87aDc75187B218',
-  8,
-  'WBTC',
-  'Wrapped BTC'
+  '0x6F0167Dca1fAB2AaBe20cf56B7a7E1FdB47AC388',
+  18,
+  'CERUS',
+  'Monocerus'
 )
 
 export const UNI: { [chainId: number]: Token } = {

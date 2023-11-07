@@ -377,7 +377,7 @@ export default function Landing() {
               {shouldDisableNFTRoutes ? (
                 <Trans>Trade crypto with confidence</Trans>
               ) : (
-                <Trans>Monocerus World</Trans>
+                <Trans>Monocerus Swap</Trans>
               )}
             </TitleText>
             <SubTextContainer>
@@ -385,9 +385,8 @@ export default function Landing() {
                 {shouldDisableNFTRoutes ? (
                   <Trans>Buy, sell, and explore tokens</Trans>
                 ) : (
-                  <Trans><b>The World of High-yield GameFi with Dynamic NFT</b>
-                  <p>Monocerus harness the advantage of Web 3.0 technology and orchestrates it to present a High-yield DeFi Application in
-                  an exciting way through Mobile RPG and Dynamic NFTs</p></Trans>
+                  <Trans><b>Concentrated Liquidity Market Maker (CLMM) Swap</b>
+                  <p>Monocerus Swap is an Uniswap V3 Fork that can give up to 20,000x Efficiency for your Pooled Capital. Get more revenue from gamification and exciting Experience through Monocerus MMORPG! </p></Trans>
                 )}
               </SubText>
             </SubTextContainer>
@@ -397,7 +396,7 @@ export default function Landing() {
                 name={SharedEventName.ELEMENT_CLICKED}
                 element={InterfaceElementName.CONTINUE_BUTTON}
               >
-                <ButtonCTA as={LinkRPG} target="_blank" href="https://monocerus.world/rpg/">
+                <ButtonCTA as={LinkRPG} target="_blank" href="https://monocerus.world">
                   <ButtonCTAText>Monocerus Mobile RPG</ButtonCTAText>
                 </ButtonCTA>
               </TraceEvent>

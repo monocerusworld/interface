@@ -6,3 +6,5 @@
 /src/components/About/constants.tsx
 /src/components/About/AboutFooter.tsx
 /src/components/About/Icons.tsx
+/src/components/PositionListItem/index.tsx
+/src/constants/routing.ts

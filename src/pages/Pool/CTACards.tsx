@@ -79,13 +79,13 @@ export default function CTACards() {
           </ThemedText.DeprecatedBody>
         </ResponsiveColumn>
       </CTA>
-      <CTA data-testid="cta-infolink" href={infoLink + 'pools'}>
+      <CTA data-testid="cta-infolink" href='https://defillama.com/protocol/monocerus?denomination=USD'>
         <ResponsiveColumn>
           <HeaderText style={{ alignSelf: 'flex-start' }}>
-            <Trans>Top pools</Trans> ↗
+            <Trans>Total Value Locked (TVL)</Trans> ↗
           </HeaderText>
           <ThemedText.DeprecatedBody fontWeight={400} style={{ alignSelf: 'flex-start' }}>
-            <Trans>Explore Monocerus Analytics.</Trans>
+            <Trans>Explore Monocerus on DefiLlama.</Trans>
           </ThemedText.DeprecatedBody>
         </ResponsiveColumn>
       </CTA>
