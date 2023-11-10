@@ -8,3 +8,6 @@
 /src/components/About/Icons.tsx
 /src/components/PositionListItem/index.tsx
 /src/constants/routing.ts
+*.ts
+*.tsx
+*
