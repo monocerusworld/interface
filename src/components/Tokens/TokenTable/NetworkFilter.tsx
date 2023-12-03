@@ -117,12 +117,8 @@ export default function NetworkFilter() {
   const currentChainName = validateUrlChainParam(chainName)
 
   const chainInfo = getChainInfo(CHAIN_NAME_TO_CHAIN_ID[currentChainName])
-  const BNBChainInfo = getChainInfo(CHAIN_NAME_TO_CHAIN_ID.BNB)
-  const FANTOMChainInfo = getChainInfo(CHAIN_NAME_TO_CHAIN_ID.FANTOM)
-  const GNOSISChainInfo = getChainInfo(CHAIN_NAME_TO_CHAIN_ID.GNOSIS)
-  const KLAYTNChainInfo = getChainInfo(CHAIN_NAME_TO_CHAIN_ID.KLAYTN)
-  const AVALANCHEChainInfo = getChainInfo(CHAIN_NAME_TO_CHAIN_ID.AVALANCHE)
-  const MOONBEAMChainInfo = getChainInfo(CHAIN_NAME_TO_CHAIN_ID.MOONBEAM)
+  const MANTAChainInfo = getChainInfo(CHAIN_NAME_TO_CHAIN_ID.MANTA)
+  const MANTA_TESTNETChainInfo = getChainInfo(CHAIN_NAME_TO_CHAIN_ID.MANTA_TESTNET)
 
   return (
     <StyledMenu ref={node}>
@@ -171,45 +167,17 @@ export default function NetworkFilter() {
               </InternalLinkMenuItem>
             )
           })}
-          <InternalLinkMenuItem data-testid="tokens-network-filter-option-bnb-chain" disabled>
+          <InternalLinkMenuItem data-testid="tokens-network-filter-option-manta-chain" disabled>
             <NetworkLabel>
-              <Logo src={BNBChainInfo.logoUrl} />
-              {BNBChainInfo.label}
+              <Logo src={MANTAChainInfo.logoUrl} />
+              {MANTAChainInfo.label}
             </NetworkLabel>
             <Tag>Coming soon</Tag>
           </InternalLinkMenuItem>
-          <InternalLinkMenuItem data-testid="tokens-network-filter-option-fantom-chain" disabled>
+          <InternalLinkMenuItem data-testid="tokens-network-filter-option-manta-testnet-chain" disabled>
             <NetworkLabel>
-              <Logo src={FANTOMChainInfo.logoUrl} />
-              {FANTOMChainInfo.label}
-            </NetworkLabel>
-            <Tag>Coming soon</Tag>
-          </InternalLinkMenuItem>
-          <InternalLinkMenuItem data-testid="tokens-network-filter-option-gnosis-chain" disabled>
-            <NetworkLabel>
-              <Logo src={GNOSISChainInfo.logoUrl} />
-              {GNOSISChainInfo.label}
-            </NetworkLabel>
-            <Tag>Coming soon</Tag>
-          </InternalLinkMenuItem>
-          <InternalLinkMenuItem data-testid="tokens-network-filter-option-avalanche-chain" disabled>
-            <NetworkLabel>
-              <Logo src={AVALANCHEChainInfo.logoUrl} />
-              {AVALANCHEChainInfo.label}
-            </NetworkLabel>
-            <Tag>Coming soon</Tag>
-          </InternalLinkMenuItem>
-          <InternalLinkMenuItem data-testid="tokens-network-filter-option-moonbeam-chain" disabled>
-            <NetworkLabel>
-              <Logo src={MOONBEAMChainInfo.logoUrl} />
-              {MOONBEAMChainInfo.label}
-            </NetworkLabel>
-            <Tag>Coming soon</Tag>
-          </InternalLinkMenuItem>
-          <InternalLinkMenuItem data-testid="tokens-network-filter-option-klaytn-chain" disabled>
-            <NetworkLabel>
-              <Logo src={KLAYTNChainInfo.logoUrl} />
-              {KLAYTNChainInfo.label}
+              <Logo src={MANTA_TESTNETChainInfo.logoUrl} />
+              {MANTA_TESTNETChainInfo.label}
             </NetworkLabel>
             <Tag>Coming soon</Tag>
           </InternalLinkMenuItem>

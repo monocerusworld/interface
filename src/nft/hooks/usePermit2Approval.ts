@@ -1,4 +1,4 @@
-import { UNIVERSAL_ROUTER_ADDRESS } from '@tartz-one/universal-router-sdk'
+import { UNIVERSAL_ROUTER_ADDRESS } from '@monocerus/universal-router-sdk'
 import { sendAnalyticsEvent } from '@uniswap/analytics'
 import { InterfaceEventName } from '@uniswap/analytics-events'
 import { CurrencyAmount, Token } from '@uniswap/sdk-core'

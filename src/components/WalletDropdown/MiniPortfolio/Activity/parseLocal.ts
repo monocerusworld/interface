@@ -1,5 +1,5 @@
 import { t } from '@lingui/macro'
-import { nativeOnChain } from '@tartz-one/smart-order-router'
+import { nativeOnChain } from '@monocerus/smart-order-router'
 import { formatCurrencyAmount } from '@uniswap/conedison/format'
 import { Currency, CurrencyAmount, TradeType } from '@uniswap/sdk-core'
 import { useWeb3React } from '@web3-react/core'

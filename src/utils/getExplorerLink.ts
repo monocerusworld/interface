@@ -2,19 +2,8 @@ import { SupportedChainId } from 'constants/chains'
 
 const BLOCK_EXPLORER_PREFIXES: { [chainId: number]: string } = {
   [SupportedChainId.MAINNET]: 'https://etherscan.io',
-  [SupportedChainId.GOERLI]: 'https://goerli.etherscan.io',
-  [SupportedChainId.OPTIMISM]: 'https://optimistic.etherscan.io',
-  [SupportedChainId.OPTIMISM_GOERLI]: 'https://goerli-optimism.etherscan.io',
-  [SupportedChainId.POLYGON]: 'https://polygonscan.com',
-  [SupportedChainId.POLYGON_MUMBAI]: 'https://mumbai.polygonscan.com',
-  [SupportedChainId.CELO]: 'https://celoscan.io',
-  [SupportedChainId.CELO_ALFAJORES]: 'https://alfajores-blockscout.celo-testnet.org',
-  [SupportedChainId.BNB]: 'https://bscscan.com',
-  [SupportedChainId.FANTOM]: 'https://ftmscan.com',
-  [SupportedChainId.GNOSIS]: 'https://gnosisscan.io',
-  [SupportedChainId.KLAYTN]: 'https://scope.klaytn.com',
-  [SupportedChainId.AVALANCHE]: 'https://snowtrace.io',
-  [SupportedChainId.MOONBEAM]: 'https://moonscan.io',
+  [SupportedChainId.MANTA]: 'https://pacific-explorer.manta.network/',
+  [SupportedChainId.MANTA_TESTNET]: 'https://pacific-explorer.testnet.manta.network/',
 }
 
 export enum ExplorerDataType {
@@ -31,31 +20,31 @@ export enum ExplorerDataType {
  * @param type the type of the data
  */
 export function getExplorerLink(chainId: number, data: string, type: ExplorerDataType): string {
-  if (chainId === SupportedChainId.ARBITRUM_ONE) {
+  if (chainId === SupportedChainId.MANTA) {
     switch (type) {
       case ExplorerDataType.TRANSACTION:
-        return `https://arbiscan.io/tx/${data}`
+        return `https://pacific-explorer.manta.network/tx/${data}`
       case ExplorerDataType.ADDRESS:
       case ExplorerDataType.TOKEN:
-        return `https://arbiscan.io/address/${data}`
+        return `https://pacific-explorer.manta.network/address/${data}`
       case ExplorerDataType.BLOCK:
-        return `https://arbiscan.io/block/${data}`
+        return `https://pacific-explorer.manta.network/block/${data}`
       default:
-        return `https://arbiscan.io/`
+        return `https://pacific-explorer.manta.network`
     }
   }
 
-  if (chainId === SupportedChainId.ARBITRUM_GOERLI) {
+  if (chainId === SupportedChainId.MANTA_TESTNET) {
     switch (type) {
       case ExplorerDataType.TRANSACTION:
-        return `https://goerli.arbiscan.io/tx/${data}`
+        return `https://pacific-explorer.testnet.manta.network/tx/${data}`
       case ExplorerDataType.ADDRESS:
       case ExplorerDataType.TOKEN:
-        return `https://goerli.arbiscan.io/address/${data}`
+        return `https://pacific-explorer.testnet.manta.network/address/${data}`
       case ExplorerDataType.BLOCK:
-        return `https://goerli.arbiscan.io/block/${data}`
+        return `https://pacific-explorer.testnet.manta.network/block/${data}`
       default:
-        return `https://goerli.arbiscan.io/`
+        return `https://pacific-explorer.testnet.manta.network/`
     }
   }
 

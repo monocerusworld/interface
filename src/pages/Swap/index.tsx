@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { UNIVERSAL_ROUTER_ADDRESS } from '@tartz-one/universal-router-sdk'
+import { UNIVERSAL_ROUTER_ADDRESS } from '@monocerus/universal-router-sdk'
 import { sendAnalyticsEvent, Trace, TraceEvent } from '@uniswap/analytics'
 import {
   BrowserEvent,

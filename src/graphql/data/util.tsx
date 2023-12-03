@@ -58,21 +58,8 @@ export function isPricePoint(p: PricePoint | null): p is PricePoint {
 
 export const CHAIN_ID_TO_BACKEND_NAME: { [key: number]: Chain } = {
   [SupportedChainId.MAINNET]: Chain.Ethereum,
-  [SupportedChainId.GOERLI]: Chain.EthereumGoerli,
-  [SupportedChainId.POLYGON]: Chain.Polygon,
-  [SupportedChainId.POLYGON_MUMBAI]: Chain.Polygon,
-  [SupportedChainId.CELO]: Chain.Celo,
-  [SupportedChainId.CELO_ALFAJORES]: Chain.Celo,
-  [SupportedChainId.ARBITRUM_ONE]: Chain.Arbitrum,
-  [SupportedChainId.ARBITRUM_GOERLI]: Chain.Arbitrum,
-  [SupportedChainId.OPTIMISM]: Chain.Optimism,
-  [SupportedChainId.OPTIMISM_GOERLI]: Chain.Optimism,
-  [SupportedChainId.BNB]: Chain.Bnb,
-  [SupportedChainId.FANTOM]: Chain.Fantom,
-  [SupportedChainId.GNOSIS]: Chain.Gnosis,
-  [SupportedChainId.KLAYTN]: Chain.Klaytn,
-  [SupportedChainId.AVALANCHE]: Chain.Avalanche,
-  [SupportedChainId.MOONBEAM]: Chain.Moonbeam,
+  [SupportedChainId.MANTA]: Chain.Manta,
+  [SupportedChainId.MANTA_TESTNET]: Chain.MantaTestnet,
 }
 
 export function chainIdToBackendName(chainId: number | undefined) {
@@ -83,10 +70,9 @@ export function chainIdToBackendName(chainId: number | undefined) {
 
 const GQL_CHAINS: number[] = [
   SupportedChainId.MAINNET,
-  SupportedChainId.OPTIMISM,
-  SupportedChainId.POLYGON,
-  SupportedChainId.ARBITRUM_ONE,
-  SupportedChainId.CELO,
+  SupportedChainId.MANTA,
+  SupportedChainId.MANTA_TESTNET,
+
 ]
 
 export function isGqlSupportedChain(chainId: number | undefined): chainId is SupportedChainId {
@@ -111,17 +97,8 @@ export function gqlToCurrency(token: {
 }
 
 const URL_CHAIN_PARAM_TO_BACKEND: { [key: string]: Chain } = {
-  ethereum: Chain.Ethereum,
-  polygon: Chain.Polygon,
-  celo: Chain.Celo,
-  arbitrum: Chain.Arbitrum,
-  optimism: Chain.Optimism,
-  bnb: Chain.Bnb,
-  fantom: Chain.Fantom,
-  gnosis: Chain.Gnosis,
-  klaytn: Chain.Klaytn,
-  avalanche: Chain.Avalanche,
-  moonbeam: Chain.Moonbeam,
+  manta: Chain.Manta,
+  manta-testnet: Chain.MantaTestnet,
 }
 
 export function validateUrlChainParam(chainName: string | undefined) {
@@ -131,18 +108,8 @@ export function validateUrlChainParam(chainName: string | undefined) {
 // TODO(cartcrom): refactor into safer lookup & replace usage
 export const CHAIN_NAME_TO_CHAIN_ID: { [key in Chain]: SupportedChainId } = {
   [Chain.Ethereum]: SupportedChainId.MAINNET,
-  [Chain.EthereumGoerli]: SupportedChainId.GOERLI,
-  [Chain.Polygon]: SupportedChainId.POLYGON,
-  [Chain.Celo]: SupportedChainId.CELO,
-  [Chain.Optimism]: SupportedChainId.OPTIMISM,
-  [Chain.Arbitrum]: SupportedChainId.ARBITRUM_ONE,
-  [Chain.UnknownChain]: SupportedChainId.MAINNET,
-  [Chain.Bnb]: SupportedChainId.BNB,
-  [Chain.Fantom]: SupportedChainId.FANTOM,
-  [Chain.Gnosis]: SupportedChainId.GNOSIS,
-  [Chain.Klaytn]: SupportedChainId.KLAYTN,
-  [Chain.Avalanche]: SupportedChainId.AVALANCHE,
-  [Chain.Moonbeam]: SupportedChainId.MOONBEAM,
+  [Chain.Manta]: SupportedChainId.MANTA,
+  [Chain.MantaTestnet]: SupportedChainId.MANTA_TESTNET,
 }
 
 export function fromGraphQLChain(chain: Chain): SupportedChainId {

@@ -1,4 +1,4 @@
-import { ChainId } from '@tartz-one/smart-order-router'
+import { ChainId } from '@monocerus/smart-order-router'
 import { sendAnalyticsEvent, useTrace } from '@uniswap/analytics'
 import { InterfacePageName, NFTEventName } from '@uniswap/analytics-events'
 import { MouseoverTooltip } from 'components/Tooltip'

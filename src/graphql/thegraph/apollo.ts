@@ -6,25 +6,9 @@ import store from '../../state/index'
 const CHAIN_SUBGRAPH_URL: Record<number, string> = {
   [SupportedChainId.MAINNET]: 'https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3',
 
-  [SupportedChainId.ARBITRUM_ONE]: 'https://api.thegraph.com/subgraphs/name/ianlapham/arbitrum-minimal',
+  [SupportedChainId.MANTA]: 'https://api.goldsky.com/api/public/project_clpm9wvhralny01szb1oa4pue/subgraphs/monocerus/1.0.0/gn',
 
-  [SupportedChainId.OPTIMISM]: 'https://api.thegraph.com/subgraphs/name/ianlapham/optimism-post-regenesis',
-
-  [SupportedChainId.POLYGON]: 'https://api.thegraph.com/subgraphs/name/ianlapham/uniswap-v3-polygon',
-
-  [SupportedChainId.CELO]: 'https://api.thegraph.com/subgraphs/name/jesse-sawa/uniswap-celo',
-
-  [SupportedChainId.BNB]: 'https://api.thegraph.com/subgraphs/name/ianlapham/uniswap-v3-bsc',
-
-  [SupportedChainId.FANTOM]: 'https://api.thegraph.com/subgraphs/name/tartz-one/v3-fantom',
-
-  [SupportedChainId.GNOSIS]: 'https://api.thegraph.com/subgraphs/name/pullstacker/v3-gnosis',
-
-  [SupportedChainId.KLAYTN]: 'https://api.thegraph.com/subgraphs/name/pullstacker/v3-klaytn',
-
-  [SupportedChainId.AVALANCHE]: 'https://api.thegraph.com/subgraphs/name/tartz-one/v3-avalanche',
-
-  [SupportedChainId.MOONBEAM]: 'https://api.thegraph.com/subgraphs/name/pullstacker/v3-moonbeam',
+  [SupportedChainId.MANTA_TESTNET]: 'https://api.goldsky.com/api/public/project_clpm9wvhralny01szb1oa4pue/subgraphs/monocerus/1.0.0/gn',
 }
 
 const httpLink = new HttpLink({ uri: CHAIN_SUBGRAPH_URL[SupportedChainId.MAINNET] })

@@ -8,45 +8,14 @@
  */
 export enum SupportedChainId {
   MAINNET = 1,
-  GOERLI = 5,
-
-  ARBITRUM_ONE = 42161,
-  ARBITRUM_GOERLI = 421613,
-
-  OPTIMISM = 10,
-  OPTIMISM_GOERLI = 420,
-
-  POLYGON = 137,
-  POLYGON_MUMBAI = 80001,
-
-  CELO = 42220,
-  CELO_ALFAJORES = 44787,
-
-  BNB = 56,
-  FANTOM = 250,
-  GNOSIS = 100,
-  KLAYTN = 8217,
-  AVALANCHE = 43114,
-  MOONBEAM = 1284,
+  MANTA = 169,
+  MANTA_TESTNET = 3441005
 }
 
 export const CHAIN_IDS_TO_NAMES = {
   [SupportedChainId.MAINNET]: 'mainnet',
-  [SupportedChainId.GOERLI]: 'goerli',
-  [SupportedChainId.POLYGON]: 'polygon',
-  [SupportedChainId.POLYGON_MUMBAI]: 'polygon_mumbai',
-  [SupportedChainId.CELO]: 'celo',
-  [SupportedChainId.CELO_ALFAJORES]: 'celo_alfajores',
-  [SupportedChainId.ARBITRUM_ONE]: 'arbitrum',
-  [SupportedChainId.ARBITRUM_GOERLI]: 'arbitrum_goerli',
-  [SupportedChainId.OPTIMISM]: 'optimism',
-  [SupportedChainId.OPTIMISM_GOERLI]: 'optimism_goerli',
-  [SupportedChainId.BNB]: 'bnb',
-  [SupportedChainId.FANTOM]: 'fantom',
-  [SupportedChainId.GNOSIS]: 'gnosis',
-  [SupportedChainId.KLAYTN]: 'klaytn',
-  [SupportedChainId.AVALANCHE]: 'avalanche',
-  [SupportedChainId.MOONBEAM]: 'moonbeam',
+  [SupportedChainId.MANTA]: 'manta',
+  [SupportedChainId.MANTA_TESTNET]: 'manta-testnet',
 }
 
 /**
@@ -62,32 +31,16 @@ export function isSupportedChain(chainId: number | null | undefined): chainId is
 
 export const SUPPORTED_GAS_ESTIMATE_CHAIN_IDS = [
   SupportedChainId.MAINNET,
-  SupportedChainId.POLYGON,
-  SupportedChainId.CELO,
-  SupportedChainId.OPTIMISM,
-  SupportedChainId.ARBITRUM_ONE,
-  SupportedChainId.BNB,
-  SupportedChainId.FANTOM,
-  SupportedChainId.GNOSIS,
-  SupportedChainId.KLAYTN,
-  SupportedChainId.AVALANCHE,
-  SupportedChainId.MOONBEAM,
+  SupportedChainId.MANTA,
+  SupportedChainId.MANTA_TESTNET,
 ] as const
 
 /**
  * Unsupported networks for V2 pool behavior.
  */
 export const UNSUPPORTED_V2POOL_CHAIN_IDS = [
-  SupportedChainId.POLYGON,
-  SupportedChainId.OPTIMISM,
-  SupportedChainId.ARBITRUM_ONE,
-  SupportedChainId.BNB,
-  SupportedChainId.FANTOM,
-  SupportedChainId.GNOSIS,
-  SupportedChainId.KLAYTN,
-  SupportedChainId.AVALANCHE,
-  SupportedChainId.MOONBEAM,
-  SupportedChainId.ARBITRUM_GOERLI,
+  SupportedChainId.MANTA,
+  SupportedChainId.MANTA_TESTNET,
 ] as const
 
 // const TESTNET_CHAIN_IDS = [
@@ -104,17 +57,6 @@ export const UNSUPPORTED_V2POOL_CHAIN_IDS = [
  */
 const L1_CHAIN_IDS = [
   SupportedChainId.MAINNET,
-  SupportedChainId.GOERLI,
-  SupportedChainId.POLYGON,
-  SupportedChainId.POLYGON_MUMBAI,
-  SupportedChainId.CELO,
-  SupportedChainId.CELO_ALFAJORES,
-  SupportedChainId.BNB,
-  SupportedChainId.FANTOM,
-  SupportedChainId.GNOSIS,
-  SupportedChainId.KLAYTN,
-  SupportedChainId.AVALANCHE,
-  SupportedChainId.MOONBEAM,
 ] as const
 
 export type SupportedL1ChainId = (typeof L1_CHAIN_IDS)[number]
@@ -124,10 +66,8 @@ export type SupportedL1ChainId = (typeof L1_CHAIN_IDS)[number]
  * The expectation is that all of these networks have immediate transaction confirmation.
  */
 export const L2_CHAIN_IDS = [
-  SupportedChainId.ARBITRUM_ONE,
-  SupportedChainId.ARBITRUM_GOERLI,
-  SupportedChainId.OPTIMISM,
-  SupportedChainId.OPTIMISM_GOERLI,
+  SupportedChainId.MANTA,
+  SupportedChainId.MANTA_TESTNET
 ] as const
 
 export type SupportedL2ChainId = (typeof L2_CHAIN_IDS)[number]

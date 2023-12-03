@@ -1,5 +1,5 @@
 import { skipToken } from '@reduxjs/toolkit/query/react'
-import { IMetric, MetricLoggerUnit, setGlobalMetric } from '@tartz-one/smart-order-router'
+import { IMetric, MetricLoggerUnit, setGlobalMetric } from '@monocerus/smart-order-router'
 import { Currency, CurrencyAmount, TradeType } from '@uniswap/sdk-core'
 import { sendTiming } from 'components/analytics'
 import { AVERAGE_L1_BLOCK_TIME } from 'constants/chainInfo'

@@ -1,4 +1,4 @@
-import { routeAmountsToString, SwapRoute } from '@tartz-one/smart-order-router'
+import { routeAmountsToString, SwapRoute } from '@monocerus/smart-order-router'
 import { Protocol } from '@uniswap/router-sdk'
 import { Currency, CurrencyAmount } from '@uniswap/sdk-core'
 import { Pool } from '@uniswap/v3-sdk'

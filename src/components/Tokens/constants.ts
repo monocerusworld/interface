@@ -9,10 +9,5 @@ export const MOBILE_MEDIA_BREAKPOINT = '420px'
 
 // includes chains that the backend does not current source off-chain metadata for
 export const UNSUPPORTED_METADATA_CHAINS = [
-  SupportedChainId.BNB,
-  SupportedChainId.FANTOM,
-  SupportedChainId.GNOSIS,
-  SupportedChainId.KLAYTN,
-  SupportedChainId.AVALANCHE,
-  SupportedChainId.MOONBEAM,
+
 ]

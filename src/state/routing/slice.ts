@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery, FetchBaseQueryError } from '@reduxjs/toolkit/query/react'
-import { AlphaRouter, ChainId } from '@tartz-one/smart-order-router'
+import { AlphaRouter, ChainId } from '@monocerus/smart-order-router'
 import { Protocol } from '@uniswap/router-sdk'
 import { RPC_PROVIDERS } from 'constants/providers'
 import { getClientSideQuote, toSupportedChainId } from 'lib/hooks/routing/clientSideSmartOrderRouter'

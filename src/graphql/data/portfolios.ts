@@ -4,7 +4,7 @@ gql`
   query PortfolioBalances($ownerAddress: String!) {
     portfolios(
       ownerAddresses: [$ownerAddress]
-      chains: [ETHEREUM, POLYGON, ARBITRUM, OPTIMISM, BNB, FANTOM, GNOSIS, KLAYTN, AVALANCHE, MOONBEAM]
+      chains: [ETHEREUM, MANTA, MANTA_TESTNET]
     ) {
       id
       tokensTotalDenominatedValue {

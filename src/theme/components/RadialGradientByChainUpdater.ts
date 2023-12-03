@@ -138,28 +138,28 @@ export default function RadialGradientByChainUpdater(): null {
         break;
       }
 
-      case SupportedChainId.AVALANCHE: {
+      case SupportedChainId.MANTA: {
         setBackground(backgroundResetStyles);
-        const avalancheLightGradient =
+        const MANTALightGradient =
           "radial-gradient(100% 100% at 50% 0%,rgba(92, 81, 44, 0.2) 0%, rgba(255, 255, 255, 0.16) 50%, rgba(255, 255, 255, 0) 100%), #FFFFFF";
-        const avalancheDarkGradient =
+        const MANTADarkGradient =
           "radial-gradient(100% 100% at 50% 0%,rgba(255, 4, 32, 0.1) 0%, rgba(255, 4, 32, 0.16) 50%, rgba(140, 185, 11, 0) 100%), #0D0E0E";
 
         backgroundRadialGradientElement.style.background = darkMode
-          ? avalancheDarkGradient
-          : avalancheLightGradient;
+          ? MANTADarkGradient
+          : MANTALightGradient;
         break;
       }
 
-      case SupportedChainId.MOONBEAM: {
+      case SupportedChainId.MANTA_TESTNET: {
         setBackground(backgroundResetStyles);
-        const moonbeamLightGradient =
+        const MANTA_TESTNETLightGradient =
           "radial-gradient(100% 100% at 50% 0%, rgba(242 , 186, 8, 0.1) 0%, rgba(238, 182, 6, 0.08) 50%, rgba(140, 185, 11, 0) 100%), #FFFFFF";
-        const moonbeamDarkGradient =
+        const MANTA_TESTNETDarkGradient =
           "radial-gradient(100% 100% at 50% 0%, rgba(169, 132, 17, 0.1) 0%, rgba(128, 100, 14, 0.08) 50%, rgba(140, 185, 11, 0) 100%), #0D0E0E";
         backgroundRadialGradientElement.style.background = darkMode
-          ? moonbeamDarkGradient
-          : moonbeamLightGradient;
+          ? MANTA_TESTNETDarkGradient
+          : MANTA_TESTNETLightGradient;
         break;
       }
 

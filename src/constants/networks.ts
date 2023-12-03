@@ -28,86 +28,13 @@ export const FALLBACK_URLS = {
     'https://rpc.ankr.com/eth',
     'https://eth-mainnet.public.blastapi.io',
   ],
-  [SupportedChainId.GOERLI]: [
+  [SupportedChainId.MANTA]: [
     // "Safe" URLs
-    'https://rpc.goerli.mudit.blog/',
-    // "Fallback" URLs
-    'https://rpc.ankr.com/eth_goerli',
+    'https://pacific-rpc.manta.network/http',
   ],
-  [SupportedChainId.POLYGON]: [
+  [SupportedChainId.MANTA_TESTNET]: [
     // "Safe" URLs
-    'https://polygon-rpc.com/',
-    'https://rpc-mainnet.matic.network',
-    'https://matic-mainnet.chainstacklabs.com',
-    'https://rpc-mainnet.maticvigil.com',
-    'https://rpc-mainnet.matic.quiknode.pro',
-    'https://matic-mainnet-full-rpc.bwarelabs.com',
-  ],
-  [SupportedChainId.POLYGON_MUMBAI]: [
-    // "Safe" URLs
-    'https://matic-mumbai.chainstacklabs.com',
-    'https://rpc-mumbai.maticvigil.com',
-    'https://matic-testnet-archive-rpc.bwarelabs.com',
-  ],
-  [SupportedChainId.ARBITRUM_ONE]: [
-    // "Safe" URLs
-    'https://arb1.arbitrum.io/rpc',
-    // "Fallback" URLs
-    'https://arbitrum.public-rpc.com',
-  ],
-  [SupportedChainId.ARBITRUM_GOERLI]: [
-    // "Safe" URLs
-    'https://goerli-rollup.arbitrum.io/rpc',
-  ],
-  [SupportedChainId.OPTIMISM]: [
-    // "Safe" URLs
-    'https://mainnet.optimism.io/',
-    // "Fallback" URLs
-    'https://rpc.ankr.com/optimism',
-  ],
-  [SupportedChainId.OPTIMISM_GOERLI]: [
-    // "Safe" URLs
-    'https://goerli.optimism.io',
-  ],
-  [SupportedChainId.CELO]: [
-    // "Safe" URLs
-    `https://forno.celo.org`,
-  ],
-  [SupportedChainId.FANTOM]: [
-    // "Safe" URLs
-    'https://rpc.ftm.tools',
-  ],
-  [SupportedChainId.GNOSIS]: [
-    // "Safe" URLs
-    'https://rpc.gnosischain.com',
-  ],
-  [SupportedChainId.KLAYTN]: [
-    // "Safe" URLs
-    'https://klaytn.blockpi.network/v1/rpc/public',
-  ],
-  [SupportedChainId.AVALANCHE]: [
-    // "Safe" URLs
-    'https://api.avax.network/ext/bc/C/rpc',
-  ],
-  [SupportedChainId.MOONBEAM]: [
-    // "Safe" URLs
-    'https://rpc.api.moonbeam.network',
-  ],
-  [SupportedChainId.CELO_ALFAJORES]: [
-    // "Safe" URLs
-    `https://celo-alfajores.infura.io/v3/${INFURA_KEY}`,
-  ],
-  [SupportedChainId.BNB]: [
-    // "Safe" URLs
-    'https://endpoints.omniatech.io/v1/bsc/mainnet/public',
-    'https://bsc-mainnet.gateway.pokt.network/v1/lb/6136201a7bad1500343e248d',
-    'https://1rpc.io/bnb',
-    'https://bsc-dataseed3.binance.org',
-    'https://bsc-dataseed2.defibit.io',
-    'https://bsc-dataseed1.ninicoin.io',
-    'https://binance.nodereal.io',
-    'https://bsc-dataseed4.defibit.io',
-    'https://rpc.ankr.com/bsc',
+    'https://pacific-rpc.testnet.manta.network/http',
   ],
 }
 
@@ -120,37 +47,6 @@ export const RPC_URLS = {
     `https://mainnet.infura.io/v3/${INFURA_KEY}`,
     ...FALLBACK_URLS[SupportedChainId.MAINNET],
   ],
-  [SupportedChainId.GOERLI]: [`https://goerli.infura.io/v3/${INFURA_KEY}`, ...FALLBACK_URLS[SupportedChainId.GOERLI]],
-  [SupportedChainId.OPTIMISM]: [
-    `https://optimism-mainnet.infura.io/v3/${INFURA_KEY}`,
-    ...FALLBACK_URLS[SupportedChainId.OPTIMISM],
-  ],
-  [SupportedChainId.OPTIMISM_GOERLI]: [
-    `https://optimism-goerli.infura.io/v3/${INFURA_KEY}`,
-    ...FALLBACK_URLS[SupportedChainId.OPTIMISM_GOERLI],
-  ],
-  [SupportedChainId.ARBITRUM_ONE]: [
-    `https://arbitrum-mainnet.infura.io/v3/${INFURA_KEY}`,
-    ...FALLBACK_URLS[SupportedChainId.ARBITRUM_ONE],
-  ],
-  [SupportedChainId.ARBITRUM_GOERLI]: [
-    `https://arbitrum-goerli.infura.io/v3/${INFURA_KEY}`,
-    ...FALLBACK_URLS[SupportedChainId.ARBITRUM_GOERLI],
-  ],
-  [SupportedChainId.POLYGON]: [
-    `https://polygon-mainnet.infura.io/v3/${INFURA_KEY}`,
-    ...FALLBACK_URLS[SupportedChainId.POLYGON],
-  ],
-  [SupportedChainId.POLYGON_MUMBAI]: [
-    `https://polygon-mumbai.infura.io/v3/${INFURA_KEY}`,
-    ...FALLBACK_URLS[SupportedChainId.POLYGON_MUMBAI],
-  ],
-  [SupportedChainId.CELO]: FALLBACK_URLS[SupportedChainId.CELO],
-  [SupportedChainId.CELO_ALFAJORES]: FALLBACK_URLS[SupportedChainId.CELO_ALFAJORES],
-  [SupportedChainId.BNB]: [QUICKNODE_RPC_URL, ...FALLBACK_URLS[SupportedChainId.BNB]],
-  [SupportedChainId.FANTOM]: [process.env.ANKR_FANTOM_RPC_URL, ...FALLBACK_URLS[SupportedChainId.FANTOM]],
-  [SupportedChainId.GNOSIS]: [process.env.ANKR_GNOSIS_RPC_URL, ...FALLBACK_URLS[SupportedChainId.GNOSIS]],
-  [SupportedChainId.KLAYTN]: [process.env.ANKR_KLAYTN_RPC_URL, ...FALLBACK_URLS[SupportedChainId.KLAYTN]],
-  [SupportedChainId.AVALANCHE]: [process.env.ANKR_AVALANCHE_RPC_URL, ...FALLBACK_URLS[SupportedChainId.AVALANCHE]],
-  [SupportedChainId.MOONBEAM]: [process.env.ANKR_MOONBEAM_RPC_URL, ...FALLBACK_URLS[SupportedChainId.MOONBEAM]],
+  [SupportedChainId.MANTA]: [process.env.ANKR_MANTA_RPC_URL, ...FALLBACK_URLS[SupportedChainId.MANTA]],
+  [SupportedChainId.MANTA_TESTNET]: [process.env.ANKR_MANTA_TESTNET_RPC_URL, ...FALLBACK_URLS[SupportedChainId.MANTA_TESTNET]],
 }

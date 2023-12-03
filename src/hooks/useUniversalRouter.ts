@@ -1,7 +1,7 @@
 import { TransactionResponse } from '@ethersproject/abstract-provider'
 import { BigNumber } from '@ethersproject/bignumber'
 import { t } from '@lingui/macro'
-import { SwapRouter, UNIVERSAL_ROUTER_ADDRESS } from '@tartz-one/universal-router-sdk'
+import { SwapRouter, UNIVERSAL_ROUTER_ADDRESS } from '@monocerus/universal-router-sdk'
 import { sendAnalyticsEvent } from '@uniswap/analytics'
 import { SwapEventName } from '@uniswap/analytics-events'
 import { Trade } from '@uniswap/router-sdk'

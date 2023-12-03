@@ -114,19 +114,9 @@ string**" will throw GraphQL validation errors.
 scalar AWSJSON
 
 enum Chain {
-  ARBITRUM
   ETHEREUM
-  ETHEREUM_GOERLI
-  OPTIMISM
-  POLYGON
-  CELO
-  BNB
-  UNKNOWN_CHAIN
-  FANTOM
-  GNOSIS
-  KLAYTN
-  AVALANCHE
-  MOONBEAM
+  MANTA
+  MANTA_TESTNET
 }
 
 enum CollectionSortableField {
