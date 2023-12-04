@@ -39,7 +39,6 @@ const BG_COLORS_BY_DARK_MODE_AND_CHAIN_ID: {
   [darkMode in "dark" | "light"]: { [chainId in NetworkAlertChains]: string };
 } = {
   dark: {
-      "radial-gradient(182.71% 150.59% at 2.81% 7.69%, rgba(240, 185, 11, 0.16) 0%, rgba(255, 168, 0, 0.16) 100%)",
     [SupportedChainId.MANTA]:
       "radial-gradient(182.71% 150.59% at 2.81% 7.69%, rgba(240, 185, 11, 0.16) 0%, rgba(255, 168, 0, 0.16) 100%)",
     [SupportedChainId.MANTA_TESTNET]:
