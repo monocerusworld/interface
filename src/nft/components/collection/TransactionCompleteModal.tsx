@@ -23,7 +23,7 @@ import {
 } from 'nft/utils'
 import { formatAssetEventProperties } from 'nft/utils/formatEventProperties'
 import { useEffect, useMemo, useRef, useState } from 'react'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { useIsDarkMode } from 'theme/components/ThemeToggle'
 import { ExplorerDataType, getExplorerLink } from 'utils/getExplorerLink'
 

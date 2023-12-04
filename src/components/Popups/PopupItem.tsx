@@ -1,6 +1,6 @@
 import { useCallback, useEffect } from 'react'
 import { X } from 'react-feather'
-import styled, { useTheme } from 'styled-components/macro'
+import styled, { useTheme } from 'styled-components'
 
 import { useRemovePopup } from '../../state/application/hooks'
 import { PopupContent } from '../../state/application/reducer'

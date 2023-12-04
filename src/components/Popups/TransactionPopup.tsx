@@ -7,7 +7,7 @@ import useENSName from 'hooks/useENSName'
 import { useCombinedActiveList } from 'state/lists/hooks'
 import { useTransaction } from 'state/transactions/hooks'
 import { TransactionDetails } from 'state/transactions/types'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { EllipsisStyle, ThemedText } from 'theme'
 import { ExplorerDataType, getExplorerLink } from 'utils/getExplorerLink'
 

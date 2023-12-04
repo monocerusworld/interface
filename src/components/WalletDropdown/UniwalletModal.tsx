@@ -11,7 +11,7 @@ import { QRCodeSVG } from 'qrcode.react'
 import { useCallback, useEffect, useState } from 'react'
 import { useModalIsOpen, useToggleUniwalletModal } from 'state/application/hooks'
 import { ApplicationModal } from 'state/application/reducer'
-import styled, { useTheme } from 'styled-components/macro'
+import styled, { useTheme } from 'styled-components'
 import { CloseIcon, ThemedText } from 'theme'
 
 import uniPng from '../../assets/images/uniwallet.svg'

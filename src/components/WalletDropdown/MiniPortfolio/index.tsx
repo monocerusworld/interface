@@ -8,7 +8,7 @@ import { useIsNftPage } from 'hooks/useIsNftPage'
 import { useAtomValue } from 'jotai/utils'
 import { useState } from 'react'
 import { shouldDisableNFTRoutesAtom } from 'state/application/atoms'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { ThemedText } from 'theme'
 
 import { ActivityTab } from './Activity/ActivityTab'

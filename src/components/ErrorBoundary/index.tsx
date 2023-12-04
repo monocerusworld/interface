@@ -8,7 +8,7 @@ import { useIsMobile } from 'nft/hooks'
 import React, { PropsWithChildren, useState } from 'react'
 import { Copy } from 'react-feather'
 import { useLocation } from 'react-router-dom'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { isSentryEnabled } from 'utils/env'
 
 import { CopyToClipboard, ExternalLink, ThemedText } from '../../theme'

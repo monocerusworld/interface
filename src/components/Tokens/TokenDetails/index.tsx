@@ -37,7 +37,7 @@ import { getTokenAddress } from 'lib/utils/analytics'
 import { useCallback, useMemo, useState, useTransition } from 'react'
 import { ArrowLeft } from 'react-feather'
 import { useNavigate } from 'react-router-dom'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { isAddress } from 'utils'
 
 import { OnChangeTimePeriod } from './ChartSection'

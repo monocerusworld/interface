@@ -14,7 +14,7 @@ import { Column, Row } from 'nft/components/Flex'
 import { useIsMobile } from 'nft/hooks'
 import { useCallback, useRef, useState } from 'react'
 import { AlertTriangle, ChevronDown, ChevronUp } from 'react-feather'
-import { useTheme } from 'styled-components/macro'
+import { useTheme } from 'styled-components'
 
 import * as styles from './ChainSelector.css'
 import ChainSelectorRow from './ChainSelectorRow'

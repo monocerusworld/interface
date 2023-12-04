@@ -2,7 +2,7 @@ import { useWeb3React } from '@web3-react/core'
 import { Unicon } from 'components/Unicon'
 import { Connection, ConnectionType } from 'connection'
 import useENSAvatar from 'hooks/useENSAvatar'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { flexColumnNoWrap } from 'theme/styles'
 
 import sockImg from '../../assets/svg/socks.svg'

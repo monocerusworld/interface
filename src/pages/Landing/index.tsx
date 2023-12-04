@@ -23,7 +23,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { Link as NativeLink } from "react-router-dom";
 import { shouldDisableNFTRoutesAtom } from "state/application/atoms";
 import { useAppSelector } from "state/hooks";
-import styled, { css } from "styled-components/macro";
+import styled, { css } from "styled-components";
 import { BREAKPOINTS } from "theme";
 import { useIsDarkMode } from "theme/components/ThemeToggle";
 import { Z_INDEX } from "theme/zIndex";

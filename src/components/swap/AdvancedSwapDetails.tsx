@@ -7,7 +7,7 @@ import { SUPPORTED_GAS_ESTIMATE_CHAIN_IDS } from 'constants/chains'
 import useNativeCurrency from 'lib/hooks/useNativeCurrency'
 import { useMemo } from 'react'
 import { InterfaceTrade } from 'state/routing/types'
-import styled, { useTheme } from 'styled-components/macro'
+import styled, { useTheme } from 'styled-components'
 
 import { Separator, ThemedText } from '../../theme'
 import { computeRealizedPriceImpact } from '../../utils/prices'

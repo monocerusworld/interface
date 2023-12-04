@@ -7,7 +7,7 @@ import { calculateCardIndex } from 'nft/utils'
 import { useCallback, useMemo, useState } from 'react'
 import { useQuery } from 'react-query'
 import { useNavigate } from 'react-router-dom'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { opacify } from 'theme/utils'
 
 import { Carousel, LoadingCarousel } from './Carousel'

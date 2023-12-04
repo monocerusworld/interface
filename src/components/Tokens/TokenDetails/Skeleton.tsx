@@ -2,7 +2,7 @@ import { WidgetSkeleton } from 'components/Widget'
 import { DEFAULT_WIDGET_WIDTH } from 'components/Widget'
 import { ArrowLeft } from 'react-feather'
 import { useParams } from 'react-router-dom'
-import styled, { useTheme } from 'styled-components/macro'
+import styled, { useTheme } from 'styled-components'
 import { textFadeIn } from 'theme/styles'
 
 import { LoadingBubble } from '../loading'

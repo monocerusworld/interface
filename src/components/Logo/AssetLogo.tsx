@@ -2,7 +2,7 @@ import { getChainInfo } from "constants/chainInfo";
 import { SupportedChainId } from "constants/chains";
 import useTokenLogoSource from "hooks/useAssetLogoSource";
 import React from "react";
-import styled, { css } from "styled-components/macro";
+import styled, { css } from "styled-components";
 
 export const MissingImageLogo = styled.div<{ size?: string }>`
   --size: ${({ size }) => size};

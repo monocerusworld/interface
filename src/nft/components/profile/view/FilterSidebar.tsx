@@ -22,7 +22,7 @@ import {
   useState,
 } from 'react'
 import { easings, useSpring } from 'react-spring'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { ThemedText } from 'theme'
 import { TRANSITION_DURATIONS } from 'theme/styles'
 

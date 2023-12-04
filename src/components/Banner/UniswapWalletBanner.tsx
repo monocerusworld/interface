@@ -6,7 +6,7 @@ import { DownloadButton, LearnMoreButton } from 'components/WalletDropdown/Downl
 import { X } from 'react-feather'
 import { useLocation } from 'react-router-dom'
 import { useHideUniswapWalletBanner } from 'state/user/hooks'
-import styled, { useTheme } from 'styled-components/macro'
+import styled, { useTheme } from 'styled-components'
 import { ThemedText } from 'theme'
 import { Z_INDEX } from 'theme/zIndex'
 import { isIOS } from 'utils/userAgent'

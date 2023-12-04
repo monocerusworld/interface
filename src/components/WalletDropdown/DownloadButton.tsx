@@ -2,7 +2,7 @@ import { sendAnalyticsEvent } from '@uniswap/analytics'
 import { useMGTMMicrositeEnabled } from 'featureFlags/flags/mgtm'
 import { PropsWithChildren, useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { ClickableStyle } from 'theme'
 import { isIOS } from 'utils/userAgent'
 

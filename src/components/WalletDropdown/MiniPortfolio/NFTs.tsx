@@ -3,7 +3,7 @@ import { LoadingAssets } from 'nft/components/collection/CollectionAssetLoading'
 import { EmptyWalletModule } from 'nft/components/profile/view/EmptyWalletContent'
 import { useState } from 'react'
 import InfiniteScroll from 'react-infinite-scroll-component'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 
 import { useToggleWalletDrawer } from '..'
 import { DEFAULT_NFT_QUERY_AMOUNT } from './constants'

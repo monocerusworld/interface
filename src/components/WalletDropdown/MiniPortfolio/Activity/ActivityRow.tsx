@@ -5,7 +5,7 @@ import AlertTriangleFilled from 'components/Icons/AlertTriangleFilled'
 import { LoaderV2 } from 'components/Icons/LoadingSpinner'
 import { TransactionStatus } from 'graphql/data/__generated__/types-and-hooks'
 import useENSName from 'hooks/useENSName'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { EllipsisStyle, ThemedText } from 'theme'
 import { ExplorerDataType, getExplorerLink } from 'utils/getExplorerLink'
 

@@ -22,7 +22,7 @@ import { useNavigate } from 'react-router-dom'
 import { shouldDisableNFTRoutesAtom } from 'state/application/atoms'
 import { useAppDispatch } from 'state/hooks'
 import { updateSelectedWallet } from 'state/user/reducer'
-import styled, { useTheme } from 'styled-components/macro'
+import styled, { useTheme } from 'styled-components'
 import { CopyHelper, ExternalLink, ThemedText } from 'theme'
 
 import { shortenAddress } from '../../nft/utils/address'

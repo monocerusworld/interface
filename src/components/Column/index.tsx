@@ -1,4 +1,4 @@
-import styled, { DefaultTheme } from 'styled-components/macro'
+import styled, { DefaultTheme } from 'styled-components'
 
 type Gap = keyof DefaultTheme['grids']
 

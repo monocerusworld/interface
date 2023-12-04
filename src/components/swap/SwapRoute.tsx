@@ -16,7 +16,7 @@ import useAutoRouterSupported from 'hooks/useAutoRouterSupported'
 import { memo, useState } from 'react'
 import { Plus } from 'react-feather'
 import { InterfaceTrade } from 'state/routing/types'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { Separator, ThemedText } from 'theme'
 import { useDarkModeManager } from 'theme/components/ThemeToggle'
 

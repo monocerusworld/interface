@@ -2,7 +2,7 @@ import { Trans } from '@lingui/macro'
 import AlertTriangleFilled from 'components/Icons/AlertTriangleFilled'
 import { getChainInfo } from 'constants/chainInfo'
 import { SupportedChainId } from 'constants/chains'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 
 import { ThemedText } from '../../theme'
 import { AutoColumn } from '../Column'

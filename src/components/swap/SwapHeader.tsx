@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
 import { Percent } from '@uniswap/sdk-core'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 
 import { ThemedText } from '../../theme'
 import { RowBetween, RowFixed } from '../Row'

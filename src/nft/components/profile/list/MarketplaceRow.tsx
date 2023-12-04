@@ -15,7 +15,7 @@ import { ListingMarket, WalletAsset } from 'nft/types'
 import { formatEth, formatUsdPrice } from 'nft/utils/currency'
 import { fetchPrice } from 'nft/utils/fetchPrice'
 import { Dispatch, DispatchWithoutAction, useCallback, useEffect, useMemo, useReducer, useState } from 'react'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { BREAKPOINTS, ThemedText } from 'theme'
 
 import { PriceTextInput } from './PriceTextInput'

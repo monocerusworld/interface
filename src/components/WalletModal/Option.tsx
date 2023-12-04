@@ -2,7 +2,7 @@ import { TraceEvent } from '@uniswap/analytics'
 import { BrowserEvent, InterfaceElementName, InterfaceEventName } from '@uniswap/analytics-events'
 import Loader from 'components/Icons/LoadingSpinner'
 import { Connection, ConnectionType } from 'connection'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { flexColumnNoWrap, flexRowNoWrap } from 'theme/styles'
 
 import NewBadge from './NewBadge'

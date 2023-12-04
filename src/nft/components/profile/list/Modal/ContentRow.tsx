@@ -6,7 +6,7 @@ import { VerifiedIcon } from 'nft/components/icons'
 import { AssetRow, CollectionRow, ListingStatus } from 'nft/types'
 import { useEffect, useRef } from 'react'
 import { Check, XOctagon } from 'react-feather'
-import styled, { css, useTheme } from 'styled-components/macro'
+import styled, { css, useTheme } from 'styled-components'
 import { ThemedText } from 'theme'
 import { opacify } from 'theme/utils'
 

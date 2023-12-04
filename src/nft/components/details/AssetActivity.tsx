@@ -9,7 +9,7 @@ import { formatEth, formatEthPrice } from 'nft/utils/currency'
 import { getTimeDifference } from 'nft/utils/date'
 import { putCommas } from 'nft/utils/putCommas'
 import { ReactNode } from 'react'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 
 const TR = styled.tr`
   border-bottom: ${({ theme }) => `1px solid ${theme.backgroundOutline}`};

@@ -1,6 +1,6 @@
 import { transparentize } from 'polished'
 import { ReactNode, useCallback, useEffect, useState } from 'react'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 
 import Popover, { PopoverProps } from '../Popover'
 

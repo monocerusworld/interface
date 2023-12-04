@@ -7,7 +7,7 @@ import ms from 'ms.macro'
 import { darken } from 'polished'
 import { useState } from 'react'
 import { useUserSlippageTolerance, useUserTransactionTTL } from 'state/user/hooks'
-import styled, { useTheme } from 'styled-components/macro'
+import styled, { useTheme } from 'styled-components'
 
 import { ThemedText } from '../../theme'
 import { AutoColumn } from '../Column'

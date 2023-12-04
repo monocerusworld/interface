@@ -9,7 +9,7 @@ import useTokenLogoSource from 'hooks/useAssetLogoSource'
 import useENSAvatar from 'hooks/useENSAvatar'
 import React from 'react'
 import { Loader } from 'react-feather'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 const UnknownContract = styled(UnknownStatus)`
   color: ${({ theme }) => theme.textSecondary};
 `

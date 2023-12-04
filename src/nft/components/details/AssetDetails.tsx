@@ -22,7 +22,7 @@ import { useCallback, useMemo, useReducer, useState } from 'react'
 import InfiniteScroll from 'react-infinite-scroll-component'
 import { useInfiniteQuery, useQuery } from 'react-query'
 import { Link as RouterLink } from 'react-router-dom'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { useIsDarkMode } from 'theme/components/ThemeToggle'
 
 import AssetActivity, { LoadingAssetActivity } from './AssetActivity'

@@ -5,7 +5,7 @@ import { putCommas } from 'nft/utils'
 import { shortenAddress } from 'nft/utils/address'
 import { useCallback } from 'react'
 import { Copy } from 'react-feather'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 
 const Details = styled.div`
   display: grid;

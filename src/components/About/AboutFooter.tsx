@@ -1,6 +1,6 @@
 import { TraceEvent } from '@uniswap/analytics'
 import { BrowserEvent, InterfaceElementName, SharedEventName } from '@uniswap/analytics-events'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { BREAKPOINTS, ExternalLink, StyledRouterLink } from 'theme'
 import { useIsDarkMode } from 'theme/components/ThemeToggle'
 import { DiscordIcon, GitbookIcon, GithubIcon, TelegramIcon, TwitterIcon } from './Icons'

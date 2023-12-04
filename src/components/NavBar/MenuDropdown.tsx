@@ -18,7 +18,7 @@ import { themeVars } from 'nft/css/sprinkles.css'
 import { ReactNode, useReducer, useRef } from 'react'
 import { NavLink, NavLinkProps } from 'react-router-dom'
 import { useToggleModal } from 'state/application/hooks'
-import styled, { useTheme } from 'styled-components/macro'
+import styled, { useTheme } from 'styled-components'
 import { isDevelopmentEnv, isStagingEnv } from 'utils/env'
 
 import { ApplicationModal } from '../../state/application/reducer'

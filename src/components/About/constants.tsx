@@ -1,7 +1,7 @@
 import { InterfaceElementName } from '@uniswap/analytics-events'
 
 import { Loader, ShoppingBag, PlayCircle, Play } from 'react-feather'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { lightTheme } from 'theme/colors'
 
 

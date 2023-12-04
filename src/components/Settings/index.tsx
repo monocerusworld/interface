@@ -7,7 +7,7 @@ import { isSupportedChainId } from 'lib/hooks/routing/clientSideSmartOrderRouter
 import { useRef, useState } from 'react'
 import { Settings, X } from 'react-feather'
 import { Text } from 'rebass'
-import styled, { useTheme } from 'styled-components/macro'
+import styled, { useTheme } from 'styled-components'
 
 import { useOnClickOutside } from '../../hooks/useOnClickOutside'
 import { useModalIsOpen, useToggleSettingsMenu } from '../../state/application/hooks'

@@ -19,7 +19,7 @@ import { formatEthPrice } from 'nft/utils/currency'
 import { ReactNode, useEffect, useMemo, useState } from 'react'
 import { useQuery } from 'react-query'
 import { useLocation } from 'react-router-dom'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { ThemedText } from 'theme'
 
 import BnbLogoURI from '../../assets/svg/bnb-logo.svg'

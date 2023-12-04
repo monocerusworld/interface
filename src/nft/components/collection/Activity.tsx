@@ -12,7 +12,7 @@ import { fetchPrice } from 'nft/utils/fetchPrice'
 import { useCallback, useEffect, useReducer, useState } from 'react'
 import InfiniteScroll from 'react-infinite-scroll-component'
 import { useInfiniteQuery } from 'react-query'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { useIsDarkMode } from 'theme/components/ThemeToggle'
 
 import * as styles from './Activity.css'
