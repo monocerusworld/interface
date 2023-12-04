@@ -19,7 +19,7 @@ import { formatTickPrice } from 'utils/formatTickPrice'
 import { unwrappedToken } from 'utils/unwrappedToken'
 import { hasURL } from 'utils/urlChecks'
 
-import { CERUS, DAI, USDC_MAINNET, USDT, WRAPPED_NATIVE_CURRENCY } from '../../constants/tokens'
+import { USDC_MANTA, USDT_MANTA, USDC_MANTA_TESTNET, USDT_MANTA_TESTNET, WRAPPED_NATIVE_CURRENCY, WMANTA_MANTA_TESTNET } from '../../constants/tokens'
 
 const LinkRow = styled(Link)`
   align-items: center;
@@ -123,7 +123,7 @@ export function getPriceOrderingFromPositionForUI(position?: Position): {
   const token1 = position.amount1.currency
 
   // if token0 is a dollar-stable asset, set it as the quote token
-  const stables = [DAI, USDC_MAINNET, USDT]
+  const stables = [ USDC_MANTA, USDT_MANTA, USDC_MANTA_TESTNET, USDT_MANTA_TESTNET ]
   if (stables.some((stable) => stable.equals(token0))) {
     return {
       priceLower: position.token0PriceUpper.invert(),
@@ -134,7 +134,7 @@ export function getPriceOrderingFromPositionForUI(position?: Position): {
   }
 
   // if token1 is an ETH-/BTC-stable asset, set it as the base token
-  const bases = [...Object.values(WRAPPED_NATIVE_CURRENCY), CERUS]
+  const bases = [...Object.values(WRAPPED_NATIVE_CURRENCY), WMANTA_MANTA_TESTNET]
   if (bases.some((base) => base && base.equals(token1))) {
     return {
       priceLower: position.token0PriceUpper.invert(),

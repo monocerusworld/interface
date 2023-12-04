@@ -98,7 +98,7 @@ export function gqlToCurrency(token: {
 
 const URL_CHAIN_PARAM_TO_BACKEND: { [key: string]: Chain } = {
   manta: Chain.Manta,
-  manta-testnet: Chain.MantaTestnet,
+  mantatestnet: Chain.MantaTestnet,
 }
 
 export function validateUrlChainParam(chainName: string | undefined) {

@@ -43,10 +43,8 @@ const MAX_UINT128 = BigNumber.from(2).pow(128).sub(1)
 
 const DEFAULT_CHAINS = [
   SupportedChainId.MAINNET,
-  SupportedChainId.ARBITRUM_ONE,
-  SupportedChainId.OPTIMISM,
-  SupportedChainId.POLYGON,
-  SupportedChainId.CELO,
+  SupportedChainId.MANTA,
+  SupportedChainId.MANTA_TESTNET,
 ]
 
 type UseMultiChainPositionsData = { positions: PositionInfo[] | undefined; loading: boolean }

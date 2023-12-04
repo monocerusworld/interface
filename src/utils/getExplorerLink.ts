@@ -58,7 +58,7 @@ export function getExplorerLink(chainId: number, data: string, type: ExplorerDat
       return `${prefix}/token/${data}`
 
     case ExplorerDataType.BLOCK:
-      if (chainId === SupportedChainId.OPTIMISM || chainId === SupportedChainId.OPTIMISM_GOERLI) {
+      if (chainId === SupportedChainId.MANTA || chainId === SupportedChainId.MANTA_TESTNET) {
         return `${prefix}/tx/${data}`
       }
       return `${prefix}/block/${data}`
